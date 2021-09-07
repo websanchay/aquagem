@@ -952,24 +952,22 @@ h6 {
     }
 }
 
-@media screen and (max-width: 425px) and (min-width: 320px) {}
-
-.ext_1 {
-    width: 149px;
-    height: 98px;
-    position: relative;
-    left: 68px;
-    bottom: 34px;
-}
-
-.pergolas {
-    margin-left: 36px;
-    width: 65px;
-}
-
-.p {
-    margin-left: 6px;
-    font-size: 12px;
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    .ext_1 {
+        width: 149px;
+        height: 98px;
+        position: relative;
+        left: 68px;
+        bottom: 34px;
+    }
+    .pergolas {
+        margin-left: 36px;
+        width: 65px;
+    }
+    .p {
+        margin-left: 6px;
+        font-size: 12px;
+    }
 }
 
 
