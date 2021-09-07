@@ -952,7 +952,8 @@ h6 {
     }
 }
 
-@media screen and (max-width: 425px) and (min-width: 320px) {
+
+/* @media screen and (max-width: 425px) and (min-width: 320px) {
     .ext_1 {
         width: 149px;
         height: 98px;
@@ -968,7 +969,7 @@ h6 {
         margin-left: 6px;
         font-size: 12px;
     }
-}
+} */
 
 
 /*--------------------------------------------------------------
