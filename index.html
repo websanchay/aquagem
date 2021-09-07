@@ -23,23 +23,12 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <script>
-        function refreshPage() {
-            var page_y = $(document).scrollTop();
-            window.location.href = window.location.href + '?page_y=' + page_y;
-        }
-        window.onload = function() {
-            setTimeout(refreshPage, 35000);
-            if (window.location.href.indexOf('page_y') != -1) {
-                var match = window.location.href.split('?')[1].split("&")[0].split("=");
-                $('html, body').scrollTop(match[1]);
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -56,45 +45,47 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero"><b>Home</b></a></li>
-                    <li><a class="nav-link scrollto" href="#about"><b>About</b></a></li>
-                    <li class="dropdown"><a href="#interiors"><span><b>Interiors</b></span><i class="bi bi-chevron-down"></i></a>
+                    <li><a class="nav-link scrollto" href="#about_us"><b>About Us</b></a></li>
+                    <li class="nav-link scrollto dropdown"><a href="#"><span><b>Interiors</b></span><i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#interiors">Stretch Ceiling</a></li>
-                            <li><a href="#interiors">Floors</a></li>
-                            <li><a href="#interiors">Solid Surfaces</a></li>
+                            <li><a class="nav-link scrollto" href="#interiors">Stretch Ceiling</a></li>
+                            <li><a class="nav-link scrollto" href="#interiors">Floors</a></li>
+                            <li><a class="nav-link scrollto" href="#interiors">Solid Surfaces</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#exteriors"><span><b>Exteriors</b></span><b><i class="bi bi-chevron-down"></i></b></a>
+                    <li class="nav-link scrollto dropdown"><a href="#"><span><b>Exteriors</b></span><b><i class="bi bi-chevron-down"></i></b></a>
                         <ul>
                             <li>
-                                <a href="#exteriors">Pergolas and Gazebos</a>
+                                <a class="nav-link scrollto" href="#exteriors">Pergolas and Gazebos</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Decking and cladding</a>
+                                <a class="nav-link scrollto" href="#exteriors">Decking and cladding</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Exterior Furnitures</a>
+                                <a class="nav-link scrollto" href="#exteriors">Exterior Furnitures</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Bar Counter</a>
+                                <a class="nav-link scrollto" href="#exteriors">Bar Counter</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Terrace Garden</a>
+                                <a class="nav-link scrollto" href="#exteriors">Terrace Garden</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Vertical Garden</a>
+                                <a class="nav-link scrollto" href="#exteriors">Vertical Garden</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Water Features</a>
+                                <a class="nav-link scrollto" href="#exteriors">Water Features</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Fireplaces</a>
+                                <a class="nav-link scrollto" href="#exteriors">Fireplaces</a>
                             </li>
                             <li>
-                                <a href="#exteriors">Outdoor Lights</a>
+                                <a class="nav-link scrollto" href="#exteriors">Outdoor Lights</a>
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a class="nav-link scrollto" href="project.html"><b>Projects</b></a></li>
                     <li><a class="nav-link scrollto" href="#footer"><b>Contact Us</b></a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -103,6 +94,7 @@
 
         </div>
     </header>
+
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
@@ -113,42 +105,61 @@
 
             <div class="carousel-inner" role="listbox">
 
-                <!-- Slide 1 -->
-                <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-4.jpg)">
+                <!--Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(assets/img/slide/floor_5.jpg)">
                     <div class="carousel-container">
-                        <div class="container">
-                            <!-- <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Green</span></h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                                tempore modi architecto.</p>
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                        <div class="container floor">
+                            <h2 class="animate__animated animate__fadeInDown" style="letter-spacing: 12px;margin-right: 113px;">| FLOORS</h2>
+                            <h3 class="animate__animated animate__fadeInUp "><b style="color:white;letter-spacing: 12px;margin-right: 45px;">| There to hold you.. always</b></h3>
+                            <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-5.jpg)">
+                <div class="carousel-item" style="background-image: url(assets/img/slide/stretch.jpg)">
                     <div class="carousel-container">
-                        <div class="container">
-                            <!-- <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                                tempore modi architecto.</p>
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                        <div class="container">-->
+                            <h2 class="animate__animated animate__fadeInDown" style="letter-spacing: 12px;margin-right: 113px;">| STRETCH CEILING </h2>
+                            <h3 class="animate__animated animate__fadeInUp"><b style="color:white;letter-spacing: 12px;margin-right: 45px;">| Imagination are above</b>
+                            </h3>
+                            <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-7.jpg)">
+                <div class="carousel-item" style="background-image: url(assets/img/slide/solid.jpg)">
                     <div class="carousel-container">
                         <div class="container">
-                            <!-- <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et
-                                tempore modi architecto.</p>
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                            <h2 class="animate__animated animate__fadeInDown" style="letter-spacing: 12px;margin-right: 113px;">| SOLID SURFACES </h2>
+                            <h3 class="animate__animated animate__fadeInUp"><b style="color:white;letter-spacing: 12px;margin-right: 45px;">| Imagine and Create</b></h3>
+                            <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
                         </div>
                     </div>
                 </div>
 
+                <!--Slide 4 -->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-7.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown" style="letter-spacing: 12px;margin-right: 78px;">| YOUR TERRACE GARDEN</h2>
+                            <h3 class="animate__animated animate__fadeInUp"><b style="color:white;letter-spacing: 10px;margin-right: 45px;">| ENJOY THE CITY SKYLINE </b></h3>
+                            <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!--slide 5-->
+                <div class="carousel-item" style="background-image: url(assets/img/slide/slide-8.jpg)">
+                    <div class="carousel-container">
+                        <div class="container">
+                            <h2 class="animate__animated animate__fadeInDown" style="letter-spacing: 12px;margin-right: 78px;">| YOUR BACKYARD</h2>
+                            <h3 class="animate__animated animate__fadeInUp"><b style="color:white;letter-spacing: 10px;margin-right: 45px;">FEEL IT .. NURTURE IT</b></h3>
+                            <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
@@ -162,11 +173,10 @@
         </div>
     </section>
     <!-- End Hero -->
-
     <main id="main">
 
         <!-- ======= About Us Section ======= -->
-        <section id="about" class="about">
+        <section id="about_us" class="about">
             <div class="container">
 
                 <div class="section-title">
@@ -174,10 +184,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 order-1 order-lg-2">
+                    <div class="col-lg-6 col-md-12 col-sm-12 c0l-xs-12 ">
                         <img src="assets/img/image.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-lg-6 col-md-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                    <div class="col-lg-6 col-md-12 pt-4 pt-lg-0 content">
                         <p>We, at Creatives, as the name suggest is looking to break the monotony of your home, as person we all tend to imagine of a dream home, things that should surround us, things that relax our mind, an atmosphere of our like, all this
                             but not as our neighbour have it ,.</p>
                         <h6><b>it should be UNIQUE.... IT SHOULD BE CREATIVE... that is who we are..</b></h6>
@@ -203,11 +213,11 @@
                     <h5>We offer a variety of services to make your imagination counts from the ceiling to your floors</h5>
                     <!-- <p>House is just four walls.We are creating your dream home.</p> -->
                 </div>
-                <div id="interiors" class="row no-gutters">
+                <div class="row no-gutters">
 
                     <div class="col-lg-4 col-md-4">
                         <div class="gallery-item">
-                            <a href="#" class="venobox" data-gall="gallery-item">
+                            <a href="#interiors" class="venobox" data-gall="gallery-item">
                                 <img src="assets/img/slide/Stretch.png" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -215,7 +225,7 @@
 
                     <div class="col-lg-4 col-md-4">
                         <div class="gallery-item">
-                            <a href="#" class="venobox" data-gall="gallery-item">
+                            <a href="#interiors" class="venobox" data-gall="gallery-item">
                                 <img src="assets/img/slide/Floors_1.png" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -223,7 +233,7 @@
 
                     <div class="col-lg-4 col-md-4">
                         <div class="gallery-item">
-                            <a href="#" class="venobox" data-gall="gallery-item">
+                            <a href="#interiors" class="venobox" data-gall="gallery-item">
                                 <img src="assets/img/slide/solid.png" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -231,27 +241,112 @@
                 </div>
             </div>
         </section>
+
+        <br/>
         <!-- End Services Section -->
-        <section id="services" class="services">
+        <section id="gallery" class="gallery">
             <div class="container">
                 <div id="exteriors" class="section-title">
                     <h2>Exteriors</h2>
                     <h5>We offer a variety of servicesto make your Terraces and Backyard more enjoyable</h5>
                 </div>
-                <div id="exteriors" class="row no-gutters">
-
+                <div class="row no-gutters">
                     <div class="col-lg-6 col-md-6">
-                        <div class="gallery-item">
+                        <div class="#">
+                            <a href="#" class="venobox" data-gall="gallery-item"></a>
+                            <img src="assets/img/slide/terrace_4.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="#">
+                            <a href="#" class="venobox" data-gall="gallery-item"></a>
+                            <img src="assets/img/slide/terrace_5.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br/>
+        <section>
+            <div class="container">
+                <div class="row no-gutters exteriors_1">
+                    <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="ext_1 gallery-item">
                             <a href="#" class="venobox" data-gall="gallery-item">
-                                <img src="assets/img/slide/exteriors.png" alt="" class="img-fluid b1">
+                                <img class="pergolas" src="assets/img/slide/p_1.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="p">Pergolas and gazebos</b>
+                                </p>
                             </a>
                         </div>
                     </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="gallery-item">
+                    <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="ext_2 gallery-item">
                             <a href="#" class="venobox" data-gall="gallery-item">
-                                <img src="assets/img/slide/BACKYARDS.png" alt="" class="img-fluid b2">
+                                <img class="cladding" src="assets/img/slide/p_2.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="d">Decking and Cladding</b></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="ext_3">
+                            <a href="#" class="venobox" data-gall="gallery-item">
+                                <img class="garden" src="assets/img/slide/p_4.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="t">Terrace Garden</b></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="ext_4">
+                            <a href="#" class="venobox" data-gall="gallery-item">
+                                <img class="outdoor" src="assets/img/slide/p_9.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="o">Outdoor Lights</b></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xs-12">
+                        <div class="ext_5">
+                            <a href="#" class="venobox" data-gall="gallery-item">
+                                <img class="fireplace" src="assets/img/slide/p_3.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="f">Fireplaces</b></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <br/><br/>
+        <section>
+            <div class="container">
+                <div class="row no-gutters exteriors_2">
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ext_6">
+                            <a href="#" class="venobox" data-gall="gallery-item">
+                                <img class="vertical" src="assets/img/slide/p_5.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="v">Vertical Gardens</b>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ext_7">
+                            <a href="#" class="venobox" data-gall="gallery-item">
+                                <img class="water" src="assets/img/slide/p_6.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="w">Water Features</b></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ext_8">
+                            <a href="#" class="venobox" data-gall="gallery-item">
+                                <img class="bar" src="assets/img/slide/p_7.jpg" alt="" class="img-fluid" width="100px">
+                                <p><b class="b">Bar Counter</b></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="ext_9">
+                            <a href="#" class="venobox" data-gall="gallery-item">
+                                <img class="exteriors" src="assets/img/slide/p_8.png" alt="" class="img-fluid" width="100px">
+                                <p><b class="e">Exterior Furnitures</b></p>
                             </a>
                         </div>
                     </div>
@@ -259,28 +354,80 @@
             </div>
         </section>
 
+
     </main>
     <!-- End #main -->
-
+    <br/><br/><br/>
     <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <img src="assets/img/slide/logo_1.png" alt="Logo" class="img-responsive"><br><br>
-            <address class="address">
-                <h3><b>Aquagem Enterprises</b></h3>
-                <p>
-                   J-1/117. 3rd Floor, DDA Flats Kalkaji,
-                   New Delhi- 110019
-                   Mobile No: +9953504986, +8882084631
-                </p>
-            </address>
-            <hr>
-            <div class="copyright">
-                &copy; Copyright@2021.<strong><span>Creatives.</span></strong></strong>Aquagem Enterprises</strong>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-2">
+                        <!-- Content -->
+                        <a href="index.html"><img src="assets/img/slide/logo_1.png" alt="logo" style="width: 229px;"></a>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h4>
+                        <p>
+                            <a href="#!" class="text-reset ">Home</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">About us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Interiors</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Exteriors</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Products</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Contact us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h4 class="text-uppercase fw-bold mb-4">
+                            Contact Us
+                        </h4>
+                        <h3><i class="fas fa-home me-3" style="margin-left: -14px"></i> Aquagem Enterprises</h3>
+                        <p>
+                            J-1/117. 3rd Floor DDA Flats Kalkaji </p>
+                        <p>New Delhi- 110019</p>
+                        <p><i class="fas fa-phone me-3" style="margin-left: -14px"></i>+918287975156 </p>
+                        <p><i class="fas fa-print me-3" style="margin-left: -14px"></i>+917982629601 </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
             </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#"><strong><span>Creatives.</span></strong></strong>Aquagem Enterprises</strong></a>
         </div>
+        <!-- Copyright -->
     </footer>
-    <!-- End Footer -->
+    <!-- Footer -->
+    <!-- Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -293,6 +440,12 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $(window).on('load', function() {
+            $(window).scrollTop(0);
+        });
+    </script>
 
 </body>
 

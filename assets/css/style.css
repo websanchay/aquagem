@@ -1,6 +1,10 @@
+html,
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -112,6 +116,7 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     height: 106px;
+    padding-top: 90px;
 }
 
 #header.header-scrolled {
@@ -133,12 +138,15 @@ h6 {
 }
 
 #header .logo img {
-    max-height: 109px;
+    max-height: 138px;
+    max-width: 218px;
+    margin-top: -28px;
 }
 
-.scrolled-offset {
-    margin-top: 107px;
-}
+
+/* .scrolled-offset {
+    margin-top: 166px;
+} */
 
 
 /*--------------------------------------------------------------
@@ -152,6 +160,9 @@ h6 {
 
 .navbar {
     padding: 0;
+    padding-top: 0;
+    padding-right: 70px;
+    margin-top: -19px;
 }
 
 .navbar ul {
@@ -258,6 +269,10 @@ h6 {
     top: 0;
     left: 100%;
     visibility: visible;
+}
+
+.fixed-top {
+    position: absolute;
 }
 
 @media (max-width: 1366px) {
@@ -377,6 +392,13 @@ h6 {
     display: block;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .navbar a,
+    .navbar a:focus {
+        font-size: 13px;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -385,9 +407,14 @@ h6 {
 #hero {
     width: 100%;
     height: 85vh;
-    background-color: rgba(9, 9, 9, 0.8);
+    /* background-color: rgba(9, 9, 9, 0.8); */
     overflow: hidden;
     position: relative;
+    top: 15px;
+}
+
+#heroCarousel {
+    margin-top: 153px;
 }
 
 #hero .carousel,
@@ -517,6 +544,10 @@ h6 {
     background: #14db48;
 }
 
+.floor {
+    text-align: center;
+}
+
 #hero .btn-get-started:hover {
     background: #6ec083;
 }
@@ -545,8 +576,27 @@ h6 {
 
 @media (max-height: 500px) {
     #hero {
-        height: 120vh;
+        height: 130vh;
     }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
@@ -554,7 +604,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 
-section {
+.about {
     padding: 50px 0;
 }
 
@@ -609,6 +659,12 @@ section {
     color: #919191;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .content {
+        margin-top: 18px;
+    }
+}
+
 
 /* ----------------------------------------------------------- 
 # services Section
@@ -658,7 +714,7 @@ section {
 --------------------------------------------------------------*/
 
 .gallery {
-    padding-bottom: 0;
+    padding-bottom: 30px;
 }
 
 .gallery .gallery-item {
@@ -680,81 +736,240 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-
-.why-us {
-    padding: 0;
+/* .exteriors_1 {
+    padding-left: 169px;
 }
 
-.why-us .row {
-    overflow: hidden;
+.exteriors_2 {
+    padding-right: 8px;
+} */
+
+.ext_1 {
+    border: 3px solid green;
+    width: 192px;
+    height: 130px;
+    position: relative;
+    left: 18px;
 }
 
-.why-us .content-item {
-    padding: 40px;
-    border-left: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    margin: -1px;
+.pergolas {
+    margin-left: 39px;
 }
 
-.why-us .content-item span {
-    display: block;
-    font-size: 24px;
-    font-weight: 400;
-    color: #6ec083;
+.p {
+    margin-left: 18px;
 }
 
-.why-us .content-item h4 {
-    font-size: 26px;
-    font-weight: 300;
-    padding: 0;
-    margin: 20px 0;
+.ext_2 {
+    border: 3px solid green;
+    position: absolute;
+    width: 192px;
+    height: 130px;
+    left: 57px;
 }
 
-.why-us .content-item p {
-    color: #aaaaaa;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
+.cladding {
+    margin-left: 42px;
 }
 
-@media (max-width: 768px) {
-    .why-us .content-item {
-        padding: 40px 0;
+.d {
+    margin-left: 21px;
+}
+
+.ext_3 {
+    border: 3px solid green;
+    position: absolute;
+    left: 80px;
+    width: 192px;
+    height: 130px;
+}
+
+.garden {
+    margin-left: 40px;
+}
+
+.t {
+    margin-left: 39px;
+}
+
+.ext_4 {
+    border: 3px solid green;
+    position: absolute;
+    width: 192px;
+    height: 130px;
+    left: 108px;
+}
+
+.outdoor {
+    margin-left: 43px;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.o {
+    margin-left: 37px;
+    position: relative;
+    bottom: -4px;
+}
+
+.ext_5 {
+    border: 3px solid green;
+    position: absolute;
+    left: 128px;
+    width: 192px;
+    height: 130px;
+}
+
+.fireplace {
+    margin-left: 37px;
+}
+
+.f {
+    margin-left: 51px;
+}
+
+.ext_6 {
+    border: 3px solid green;
+    width: 200px;
+    margin-left: 71px;
+}
+
+.vertical {
+    margin-left: 41px;
+    height: 90px;
+    margin-top: 9px;
+}
+
+.v {
+    margin-left: 34px;
+}
+
+.ext_7 {
+    border: 3px solid green;
+    width: 200px;
+    margin-left: 28px;
+}
+
+.water {
+    margin-left: 41px;
+}
+
+.w {
+    margin-left: 38px;
+}
+
+.ext_8 {
+    border: 3px solid green;
+    width: 200px;
+    margin-left: -29px;
+}
+
+.bar {
+    margin-left: 51px;
+    width: 90px;
+    height: 90px;
+    margin-top: 7px;
+}
+
+.b {
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+
+.ext_9 {
+    border: 3px solid green;
+    width: 200px;
+    margin-left: -71px;
+}
+
+.exteriors {
+    margin-left: 39px;
+}
+
+.e {
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    .ext_1 {
+        width: 178px;
+        position: relative;
+        left: -2px;
+    }
+    .ext_2 {
+        position: absolute;
+        width: 178px;
+        left: 44px;
+    }
+    .ext_3 {
+        position: absolute;
+        left: 76px;
+        width: 178px;
+    }
+    .garden {
+        margin-left: 36px;
+    }
+    .t {
+        margin-left: 34px;
+    }
+    .ext_4 {
+        position: absolute;
+        width: 178px;
+        left: 108px;
+    }
+    .ext_5 {
+        position: absolute;
+        left: 136px;
+        width: 178px;
+    }
+    .ext_6 {
+        margin-left: 34px;
+    }
+    .ext_7 {
+        margin-left: 15px;
+    }
+    .ext_8 {
+        margin-left: -5px;
+        height: 136px;
+    }
+    .ext_9 {
+        margin-left: -24px;
+    }
+    .p {
+        margin-left: 12px;
+    }
+    .d {
+        margin-left: 11px;
+    }
+    .e {
+        margin-left: 23px;
     }
 }
 
+@media screen and (max-width: 425px) and (min-width: 320px) {}
 
-/*--------------------------------------------------------------
-# Our Clients
---------------------------------------------------------------*/
-
-.clients .swiper-slide img {
-    opacity: 0.5;
-    transition: 0.3s;
-}
-
-.clients .swiper-slide img:hover {
-    opacity: 1;
-}
-
-.clients .swiper-pagination {
-    margin-top: 20px;
+.ext_1 {
+    width: 149px;
+    height: 98px;
     position: relative;
+    left: 68px;
+    bottom: 34px;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #14db48;
+.pergolas {
+    margin-left: 36px;
+    width: 65px;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #14db48;
+.p {
+    margin-left: 6px;
+    font-size: 12px;
 }
 
 
@@ -892,60 +1107,12 @@ section {
     fill: #11dbcf;
 }
 
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-
-.team .member {
-    text-align: center;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
-    padding: 30px 20px;
-    background: #fff;
+.text-uppercase {
+    color: #000;
 }
 
-.team .member img {
-    max-width: 60%;
-    border-radius: 50%;
-    margin: 0 0 30px 0;
-}
-
-.team .member h4 {
-    font-weight: 700;
-    margin-bottom: 2px;
-    font-size: 18px;
-}
-
-.team .member span {
-    font-style: italic;
-    display: block;
-    font-size: 13px;
-}
-
-.team .member p {
-    padding-top: 10px;
-    font-size: 14px;
-    font-style: italic;
-    color: #aaaaaa;
-}
-
-.team .member .social {
-    margin-top: 15px;
-}
-
-.team .member .social a {
-    color: #919191;
-    transition: 0.3s;
-}
-
-.team .member .social a:hover {
-    color: #5cb874;
-}
-
-.team .member .social i {
-    font-size: 18px;
-    margin: 0 2px;
+.text-reset a:hover {
+    color: #14db48;
 }
 
 
