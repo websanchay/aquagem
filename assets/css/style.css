@@ -930,7 +930,6 @@
         .ext_1 {
             width: 130px;
             height: 105px;
-            position: relative;
             left: -3px;
         }
         .pergolas {
@@ -942,7 +941,6 @@
             font-size: 11px;
         }
         .ext_2 {
-            position: absolute;
             width: 130px;
             height: 105px;
             left: 36px;
@@ -956,7 +954,6 @@
             font-size: 11px;
         }
         .ext_3 {
-            position: absolute;
             left: 58px;
             width: 130px;
             height: 105px;
