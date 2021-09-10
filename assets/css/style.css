@@ -1178,23 +1178,6 @@
             top: 5px;
             left: 34px;
         }
-        .ext_8 {
-            width: 171px;
-            margin-left: 171px;
-            height: 109px;
-            bottom: 108px;
-        }
-        .bar {
-            margin-left: 41px;
-            width: 70px;
-            height: 65px;
-            margin-top: 7px;
-        }
-        .b {
-            position: relative;
-            top: 5px;
-            left: 34px;
-        }
         .ext_9 {
             width: 171px;
             margin-left: 353px;
@@ -1377,78 +1360,281 @@
             overflow-x: hidden;
         } */
         .ext_1 {
-            width: 354px;
-            height: 130px;
-            left: 24px;
-            bottom: 34px;
+            width: 356px;
+            height: 115px;
+            left: 13px;
+            bottom: 6px;
         }
         .pergolas {
-            margin-left: 84px;
-            width: 65px;
+            margin-left: 129px;
+            width: 76px;
         }
         .p {
-            margin-left: 35px;
-            font-size: 15px;
+            margin-left: 93px;
+            font-size: 14px;
         }
         .ext_2 {
-            width: 236px;
-            height: 98px;
-            left: 41px;
-            bottom: -25px;
+            width: 356px;
+            height: 115px;
+            left: 29px;
+            top: 23px;
         }
         .cladding {
-            margin-left: 79px;
-            width: 65px;
+            margin-left: 125px;
+            width: 78px;
         }
         .d {
-            margin-left: 59px;
-            font-size: 15px;
+            margin-left: 90px;
+            font-size: 14px;
+        }
+        .ext_3 {
+            left: 29px;
+            width: 355px;
+            height: 115px;
+            top: 162px;
+        }
+        .garden {
+            margin-left: 122px;
+            width: 82px;
+        }
+        .t {
+            margin-left: 104px;
+        }
+        .ext_4 {
+            width: 355px;
+            height: 115px;
+            left: 29px;
+            top: 308px;
+        }
+        .outdoor {
+            margin-left: 124px;
+            margin-top: 10px;
+            width: 80px;
+            height: 65px;
+        }
+        .o {
+            margin-left: 109px;
+            font-size: 14px;
+        }
+        .ext_5 {
+            left: 31px;
+            width: 353px;
+            height: 115px;
+            top: 452px;
+        }
+        .fireplace {
+            margin-left: 123px;
+            width: 75px;
+        }
+        .f {
+            margin-left: 126px;
+            font-size: 14px;
+        }
+        .ext_6 {
+            width: 356px;
+            top: 556px;
+            left: -56px;
+            height: 115px;
+        }
+        .vertical {
+            margin-left: 128px;
+            height: 68px;
+            margin-top: 9px;
+            width: 72px;
+        }
+        .v {
+            margin-left: 107px;
+            font-size: 14px;
         }
         .ext_7 {
-            width: 236px;
-            height: 98px;
-            margin-left: 48px;
-            top: 406px;
+            width: 356px;
+            height: 115px;
+            margin-left: 16px;
+            top: 579px;
         }
         .water {
-            margin-left: 83px;
-            width: 63px;
-            height: 71px;
+            margin-left: 120px;
+            width: 87px;
+            height: 80px;
         }
         .w {
-            margin-left: 63px;
+            margin-left: 114px;
+            font-size: 14px;
         }
         .ext_8 {
-            width: 236px;
-            height: 98px;
-            left: 78px;
-            top: 435px;
+            width: 356px;
+            height: 107px;
+            left: 47px;
+            top: 605px;
         }
         .bar {
-            margin-left: 88px;
-            width: 58px;
-            height: 56px;
+            margin-left: 128px;
+            width: 74px;
+            height: 57px;
             margin-top: 7px;
         }
         .b {
-            left: 70px;
-            font-size: 15px;
+            left: 123px;
+            font-size: 14px;
         }
         .ext_9 {
-            width: 236px;
-            top: 464px;
-            left: 120px;
+            width: 356px;
+            top: 627px;
+            left: 90px;
         }
         .exteriors {
-            margin-left: 80px;
-            width: 65px;
+            margin-left: 124px;
+            width: 88px;
         }
         .e {
-            margin-left: 38px;
-            font-size: 15px;
+            margin-left: 102px;
+            font-size: 14px;
+        }
+        .img-fluid {
+            margin-top: 9px;
         }
         .footer_1 {
-            margin-top: 425px;
+            margin-top: 600px;
+        }
+    }
+    
+    @media screen and (max-width: 425px) and (min-width: 320px) {
+        .ext_1 {
+            width: 285px;
+            height: 107px;
+            left: 4px;
+            bottom: 6px;
+        }
+        .pergolas {
+            margin-left: 105px;
+            width: 76px;
+        }
+        .p {
+            margin-left: 72px;
+            font-size: 14px;
+        }
+        .ext_2 {
+            width: 284px;
+            height: 107px;
+            left: 19px;
+            top: 5px;
+        }
+        .cladding {
+            margin-left: 103px;
+            width: 78px;
+        }
+        .d {
+            margin-left: 71px;
+            font-size: 14px;
+        }
+        .ext_3 {
+            left: 19px;
+            width: 285px;
+            height: 107px;
+            top: 125px;
+        }
+        .garden {
+            margin-left: 104px;
+            width: 71px;
+        }
+        .t {
+            margin-left: 89px;
+        }
+        .ext_4 {
+            width: 283px;
+            height: 107px;
+            left: 20px;
+            top: 248px;
+        }
+        .outdoor {
+            margin-left: 92px;
+            margin-top: 5px;
+            width: 80px;
+            height: 65px;
+        }
+        .o {
+            margin-left: 80px;
+            font-size: 14px;
+        }
+        .ext_5 {
+            left: 19px;
+            width: 284px;
+            height: 107px;
+            top: 371px;
+        }
+        .fireplace {
+            margin-left: 94px;
+            width: 75px;
+        }
+        .f {
+            margin-left: 99px;
+            font-size: 14px;
+        }
+        .ext_6 {
+            width: 285px;
+            top: 454px;
+            left: -67px;
+            height: 107px;
+        }
+        .vertical {
+            margin-left: 97px;
+            height: 68px;
+            margin-top: 9px;
+            width: 72px;
+        }
+        .v {
+            margin-left: 80px;
+            font-size: 14px;
+        }
+        .ext_7 {
+            width: 284px;
+            height: 107px;
+            margin-left: 5px;
+            top: 468px;
+        }
+        .water {
+            margin-left: 87px;
+            width: 85px;
+            height: 74px;
+        }
+        .w {
+            margin-left: 82px;
+            font-size: 14px;
+        }
+        .ext_8 {
+            width: 288px;
+            height: 107px;
+            left: 33px;
+            top: 485px;
+        }
+        .bar {
+            margin-left: 99px;
+            width: 74px;
+            height: 57px;
+            margin-top: 7px;
+        }
+        .b {
+            left: 95px;
+            font-size: 14px;
+        }
+        .ext_9 {
+            width: 289px;
+            top: 502px;
+            left: 75px;
+        }
+        .exteriors {
+            margin-left: 96px;
+            width: 88px;
+        }
+        .e {
+            margin-left: 76px;
+            font-size: 14px;
+        }
+        .img-fluid {
+            margin-top: 9px;
+        }
+        .footer_1 {
+            margin-top: 495px;
         }
     }
     /*--------------------------------------------------------------
