@@ -967,7 +967,6 @@
             font-size: 12px;
         }
         .ext_4 {
-            position: absolute;
             width: 130px;
             height: 105px;
             left: 80px;
@@ -1027,6 +1026,7 @@
         .ext_8 {
             width: 130px;
             margin-left: -1px;
+            height: 115px;
         }
         .bar {
             margin-left: 29px;
@@ -1064,6 +1064,7 @@
         .pergolas {
             margin-left: 39px;
             width: 70px;
+            margin-top: 4px;
         }
         .p {
             margin-left: 10px;
@@ -1078,6 +1079,7 @@
             margin-left: 42px;
             width: 70px;
             height: 70px;
+            margin-top: 3px;
         }
         .d {
             margin-left: 7px;
@@ -1092,54 +1094,361 @@
             margin-left: 40px;
             width: 70px;
             height: 70px;
+            margin-top: 2px;
         }
         .t {
+            margin-left: 31px;
+        }
+        .ext_4 {
+            width: 171px;
+            height: 109px;
+            left: 1px;
+            top: 20px;
+        }
+        .outdoor {
+            margin-left: 43px;
+            height: 70px;
+            margin-top: 3px;
+            width: 70px;
+        }
+        .o {
+            margin-left: 37px;
+            position: relative;
+            bottom: -4px;
+        }
+        .ext_5 {
+            left: 186px;
+            width: 171px;
+            height: 109px;
+            top: 19px;
+        }
+        .fireplace {
+            margin-left: 37px;
+            width: 70px;
+            height: 70px;
+            margin-top: 9px;
+        }
+        .f {
             margin-left: 39px;
         }
-    }
-    
-    @media screen and (max-width: 425px) and (min-width: 320px) {
-        .ext_1 {
-            width: 149px;
-            height: 98px;
-            left: 68px;
-            bottom: 34px;
+        .ext_6 {
+            margin-left: 352px;
+            width: 171px;
+            height: 109px;
+            top: -22px;
         }
-        .pergolas {
-            margin-left: 36px;
-            width: 65px;
+        .vertical {
+            margin-left: 41px;
+            height: 70px;
+            margin-top: 9px;
+            width: 70px;
         }
-        .p {
-            margin-left: 6px;
-            font-size: 12px;
+        .v {
+            margin-left: 24px;
+        }
+        .ext_7 {
+            width: 171px;
+            margin-left: -16px;
+            height: 109px;
+            top: 1px;
+        }
+        .water {
+            margin-left: 37px;
+            width: 70px;
+            height: 70px;
+            margin-top: 4px;
+        }
+        .w {
+            margin-left: 29px;
         }
         .ext_8 {
-            border: 3px solid green;
-            width: 130px;
-            margin-left: 73px;
-            margin-top: 119px;
+            width: 171px;
+            margin-left: 171px;
+            height: 109px;
+            bottom: 108px;
         }
         .bar {
-            margin-left: 22px;
-            width: 83px;
+            margin-left: 41px;
+            width: 70px;
+            height: 65px;
             margin-top: 7px;
         }
         .b {
-            left: 23px;
+            position: relative;
+            top: 5px;
+            left: 34px;
+        }
+        .ext_8 {
+            width: 171px;
+            margin-left: 171px;
+            height: 109px;
+            bottom: 108px;
+        }
+        .bar {
+            margin-left: 41px;
+            width: 70px;
+            height: 65px;
+            margin-top: 7px;
+        }
+        .b {
+            position: relative;
+            top: 5px;
+            left: 34px;
         }
         .ext_9 {
-            border: 3px solid green;
-            width: 130px;
-            margin-left: 73px;
-            margin-top: 33px;
+            width: 171px;
+            margin-left: 353px;
+            height: 109px;
+            bottom: 217px;
         }
         .exteriors {
-            margin-left: 20px;
-            width: 74px;
+            margin-left: 39px;
+            width: 70px;
+            height: 70px;
         }
         .e {
+            margin-left: 16px;
+        }
+        .footer_1 {
+            margin-top: -247px;
+        }
+    }
+    
+    @media screen and (max-width: 575px) and (min-width: 475px) {
+        .ext_1 {
+            width: 142px;
+            height: 100px;
+            left: -1px;
+        }
+        .pergolas {
+            margin-left: 28px;
+            width: 61px;
+            margin-top: 4px;
+        }
+        .p {
             margin-left: 7px;
             font-size: 11px;
+        }
+        .ext_2 {
+            width: 142px;
+            height: 100px;
+            left: 175px;
+            top: -100px;
+        }
+        .cladding {
+            margin-left: 42px;
+            width: 55px;
+            height: 57px;
+            margin-top: 8px;
+        }
+        .d {
+            margin-left: 7px;
+            font-size: 11px;
+        }
+        .ext_3 {
+            left: 329px;
+            width: 142px;
+            height: 100px;
+            top: -101px;
+        }
+        .garden {
+            margin-left: 33px;
+            width: 75px;
+            height: 62px;
+            margin-top: 3px;
+        }
+        .t {
+            margin-left: 29px;
+            font-size: 11px;
+        }
+        .ext_4 {
+            width: 142px;
+            height: 100px;
+            left: 14px;
+            top: 20px;
+        }
+        .outdoor {
+            margin-left: 29px;
+            height: 58px;
+            margin-top: 7px;
+            width: 60px;
+        }
+        .o {
+            margin-left: 23px;
+            position: relative;
+            bottom: -4px;
+            font-size: 11px;
+        }
+        .ext_5 {
+            left: 176px;
+            width: 142px;
+            height: 100px;
+            top: 19px;
+        }
+        .fireplace {
+            margin-left: 37px;
+            width: 60px;
+            height: 60px;
+            margin-top: 9px;
+        }
+        .f {
+            margin-left: 36px;
+            font-size: 12px;
+        }
+        .ext_6 {
+            margin-left: 315px;
+            width: 142px;
+            height: 100px;
+            top: -22px;
+        }
+        .vertical {
+            margin-left: 41px;
+            height: 55px;
+            margin-top: 11px;
+            width: 57px;
+        }
+        .v {
+            margin-left: 19px;
+            font-size: 12px;
+        }
+        .ext_7 {
+            width: 142px;
+            margin-left: 0px;
+            height: 100px;
+            top: 1px;
+        }
+        .water {
+            margin-left: 20px;
+            width: 60px;
+            height: 58px;
+            margin-top: 9px;
+        }
+        .w {
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        .ext_8 {
+            width: 142px;
+            margin-left: 160px;
+            height: 100px;
+            bottom: 98px;
+        }
+        .bar {
+            margin-left: 41px;
+            width: 54px;
+            height: 44px;
+            margin-top: 18px;
+        }
+        .b {
+            position: relative;
+            top: 5px;
+            left: 34px;
+            font-size: 12px;
+        }
+        .ext_9 {
+            width: 142px;
+            margin-left: 316px;
+            height: 100px;
+            bottom: 198px;
+        }
+        .exteriors {
+            margin-left: 39px;
+            width: 60px;
+            height: 61px;
+            margin-top: 4px;
+        }
+        .e {
+            margin-left: 11px;
+            font-size: 12px;
+        }
+        .img-fluid {
+            margin-top: 9px;
+        }
+        .footer_1 {
+            margin-top: -247px;
+        }
+    }
+    
+    @media screen and (max-width: 475px) and (min-width: 425px) {
+        /* html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        } */
+        .ext_1 {
+            width: 354px;
+            height: 130px;
+            left: 24px;
+            bottom: 34px;
+        }
+        .pergolas {
+            margin-left: 84px;
+            width: 65px;
+        }
+        .p {
+            margin-left: 35px;
+            font-size: 15px;
+        }
+        .ext_2 {
+            width: 236px;
+            height: 98px;
+            left: 41px;
+            bottom: -25px;
+        }
+        .cladding {
+            margin-left: 79px;
+            width: 65px;
+        }
+        .d {
+            margin-left: 59px;
+            font-size: 15px;
+        }
+        .ext_7 {
+            width: 236px;
+            height: 98px;
+            margin-left: 48px;
+            top: 406px;
+        }
+        .water {
+            margin-left: 83px;
+            width: 63px;
+            height: 71px;
+        }
+        .w {
+            margin-left: 63px;
+        }
+        .ext_8 {
+            width: 236px;
+            height: 98px;
+            left: 78px;
+            top: 435px;
+        }
+        .bar {
+            margin-left: 88px;
+            width: 58px;
+            height: 56px;
+            margin-top: 7px;
+        }
+        .b {
+            left: 70px;
+            font-size: 15px;
+        }
+        .ext_9 {
+            width: 236px;
+            top: 464px;
+            left: 120px;
+        }
+        .exteriors {
+            margin-left: 80px;
+            width: 65px;
+        }
+        .e {
+            margin-left: 38px;
+            font-size: 15px;
+        }
+        .footer_1 {
+            margin-top: 425px;
         }
     }
     /*--------------------------------------------------------------
