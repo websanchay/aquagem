@@ -1,3 +1,6 @@
+/* ************************************************PERGOLAS AND GAZEBOS CSS********************************************************** */
+
+
 /* .pergolas_23 {
     position: relative;
     min-height: 1px;
@@ -203,8 +206,8 @@
         left: 418px;
     }
     .description {
-        bottom: 0px;
-        left: 276px;
+        bottom: 11px;
+        left: 13px;
     }
     .pergolas_p {
         margin-left: 15px;
@@ -226,8 +229,8 @@
         font-size: 14px;
     }
     .description {
-        bottom: 0px;
-        left: 196px;
+        bottom: 3px;
+        left: 288px;
     }
     .pergolas_p {
         margin-left: 15px;
@@ -267,7 +270,7 @@
     }
     .description {
         bottom: 4px;
-        left: 131px;
+        left: 188px;
     }
     .column_1 {
         width: 33.33%
@@ -426,5 +429,82 @@
     .outdoor_img {
         width: 100%;
         height: 126px;
+    }
+}
+
+
+/* **********************************************CLADDING AND DECKING CSS*********************************************************** */
+
+.column_2 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.outdoor_img_2 {
+    width: 78%;
+    height: 260px;
+}
+
+.decking_w {
+    color: #14db48;
+    font-size: 18px;
+    margin-left: 85px;
+}
+
+@media screen and (max-width:768px) and (min-width:576px) {
+    .decking_w {
+        margin-left: 22px;
+    }
+    .outdoor_img_2 {
+        width: 88%;
+        height: 139px;
+    }
+}
+
+@media screen and (max-width:576px) and (min-width:475px) {
+    .outdoor_img_2 {
+        width: 88%;
+        height: 139px;
+    }
+    .decking_w {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:475px) and (min-width:380px) {
+    .decking_w {
+        font-size: 13px;
+        margin-left: 6px;
+    }
+    .outdoor_img_2 {
+        width: 94%;
+        height: 137px;
+    }
+    .p_img {
+        width: 335px;
+    }
+    .p_description {
+        width: 336px;
+        margin-left: -4px;
+    }
+}
+
+@media screen and (max-width:380px) and (min-width:320px) {
+    .decking_w {
+        font-size: 13px;
+        margin-left: 6px;
+    }
+    .outdoor_img_2 {
+        width: 94%;
+        height: 137px;
+    }
+    .p_img {
+        width: 335px;
+    }
+    .p_description {
+        width: 336px;
+        margin-left: -4px;
     }
 }
