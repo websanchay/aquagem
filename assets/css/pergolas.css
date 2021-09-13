@@ -180,6 +180,9 @@
 }
 
 @media screen and (max-width:1024px) and (min-width:992px) {
+    .breadcrumb {
+        left: 762px;
+    }
     .p_img {
         width: 300px;
         height: 300px;
@@ -207,7 +210,8 @@
     }
     .description {
         bottom: 11px;
-        left: 13px;
+        text-align: center;
+        right: 1px;
     }
     .pergolas_p {
         margin-left: 15px;
@@ -221,6 +225,10 @@
     .typeofpergolas {
         flex-wrap: wrap;
     }
+    .pergolas_c {
+        margin-left: 30px;
+        color: #14db48;
+    }
 }
 
 @media screen and (max-width:768px) and (min-width:576px) {
@@ -230,7 +238,8 @@
     }
     .description {
         bottom: 3px;
-        left: 288px;
+        right: 15px;
+        text-align: center;
     }
     .pergolas_p {
         margin-left: 15px;
@@ -449,12 +458,18 @@
 .decking_w {
     color: #14db48;
     font-size: 18px;
-    margin-left: 85px;
+    /* margin-left: 85px; */
+}
+
+@media screen and (max-width:992px) and (min-width:768px) {
+    .decking_w {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width:768px) and (min-width:576px) {
     .decking_w {
-        margin-left: 22px;
+        margin-left: 5px;
     }
     .outdoor_img_2 {
         width: 88%;
@@ -494,7 +509,7 @@
 @media screen and (max-width:380px) and (min-width:320px) {
     .decking_w {
         font-size: 13px;
-        margin-left: 6px;
+        /* margin-left: 6px; */
     }
     .outdoor_img_2 {
         width: 94%;
