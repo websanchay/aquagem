@@ -450,6 +450,10 @@
         /* margin-left: 85px; */
     }
     
+    .floor-section {
+        margin-top: -50px;
+    }
+    
     @media screen and (max-width:992px) and (min-width:768px) {
         .decking_w {
             margin-left: 0px;
@@ -604,9 +608,16 @@
     .p_5 {
         font-size: 48px;
         letter-spacing: 5px;
-        margin-top: 30px;
+        margin-top: 24px;
         margin-bottom: 30px;
         color: #444;
+    }
+    
+    .p_6 {
+        font-size: 48px;
+        letter-spacing: 5px;
+        margin-top: 86px;
+        margin-bottom: 30px;
     }
     
     .description_f {
@@ -647,6 +658,10 @@
         text-align: left;
         color: #14db48;
         font-weight: bold;
+    }
+    
+    .floor_w {
+        color: #14db48;
     }
     
     .text-reset_1 {
@@ -734,6 +749,13 @@
             bottom: 8px;
             right: 8px;
         }
+        .floor_f {
+            margin-left: 0px;
+            font-size: 18px;
+            text-align: left;
+            color: #14db48;
+            font-weight: bold;
+        }
     }
     
     @media screen and (max-width:576px) and (max-width:480px) {
@@ -763,5 +785,6 @@
         .floor_w {
             margin-left: 0px;
             font-size: 12px;
+            color: #14db48;
         }
     }
