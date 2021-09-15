@@ -1,525 +1,607 @@
-/* ************************************************PERGOLAS AND GAZEBOS CSS********************************************************** */
-
-
-/* .pergolas_23 {
+    /* ************************************************PERGOLAS AND GAZEBOS CSS********************************************************** */
+    /* .pergolas_23 {
     position: relative;
     min-height: 1px;
     padding-right: 0px;
     padding-left: 0px;
     margin-left: -46px;
 } */
-
-
-/* .pergolos_23 {
+    /* .pergolos_23 {
     padding: 0px;
 } */
-
-
-/* .p_image {
+    /* .p_image {
     margin-left: 5px;
 } */
-
-.pg {
-    margin-left: -32px;
-}
-
-.p_img {
-    width: 425px;
-    height: 350px;
-}
-
-.p_2 {
-    font-weight: 900;
-    position: absolute;
-    top: 267px;
-    left: 594px;
-    color: white;
-}
-
-.p_3 {
-    font-weight: 900;
-    position: absolute;
-    top: 268px;
-    color: white;
-}
-
-.p_4 {
-    font-size: 48px;
-    letter-spacing: 5px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.p_description {
-    width: 500px;
-    height: 400px;
-}
-
-.description {
-    text-align: left;
-    position: relative;
-    bottom: 23px;
-    right: 92px;
-}
-
-.breadcrumb {
-    padding: 8px 15px;
-    list-style: none;
-    border-radius: 4px;
-    font-size: 17px;
-    position: absolute;
-    top: 76px;
-    left: 833px;
-    background-color: #f5f5f500;
-}
-
-.breadcrumb>li {
-    display: inline-block;
-}
-
-.breadcrumb-item a {
-    color: #121413;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.breadcrumb-item+.breadcrumb-item::before {
-    float: left;
-    padding-right: .5rem;
-    color: #121413;
-    content: var(--bs-breadcrumb-divider, "/");
-}
-
-.breadcrumb>.active {
-    color: #121413;
-    font-weight: 700;
-}
-
-.breadcrumb>.active:hover {
-    color: #14db48;
-}
-
-.navbar-fixed-top {
-    position: relative;
-    right: 0;
-    left: 0;
-    top: -12px;
-}
-
-
-/* * {
+    
+    .pg {
+        margin-left: -32px;
+    }
+    
+    .p_img {
+        width: 425px;
+        height: 350px;
+    }
+    
+    .p_2 {
+        font-weight: 900;
+        position: absolute;
+        top: 267px;
+        left: 594px;
+        color: white;
+    }
+    
+    .p_3 {
+        font-weight: 900;
+        position: absolute;
+        top: 268px;
+        color: white;
+    }
+    
+    .p_4 {
+        font-size: 48px;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .p_description {
+        width: 500px;
+        height: 400px;
+    }
+    
+    .description {
+        text-align: left;
+        position: relative;
+        bottom: 23px;
+        right: 92px;
+    }
+    
+    .breadcrumb {
+        padding: 8px 15px;
+        list-style: none;
+        border-radius: 4px;
+        font-size: 17px;
+        position: absolute;
+        top: 76px;
+        left: 833px;
+        background-color: #f5f5f500;
+    }
+    
+    .breadcrumb>li {
+        display: inline-block;
+    }
+    
+    .breadcrumb-item a {
+        color: #121413;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    .breadcrumb-item+.breadcrumb-item::before {
+        float: left;
+        padding-right: .5rem;
+        color: #121413;
+        content: var(--bs-breadcrumb-divider, "/");
+    }
+    
+    .breadcrumb>.active {
+        color: #121413;
+        font-weight: 700;
+    }
+    
+    .breadcrumb>.active:hover {
+        color: #14db48;
+    }
+    
+    .navbar-fixed-top {
+        position: relative;
+        right: 0;
+        left: 0;
+        top: -12px;
+    }
+    /* * {
     box-sizing: border-box;
 } */
-
-.column_1 {
-    float: left;
-    width: 16.66%;
-    padding: 5px;
-}
-
-.outdoor_img {
-    width: 100%;
-    height: 200px;
-}
-
-
-/* Clearfix (clear floats) */
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.typeofpergolas {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.pergolas_p {
-    text-align: left;
-    margin-left: -92px;
-}
-
-.pergolas_c {
-    margin-left: 30px;
-    color: #14db48;
-}
-
-.pergolas_w {
-    color: #14db48;
-    font-size: 14px;
-}
-
-@media screen and (max-width:1496px) and (min-width:1200px) {
-    .description {
-        right: 42px;
-    }
-    .pergolas_p {
-        margin-left: -40px;
-    }
-}
-
-@media screen and (max-width:1200px) and (min-width:1024px) {
-    .breadcrumb {
-        left: 662px;
-    }
-    .description {
-        right: -29px;
-    }
-    .pergolas_p {
-        margin-left: 28px;
-    }
-    .pergolas_c {
-        font-size: 11px;
-    }
-    .pergolas_w {
-        color: #14db48;
-        font-size: 11px;
-    }
-}
-
-@media screen and (max-width:1024px) and (min-width:992px) {
-    .breadcrumb {
-        left: 762px;
-    }
-    .p_img {
-        width: 300px;
-        height: 300px;
-    }
-    .description {
-        right: -30px;
-    }
-    .pergolas_p {
-        margin-left: 37px;
-    }
-    .p_description {
-        width: 470px;
-    }
-    .pergolas_w {
-        font-size: 11px;
-    }
-    .pergolas_c {
-        font-size: 11px;
-    }
-}
-
-@media screen and (max-width:992px) and (min-width:768px) {
-    .breadcrumb {
-        left: 418px;
-    }
-    .description {
-        bottom: 11px;
-        text-align: center;
-        right: 1px;
-    }
-    .pergolas_p {
-        margin-left: 15px;
-    }
-    /* .footer_1 {
-        margin-top: 0px;
-    } */
+    
     .column_1 {
-        width: 33.33%
+        float: left;
+        width: 16.66%;
+        padding: 5px;
     }
+    
+    .outdoor_img {
+        width: 100%;
+        height: 200px;
+    }
+    /* Clearfix (clear floats) */
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
     .typeofpergolas {
-        flex-wrap: wrap;
+        display: flex;
+        flex-wrap: nowrap;
     }
+    
+    .pergolas_p {
+        text-align: left;
+        margin-left: -92px;
+    }
+    
     .pergolas_c {
         margin-left: 30px;
         color: #14db48;
     }
-}
-
-@media screen and (max-width:768px) and (min-width:576px) {
-    .breadcrumb {
-        left: 289px;
+    
+    .pergolas_w {
+        color: #14db48;
         font-size: 14px;
     }
-    .description {
-        bottom: 3px;
-        right: 15px;
-        text-align: center;
+    
+    @media screen and (max-width:1496px) and (min-width:1200px) {
+        .description {
+            right: 42px;
+        }
+        .pergolas_p {
+            margin-left: -40px;
+        }
     }
-    .pergolas_p {
-        margin-left: 15px;
+    
+    @media screen and (max-width:1200px) and (min-width:1024px) {
+        .breadcrumb {
+            left: 662px;
+        }
+        .description {
+            right: -29px;
+        }
+        .pergolas_p {
+            margin-left: 28px;
+        }
+        .pergolas_c {
+            font-size: 11px;
+        }
+        .pergolas_w {
+            color: #14db48;
+            font-size: 11px;
+        }
     }
-    /* .footer_1 {
+    
+    @media screen and (max-width:1024px) and (min-width:992px) {
+        .breadcrumb {
+            left: 762px;
+        }
+        .p_img {
+            width: 300px;
+            height: 300px;
+        }
+        .description {
+            right: -30px;
+        }
+        .pergolas_p {
+            margin-left: 37px;
+        }
+        .p_description {
+            width: 470px;
+        }
+        .pergolas_w {
+            font-size: 11px;
+        }
+        .pergolas_c {
+            font-size: 11px;
+        }
+    }
+    
+    @media screen and (max-width:992px) and (min-width:768px) {
+        .breadcrumb {
+            left: 418px;
+        }
+        .description {
+            bottom: 11px;
+            text-align: center;
+            right: 1px;
+        }
+        .pergolas_p {
+            margin-left: 15px;
+        }
+        /* .footer_1 {
         margin-top: 0px;
     } */
-    .column_1 {
-        width: 33.33%
+        .column_1 {
+            width: 33.33%
+        }
+        .typeofpergolas {
+            flex-wrap: wrap;
+        }
+        .pergolas_c {
+            margin-left: 30px;
+            color: #14db48;
+        }
     }
-    .typeofpergolas {
-        flex-wrap: wrap;
+    
+    @media screen and (max-width:768px) and (min-width:576px) {
+        .breadcrumb {
+            left: 289px;
+            font-size: 14px;
+        }
+        .description {
+            bottom: 3px;
+            right: 15px;
+            text-align: center;
+        }
+        .pergolas_p {
+            margin-left: 15px;
+        }
+        /* .footer_1 {
+        margin-top: 0px;
+    } */
+        .column_1 {
+            width: 33.33%
+        }
+        .typeofpergolas {
+            flex-wrap: wrap;
+        }
+        .pergolas_w {
+            font-size: 13px;
+        }
+        .pergolas_c {
+            font-size: 13px;
+        }
     }
-    .pergolas_w {
-        font-size: 13px;
+    
+    @media screen and (max-width:576px) and (min-width:475px) {
+        .breadcrumb {
+            left: 234px;
+            font-size: 14px;
+        }
+        .p_img {
+            width: 307px;
+            height: 280px;
+        }
+        .p_description {
+            width: 420px;
+            height: 380px;
+        }
+        .pergolas_p {
+            margin-left: 6px;
+        }
+        .description {
+            bottom: 4px;
+            left: 188px;
+        }
+        .column_1 {
+            width: 33.33%
+        }
+        .typeofpergolas {
+            flex-wrap: wrap;
+        }
+        .pergolas_w {
+            font-size: 11px;
+        }
+        .pergolas_c {
+            font-size: 11px;
+        }
     }
-    .pergolas_c {
-        font-size: 13px;
+    
+    @media screen and (max-width:475px) and (min-width:425px) {
+        .breadcrumb {
+            left: 232px;
+            font-size: 11px;
+        }
+        .pg {
+            display: inline-grid;
+            margin-left: 37px;
+        }
+        .p_img {
+            width: 307px;
+            height: 280px;
+            margin-top: 6px;
+        }
+        .p_description {
+            width: 370px;
+            height: 336px;
+        }
+        .pergolas_p {
+            margin-left: 2px;
+        }
+        .description {
+            bottom: 4px;
+            left: 120px;
+        }
+        .column_1 {
+            width: 33.33%
+        }
+        .typeofpergolas {
+            flex-wrap: wrap;
+        }
+        .pergolas_w {
+            font-size: 10px;
+        }
+        .pergolas_c {
+            font-size: 10px;
+        }
+        .pergolas_a {
+            margin-left: 14px;
+        }
     }
-}
-
-@media screen and (max-width:576px) and (min-width:475px) {
-    .breadcrumb {
-        left: 234px;
-        font-size: 14px;
+    
+    @media screen and (max-width:425px) and (min-width:380px) {
+        .breadcrumb {
+            left: 191px;
+            font-size: 11px;
+        }
+        .pg {
+            display: inline-grid;
+            margin-left: 37px;
+        }
+        .p_img {
+            width: 325px;
+            height: 280px;
+            margin-top: 6px;
+            margin-left: -39px;
+        }
+        .p_4 {
+            font-size: 40px;
+        }
+        .p_description {
+            width: 337px;
+            height: 336px;
+        }
+        .pergolas_p {
+            margin-left: 2px;
+        }
+        .description {
+            left: 93px;
+            bottom: 5px;
+        }
+        .column_1 {
+            width: 33.33%
+        }
+        .typeofpergolas {
+            flex-wrap: wrap;
+        }
+        .pergolas_w {
+            font-size: 12px;
+        }
+        .pergolas_c {
+            font-size: 12px;
+            margin-left: 0px;
+        }
+        .pergolas_a {
+            margin-left: -2px;
+            font-size: 11px;
+        }
     }
-    .p_img {
-        width: 307px;
-        height: 280px;
+    
+    @media screen and (max-width:380px) and (min-width:320px) {
+        .breadcrumb {
+            left: 191px;
+            font-size: 11px;
+        }
+        .breadcrumb-item a {
+            margin-left: 15px;
+        }
+        .pg {
+            display: inline-grid;
+            margin-left: 37px;
+        }
+        .p_img {
+            width: 280px;
+            height: 280px;
+            margin-top: 6px;
+            margin-left: -39px;
+        }
+        .p_4 {
+            font-size: 30px;
+        }
+        .p_description {
+            width: 293px;
+            height: 336px;
+            margin-left: -13px;
+        }
+        .pergolas_p {
+            margin-left: 2px;
+        }
+        .description {
+            left: 64px;
+            bottom: 5px;
+        }
+        .column_1 {
+            width: 33.33%
+        }
+        .typeofpergolas {
+            flex-wrap: wrap;
+        }
+        .pergolas_w {
+            font-size: 12px;
+        }
+        .pergolas_c {
+            font-size: 10px;
+            margin-left: 0px;
+        }
+        .pergolas_a {
+            margin-left: -2px;
+            font-size: 11px;
+        }
+        .outdoor_img {
+            width: 100%;
+            height: 126px;
+        }
     }
-    .p_description {
-        width: 420px;
-        height: 380px;
+    /* **********************************************CLADDING AND DECKING CSS*********************************************************** */
+    
+    .column_2 {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
     }
-    .pergolas_p {
-        margin-left: 6px;
-    }
-    .description {
-        bottom: 4px;
-        left: 188px;
-    }
-    .column_1 {
-        width: 33.33%
-    }
-    .typeofpergolas {
-        flex-wrap: wrap;
-    }
-    .pergolas_w {
-        font-size: 11px;
-    }
-    .pergolas_c {
-        font-size: 11px;
-    }
-}
-
-@media screen and (max-width:475px) and (min-width:425px) {
-    .breadcrumb {
-        left: 232px;
-        font-size: 11px;
-    }
-    .pg {
-        display: inline-grid;
-        margin-left: 37px;
-    }
-    .p_img {
-        width: 307px;
-        height: 280px;
-        margin-top: 6px;
-    }
-    .p_description {
-        width: 370px;
-        height: 336px;
-    }
-    .pergolas_p {
-        margin-left: 2px;
-    }
-    .description {
-        bottom: 4px;
-        left: 120px;
-    }
-    .column_1 {
-        width: 33.33%
-    }
-    .typeofpergolas {
-        flex-wrap: wrap;
-    }
-    .pergolas_w {
-        font-size: 10px;
-    }
-    .pergolas_c {
-        font-size: 10px;
-    }
-    .pergolas_a {
-        margin-left: 14px;
-    }
-}
-
-@media screen and (max-width:425px) and (min-width:380px) {
-    .breadcrumb {
-        left: 191px;
-        font-size: 11px;
-    }
-    .pg {
-        display: inline-grid;
-        margin-left: 37px;
-    }
-    .p_img {
-        width: 325px;
-        height: 280px;
-        margin-top: 6px;
-        margin-left: -39px;
-    }
-    .p_4 {
-        font-size: 40px;
-    }
-    .p_description {
-        width: 337px;
-        height: 336px;
-    }
-    .pergolas_p {
-        margin-left: 2px;
-    }
-    .description {
-        left: 93px;
-        bottom: 5px;
-    }
-    .column_1 {
-        width: 33.33%
-    }
-    .typeofpergolas {
-        flex-wrap: wrap;
-    }
-    .pergolas_w {
-        font-size: 12px;
-    }
-    .pergolas_c {
-        font-size: 12px;
-        margin-left: 0px;
-    }
-    .pergolas_a {
-        margin-left: -2px;
-        font-size: 11px;
-    }
-}
-
-@media screen and (max-width:380px) and (min-width:320px) {
-    .breadcrumb {
-        left: 191px;
-        font-size: 11px;
-    }
-    .breadcrumb-item a {
-        margin-left: 15px;
-    }
-    .pg {
-        display: inline-grid;
-        margin-left: 37px;
-    }
-    .p_img {
-        width: 280px;
-        height: 280px;
-        margin-top: 6px;
-        margin-left: -39px;
-    }
-    .p_4 {
-        font-size: 30px;
-    }
-    .p_description {
-        width: 293px;
-        height: 336px;
-        margin-left: -13px;
-    }
-    .pergolas_p {
-        margin-left: 2px;
-    }
-    .description {
-        left: 64px;
-        bottom: 5px;
-    }
-    .column_1 {
-        width: 33.33%
-    }
-    .typeofpergolas {
-        flex-wrap: wrap;
-    }
-    .pergolas_w {
-        font-size: 12px;
-    }
-    .pergolas_c {
-        font-size: 10px;
-        margin-left: 0px;
-    }
-    .pergolas_a {
-        margin-left: -2px;
-        font-size: 11px;
-    }
-    .outdoor_img {
-        width: 100%;
-        height: 126px;
-    }
-}
-
-
-/* **********************************************CLADDING AND DECKING CSS*********************************************************** */
-
-.column_2 {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-.outdoor_img_2 {
-    width: 78%;
-    height: 260px;
-}
-
-.decking_w {
-    color: #14db48;
-    font-size: 18px;
-    /* margin-left: 85px; */
-}
-
-@media screen and (max-width:992px) and (min-width:768px) {
-    .decking_w {
-        margin-left: 0px;
-    }
-}
-
-@media screen and (max-width:768px) and (min-width:576px) {
-    .decking_w {
-        margin-left: 5px;
-    }
+    
     .outdoor_img_2 {
-        width: 88%;
-        height: 139px;
+        width: 78%;
+        height: 260px;
     }
-}
-
-@media screen and (max-width:576px) and (min-width:475px) {
-    .outdoor_img_2 {
-        width: 88%;
-        height: 139px;
-    }
+    
     .decking_w {
-        margin-left: 15px;
-        font-size: 14px;
+        color: #14db48;
+        font-size: 18px;
+        /* margin-left: 85px; */
     }
-}
-
-@media screen and (max-width:475px) and (min-width:380px) {
-    .decking_w {
-        font-size: 13px;
-        margin-left: 6px;
+    
+    @media screen and (max-width:992px) and (min-width:768px) {
+        .decking_w {
+            margin-left: 0px;
+        }
     }
-    .outdoor_img_2 {
-        width: 94%;
-        height: 137px;
+    
+    @media screen and (max-width:768px) and (min-width:576px) {
+        .decking_w {
+            margin-left: 5px;
+        }
+        .outdoor_img_2 {
+            width: 88%;
+            height: 139px;
+        }
     }
-    .p_img {
-        width: 335px;
+    
+    @media screen and (max-width:576px) and (min-width:475px) {
+        .outdoor_img_2 {
+            width: 88%;
+            height: 139px;
+        }
+        .decking_w {
+            margin-left: 15px;
+            font-size: 14px;
+        }
     }
-    .p_description {
-        width: 336px;
-        margin-left: -4px;
+    
+    @media screen and (max-width:475px) and (min-width:380px) {
+        .decking_w {
+            font-size: 13px;
+            margin-left: 6px;
+        }
+        .outdoor_img_2 {
+            width: 94%;
+            height: 137px;
+        }
+        .p_img {
+            width: 335px;
+        }
+        .p_description {
+            width: 336px;
+            margin-left: -4px;
+        }
     }
-}
-
-@media screen and (max-width:380px) and (min-width:320px) {
-    .decking_w {
-        font-size: 13px;
-        /* margin-left: 6px; */
+    
+    @media screen and (max-width:380px) and (min-width:320px) {
+        .decking_w {
+            font-size: 13px;
+            /* margin-left: 6px; */
+        }
+        .outdoor_img_2 {
+            width: 94%;
+            height: 137px;
+        }
+        .p_img {
+            width: 335px;
+        }
+        .p_description {
+            width: 336px;
+            margin-left: -4px;
+        }
+        @media screen and (max-width:320px) {
+            .p_img {
+                width: 282px;
+            }
+        }
     }
-    .outdoor_img_2 {
-        width: 94%;
-        height: 137px;
+    /* **************************************************Terrace Garden************************************************************************* */
+    
+    .pergolas_r {
+        text-align: left;
     }
-    .p_img {
-        width: 335px;
+    
+    .r_description {
+        width: 500px;
+        height: 400px;
     }
-    .p_description {
-        width: 336px;
-        margin-left: -4px;
+    
+    .description_hp {
+        display: block;
+        float: left;
     }
-}
+    
+    @media screen and (max-width:1506px) and (min-width:1200px) {
+        .description_r {
+            text-align: left;
+        }
+    }
+    
+    @media screen and (max-width:1200px) and (min-width:1024px) {
+        .description_r {
+            text-align: left;
+        }
+    }
+    
+    @media screen and (max-width:992px) {
+        .description_hp {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    /* **********************************************************FLOORS*********************************************************************** */
+    
+    .column_3 {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+    
+    .outdoor_img_3 {
+        width: 85%;
+        height: 200px;
+    }
+    
+    .column_3 a h4 {
+        text-decoration: none;
+        color: none;
+    }
+    
+    .p_5 {
+        font-size: 48px;
+        letter-spacing: 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #444;
+    }
+    
+    .description_f {
+        text-align: left;
+        position: relative;
+        bottom: 23px;
+        right: 92px;
+        color: #444;
+    }
+    
+    .pergolas_f {
+        text-align: left;
+        margin-left: -92px;
+        color: #444;
+        font-weight: 400;
+    }
+    
+    .description_fr {
+        text-align: left;
+        position: relative;
+        bottom: 23px;
+        right: 0px;
+        color: #444;
+    }
+    
+    .pergolas_fr {
+        text-align: left;
+        margin-left: 1px;
+        color: #444;
+        font-weight: 400;
+    }
