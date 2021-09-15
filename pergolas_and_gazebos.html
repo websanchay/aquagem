@@ -172,7 +172,6 @@
             </div>
         </section>
         <!-- Section: Links  -->
-        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
@@ -182,20 +181,9 @@
         <!-- Copyright -->
     </footer>
 
-    <script>
-        let backtotop = select('.back-to-top')
-        if (backtotop) {
-            const toggleBacktotop = () => {
-                if (window.scrollY > 100) {
-                    backtotop.classList.add('active')
-                } else {
-                    backtotop.classList.remove('active')
-                }
-            }
-            window.addEventListener('load', toggleBacktotop)
-            onscroll(document, toggleBacktotop)
-        }
-    </script>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 

@@ -15,6 +15,7 @@
     
     .pg {
         margin-left: -32px;
+        margin-top: 114px;
     }
     
     .p_img {
@@ -439,7 +440,7 @@
     }
     
     .outdoor_img_2 {
-        width: 78%;
+        width: 88%;
         height: 260px;
     }
     
@@ -514,6 +515,10 @@
             .p_img {
                 width: 282px;
             }
+            .p_description {
+                width: 282px;
+                margin-left: -4px;
+            }
         }
     }
     /* **************************************************Terrace Garden************************************************************************* */
@@ -528,11 +533,11 @@
     }
     
     .description_hp {
-        display: block;
-        float: left;
+        display: flex;
+        flex-direction: column-reverse;
     }
     
-    @media screen and (max-width:1506px) and (min-width:1200px) {
+    @media screen and (max-width:1600px) and (min-width:1200px) {
         .description_r {
             text-align: left;
         }
@@ -544,10 +549,34 @@
         }
     }
     
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:1024px) and (min-width:992px) {
+        .description_r {
+            text-align: left;
+        }
+    }
+    
+    @media screen and (min-width:992px) {
         .description_hp {
-            display: flex;
-            flex-direction: column-reverse;
+            display: block;
+            float: left;
+        }
+    }
+    
+    @media screen and (max-width:992px) and (min-width:991px) {
+        .description_hp {
+            display: block;
+        }
+        .typeofpergolas_1 {
+            flex-wrap: nowrap;
+        }
+        .description {
+            text-align: left;
+            margin-left: 14px;
+        }
+        .column_1 {
+            float: left;
+            width: 16.66%;
+            padding: 5px;
         }
     }
     /* **********************************************************FLOORS*********************************************************************** */
@@ -556,6 +585,10 @@
         float: left;
         width: 25%;
         padding: 5px;
+    }
+    
+    .typeofpergolas_1 {
+        flex-wrap: nowrap;
     }
     
     .outdoor_img_3 {
@@ -589,6 +622,7 @@
         margin-left: -92px;
         color: #444;
         font-weight: 400;
+        font-size: 14px;
     }
     
     .description_fr {
@@ -604,4 +638,130 @@
         margin-left: 1px;
         color: #444;
         font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .floor_f {
+        margin-left: 9px;
+        font-size: 18px;
+        text-align: left;
+        color: #14db48;
+        font-weight: bold;
+    }
+    
+    .text-reset_1 {
+        color: inherit!important;
+        font-size: 14px;
+        font-weight: 400px;
+    }
+    
+    @media screen and (max-width:1400px) and (min-width:1200px) {
+        .pergolas_f {
+            margin-left: -39px;
+        }
+        .description_f {
+            right: 39px;
+        }
+    }
+    
+    @media screen and (max-width:1200px) and (min-width:1024px) {
+        .pergolas_f {
+            margin-left: -13px;
+            font-size: 14px;
+        }
+        .description_f {
+            right: 8px;
+        }
+    }
+    
+    @media screen and (max-width:1024px) and (min-width:992px) {
+        .pergolas_f {
+            margin-left: 8px;
+            font-size: 14px;
+        }
+        .description_f {
+            right: -9px;
+        }
+    }
+    
+    @media screen and (max-width:990px) and (min-width:768px) {
+        .description_hp {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .column_3 {
+            width: 50%;
+        }
+        .typeofpergolas_1 {
+            flex-wrap: wrap;
+        }
+        .description_f {
+            text-align: center;
+            bottom: 11px;
+            right: 15px;
+        }
+        .pergolas_f {
+            margin-left: -15px;
+        }
+        .description_fr {
+            text-align: center;
+            bottom: 8px;
+            right: 8px;
+        }
+    }
+    
+    @media screen and (max-width:768px) and (max-width:576px) {
+        .description_hp {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .column_3 {
+            width: 50%;
+        }
+        .typeofpergolas_1 {
+            flex-wrap: wrap;
+        }
+        .description_f {
+            text-align: center;
+            bottom: 6px;
+            right: 15px;
+        }
+        .pergolas_f {
+            margin-left: -15px;
+        }
+        .description_fr {
+            text-align: center;
+            bottom: 8px;
+            right: 8px;
+        }
+    }
+    
+    @media screen and (max-width:576px) and (max-width:480px) {
+        .description_hp {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .column_3 {
+            width: 50%;
+        }
+        .typeofpergolas_1 {
+            flex-wrap: wrap;
+        }
+        .description_f {
+            text-align: center;
+            bottom: 6px;
+            right: 15px;
+        }
+        .pergolas_f {
+            margin-left: -15px;
+        }
+        .description_fr {
+            text-align: center;
+            bottom: 8px;
+            right: 8px;
+        }
+        .floor_w {
+            margin-left: 0px;
+            font-size: 12px;
+        }
     }
