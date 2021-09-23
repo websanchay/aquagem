@@ -104,6 +104,11 @@
     /* .scrolled-offset {
     margin-top: 166px;
 } */
+    
+    .scroll {
+        min-height: 100%;
+        overflow: scroll;
+    }
     /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -700,7 +705,7 @@
     }
     
     .gallery .gallery-item:hover img {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     
     .img-fluid {
@@ -2099,3 +2104,4 @@
     .address p {
         margin: -10px 0 40px 0;
     }
+    /* ****************************   Zoom-in and zoom-out css   ************************************************** */
