@@ -2041,8 +2041,8 @@
     
     #footer h3 {
         font-size: 36px;
-        font-weight: 700;
-        color: #fff;
+        font-weight: 400;
+        color: rgb(94, 85, 85);
         position: relative;
         font-family: "Poppins", sans-serif;
         padding: 0;
