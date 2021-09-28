@@ -1223,6 +1223,7 @@
             margin-top: -247px;
         }
         .gallery-int {
+            position: initial;
             left: 0px;
             top: 0px;
         }
@@ -1382,6 +1383,7 @@
             margin-top: -247px;
         }
         .gallery-int {
+            position: initial;
             left: 0px;
             top: 0px;
         }
@@ -1499,7 +1501,7 @@
         .ext_8 {
             width: 356px;
             height: 107px;
-            left: 47px;
+            left: 31px;
             top: 605px;
         }
         .bar {
@@ -1515,7 +1517,7 @@
         .ext_9 {
             width: 356px;
             top: 627px;
-            left: 90px;
+            left: 85px;
         }
         .exteriors {
             margin-left: 124px;
@@ -1643,7 +1645,7 @@
         .ext_8 {
             width: 288px;
             height: 107px;
-            left: 33px;
+            left: 19px;
             top: 485px;
         }
         .bar {
