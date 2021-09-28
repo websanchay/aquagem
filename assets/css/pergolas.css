@@ -43,11 +43,12 @@
         letter-spacing: 5px;
         margin-top: 20px;
         margin-bottom: 30px;
+        color: black;
     }
     
     .p_description {
         width: 500px;
-        height: 400px;
+        height: 335px;
     }
     
     .description {
@@ -55,6 +56,7 @@
         position: relative;
         bottom: 23px;
         right: 92px;
+        text-decoration: underline;
     }
     
     .breadcrumb {
@@ -130,15 +132,17 @@
     .pergolas_p {
         text-align: justify;
         margin-left: -92px;
+        color: #000;
+        width: auto;
     }
     
     .pergolas_c {
         margin-left: 30px;
-        color: #14db48;
+        color: #0F6A07;
     }
     
     .pergolas_w {
-        color: #14db48;
+        color: #0F6A07;
         font-size: 14px;
     }
     
@@ -165,7 +169,7 @@
             font-size: 11px;
         }
         .pergolas_w {
-            color: #14db48;
+            color: #0F6A07;
             font-size: 11px;
         }
     }
@@ -218,7 +222,7 @@
         }
         .pergolas_c {
             margin-left: 30px;
-            color: #14db48;
+            color: #0F6A07;
         }
     }
     
@@ -270,7 +274,7 @@
         }
         .description {
             bottom: 4px;
-            left: 188px;
+            left: 192px;
         }
         .column_1 {
             width: 33.33%
@@ -309,7 +313,7 @@
         }
         .description {
             bottom: 4px;
-            left: 120px;
+            left: 117px;
         }
         .column_1 {
             width: 33.33%
@@ -354,7 +358,7 @@
             margin-left: 2px;
         }
         .description {
-            left: 93px;
+            left: 97px;
             bottom: 5px;
         }
         .column_1 {
@@ -445,7 +449,7 @@
     }
     
     .decking_w {
-        color: #14db48;
+        color: #0F6A07;
         font-size: 18px;
         /* margin-left: 85px; */
     }
@@ -525,10 +529,11 @@
             }
         }
     }
-    /* **************************************************Terrace Garden************************************************************************* */
+    /* **************************************************Outdoor Spaces************************************************************************* */
     
     .pergolas_r {
-        text-align: left;
+        text-align: justify;
+        color: #000;
     }
     
     .r_description {
@@ -541,21 +546,51 @@
         flex-direction: column-reverse;
     }
     
+    .bar_right {
+        margin-left: 116px;
+    }
+    
+    .description_r {
+        position: relative;
+        text-decoration: underline;
+    }
+    
     @media screen and (max-width:1600px) and (min-width:1200px) {
         .description_r {
-            text-align: left;
+            text-align: justify;
+            text-decoration: underline;
+            position: relative;
+            bottom: 23px;
+            right: -7px;
+        }
+        .bar_right {
+            margin-left: 110px;
+        }
+        .bar_img {
+            margin-left: 33px;
         }
     }
     
     @media screen and (max-width:1200px) and (min-width:1024px) {
         .description_r {
-            text-align: left;
+            text-align: justify;
+            text-decoration: underline;
+            position: relative;
+            bottom: 23px;
+            right: 5px;
+        }
+        .bar_right {
+            margin-left: -12px;
         }
     }
     
     @media screen and (max-width:1024px) and (min-width:992px) {
         .description_r {
-            text-align: left;
+            text-align: justify;
+            text-decoration: underline;
+        }
+        .bar_right {
+            margin-left: -7px;
         }
     }
     
@@ -581,6 +616,46 @@
             float: left;
             width: 16.66%;
             padding: 5px;
+        }
+    }
+    
+    @media screen and (max-width:990px) and (min-width:768px) {
+        .description_r {
+            text-decoration: underline;
+            bottom: 6px;
+        }
+        .bar_right {
+            margin-left: 15px;
+        }
+    }
+    
+    @media screen and (max-width:768px) and (min-width:576px) {
+        .bar_right {
+            margin-left: 16px;
+        }
+    }
+    
+    @media screen and (max-width:576px) and (min-width:475px) {
+        .bar_right {
+            margin-left: 5px;
+        }
+    }
+    
+    @media screen and (max-width:475px) and (min-width:425px) {
+        .bar_right {
+            margin-left: 5px;
+        }
+    }
+    
+    @media screen and (max-width:425px) and (min-width:380px) {
+        .bar_right {
+            margin-left: 9px;
+        }
+    }
+    
+    @media screen and (max-width:380px) and (min-width:320px) {
+        .bar_right {
+            margin-left: 7px;
         }
     }
     /* **********************************************************FLOORS*********************************************************************** */
@@ -610,7 +685,7 @@
         letter-spacing: 5px;
         margin-top: 24px;
         margin-bottom: 30px;
-        color: #444;
+        color: #000;
     }
     
     .p_6 {
@@ -622,32 +697,34 @@
     
     .description_f {
         text-align: left;
+        text-decoration: underline;
         position: relative;
         bottom: 23px;
         right: 92px;
-        color: #444;
+        color: #000;
     }
     
     .pergolas_f {
         text-align: left;
         margin-left: -92px;
-        color: #444;
+        color: #000;
         font-weight: 400;
         font-size: 14px;
     }
     
     .description_fr {
         text-align: left;
+        text-decoration: underline;
         position: relative;
         bottom: 23px;
         right: 0px;
-        color: #444;
+        color: #000;
     }
     
     .pergolas_fr {
-        text-align: left;
+        text-align: justify;
         margin-left: 1px;
-        color: #444;
+        color: #000;
         font-weight: 400;
         font-size: 14px;
     }
@@ -656,12 +733,12 @@
         margin-left: 9px;
         font-size: 18px;
         text-align: left;
-        color: #14db48;
+        color: #0F6A07;
         font-weight: bold;
     }
     
     .floor_w {
-        color: #14db48;
+        color: #0F6A07;
     }
     
     .text-reset_1 {
@@ -670,12 +747,19 @@
         font-weight: 400px;
     }
     
+    .spc {
+        margin-left: 100px;
+    }
+    
     @media screen and (max-width:1400px) and (min-width:1200px) {
         .pergolas_f {
             margin-left: -39px;
         }
         .description_f {
             right: 39px;
+        }
+        .spc {
+            margin-left: 38px;
         }
     }
     
@@ -687,6 +771,9 @@
         .description_f {
             right: 8px;
         }
+        .spc {
+            margin-left: 8px;
+        }
     }
     
     @media screen and (max-width:1024px) and (min-width:992px) {
@@ -696,6 +783,9 @@
         }
         .description_f {
             right: -9px;
+        }
+        .spc {
+            margin-left: 1px;
         }
     }
     
@@ -722,6 +812,12 @@
             text-align: center;
             bottom: 8px;
             right: 8px;
+        }
+        .spc {
+            margin-left: 8px;
+        }
+        .pergolas_fr {
+            margin-left: -23px;
         }
     }
     
@@ -753,8 +849,11 @@
             margin-left: 0px;
             font-size: 18px;
             text-align: left;
-            color: #14db48;
+            color: #0F6A07;
             font-weight: bold;
+        }
+        .spc {
+            margin-left: -7px;
         }
     }
     
@@ -785,7 +884,7 @@
         .floor_w {
             margin-left: 0px;
             font-size: 12px;
-            color: #14db48;
+            color: #0F6A07;
         }
     }
     /* **********************************************Window Blinds CSS******************************************************* */

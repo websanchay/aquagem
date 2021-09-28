@@ -685,6 +685,7 @@
     
     .about .content p {
         font-size: 14px;
+        text-align: justify;
     }
     /*--------------------------------------------------------------
 # Gallery
@@ -711,6 +712,12 @@
     .img-fluid {
         border: solid 2px green;
     }
+    
+    .gallery-int {
+        position: relative;
+        left: 196px;
+        top: 8px;
+    }
     /* .exteriors_1 {
     padding-left: 169px;
 }
@@ -733,6 +740,7 @@
     
     .p {
         margin-left: 18px;
+        color: #0F6A07;
     }
     
     .ext_2 {
@@ -749,6 +757,7 @@
     
     .d {
         margin-left: 21px;
+        color: #0F6A07;
     }
     
     .ext_3 {
@@ -765,6 +774,7 @@
     
     .t {
         margin-left: 39px;
+        color: #0F6A07;
     }
     
     .ext_4 {
@@ -785,6 +795,7 @@
         margin-left: 37px;
         position: relative;
         bottom: -4px;
+        color: #0F6A07;
     }
     
     .ext_5 {
@@ -801,6 +812,7 @@
     
     .f {
         margin-left: 51px;
+        color: #0F6A07;
     }
     
     .ext_6 {
@@ -818,6 +830,7 @@
     
     .v {
         margin-left: 34px;
+        color: #0F6A07;
     }
     
     .ext_7 {
@@ -833,13 +846,14 @@
     
     .w {
         margin-left: 38px;
+        color: #0F6A07;
     }
     
     .ext_8 {
         border: 3px solid green;
         position: relative;
         width: 200px;
-        margin-left: -29px;
+        margin-left: -16px;
     }
     
     .bar {
@@ -853,6 +867,7 @@
         position: relative;
         top: 5px;
         left: 50px;
+        color: #0F6A07;
     }
     
     .ext_9 {
@@ -868,6 +883,7 @@
     
     .e {
         margin-left: 16px;
+        color: #0F6A07;
     }
     
     @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -928,6 +944,9 @@
         }
         .e {
             margin-left: 23px;
+        }
+        .gallery-int {
+            left: 207px;
         }
     }
     
@@ -1057,6 +1076,9 @@
         .e {
             margin-left: 8px;
             font-size: 11px;
+        }
+        .gallery-int {
+            left: 125px;
         }
     }
     
@@ -1199,6 +1221,10 @@
         }
         .footer_1 {
             margin-top: -247px;
+        }
+        .gallery-int {
+            left: 0px;
+            top: 0px;
         }
     }
     
@@ -1355,6 +1381,10 @@
         .footer_1 {
             margin-top: -247px;
         }
+        .gallery-int {
+            left: 0px;
+            top: 0px;
+        }
     }
     
     @media screen and (max-width: 475px) and (min-width: 425px) {
@@ -1501,6 +1531,10 @@
         .footer_1 {
             margin-top: 600px;
         }
+        .gallery-int {
+            left: 0px;
+            top: 0px;
+        }
     }
     
     @media screen and (max-width: 425px) and (min-width: 320px) {
@@ -1640,6 +1674,10 @@
         }
         .footer_1 {
             margin-top: 495px;
+        }
+        .gallery-int {
+            left: 0px;
+            top: 0px;
         }
     }
     /*--------------------------------------------------------------
@@ -2036,7 +2074,7 @@
     }
     
     .img-responsive {
-        width: 9rem;
+        width: 10rem;
     }
     
     #footer h3 {
