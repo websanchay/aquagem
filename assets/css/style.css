@@ -397,8 +397,8 @@
         height: 85vh;
         /* background-color: rgba(9, 9, 9, 0.8); */
         overflow: hidden;
-        position: relative;
-        top: 15px;
+        /* position: relative;
+        top: 15px; */
     }
     
     #heroCarousel {
