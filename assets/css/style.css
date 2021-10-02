@@ -405,6 +405,10 @@
         margin-top: 153px;
     }
     
+    #hero .img-fluid{
+        border: none;
+    }
+
     #hero .carousel,
     #hero .carousel-inner,
     #hero .carousel-item,
@@ -515,23 +519,6 @@
         width: 100%;
         height: auto;
     }
-
-    .carousel-inner {
-        position: relative;
-        /* Removed height here */
-        overflow: hidden;
-      }
-      .carousel-item {
-        position: relative;
-        width: 100vh;
-        height: 100vh;
-        display: none;
-        width: 100%;
-      }
-    
-    #hero .img-fluid{
-        border: none;
-    }  
     
     #hero .btn-get-started {
         font-family: "Raleway", sans-serif;
@@ -552,10 +539,10 @@
     .floor {
         text-align: center;
     }
-    h3 b{
+    h3 b {
         color: #fff;
-        font-size: 20px;
     }
+
     
     #hero .btn-get-started:hover {
         background: #6ec083;
@@ -565,15 +552,20 @@
         #hero {
             height: 100vh;
         }
-        /* #hero .carousel-container {
+        #hero .carousel-container {
             top: 66px;
-        } */
+        }
     }
     
     @media (max-width: 768px) {
         #hero h2 {
             font-size: 37px;
         }
+        h3 b {
+            color: #fff;
+            font-size: 16px;
+        }
+
     }
     
     @media (min-width: 1024px) {
