@@ -1099,6 +1099,9 @@
         .gallery-int {
             left: 125px;
         }
+        .gallery .gallery-item{
+            float: left;
+        }
     }
     
     @media screen and (max-width: 768px) and (min-width: 576px) {
@@ -1255,11 +1258,11 @@
             left: 0px;
             top: 0px;
         }
-        .backyard {
+        /* .backyard {
             position: absolute;
             width: 95%;
             top: 7px;
-        }
+        } */
         .features_section {
             margin-top: 138px;
         }
