@@ -146,6 +146,7 @@
         white-space: nowrap;
         transition: 0.3s;
         text-decoration: none;
+        font-family: serif;
     }
     
     .navbar a i,
@@ -232,6 +233,11 @@
     
     .fixed-top {
         position: absolute;
+    }
+
+    .nav-link b{
+        font-weight: 700;
+        font-size: 20px;
     }
     
     @media (max-width: 1366px) {
@@ -2289,14 +2295,15 @@
         font-weight: 400;
         color: rgb(94, 85, 85);
         position: relative;
-        font-family: "Poppins", sans-serif;
+        font-family: "open sans", sans-serif;
         padding: 0;
         margin: 0 0 15px 0;
     }
     
     #footer p {
         font-size: 15;
-        font-style: italic;
+        /* font-style: italic; */
+        font-family: 'Open Sans';
         padding: 0;
         margin: -10 0 40px 0;
     }
@@ -2355,7 +2362,20 @@
     }
     
     .text-reset {
-        color: grey!important;
+        color: black!important;
         text-decoration: none;
+        font-family: 'Open Sans';
     }
-    /* ****************************   Zoom-in and zoom-out css   ************************************************** */
+    /* ****************************   Whatsapp css   ************************************************** */
+
+    .whatsapp{
+        position:fixed;
+        left:10px;
+        bottom:10px;
+        width: 60px;
+        height:60px;
+    }
+    .whatsapp_image{
+        width:60px;
+        height: 60px;
+    }
