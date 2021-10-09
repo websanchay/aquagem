@@ -109,6 +109,9 @@
         min-height: 100%;
         overflow: scroll;
     }
+    .nav-link{
+        padding: 0px;    
+    }
     /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -140,13 +143,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-family: Roboto condensed;
         padding: 0 0 10px 30px;
         font-size: 16px;
         color: #222222;
         white-space: nowrap;
         transition: 0.3s;
         text-decoration: none;
-        font-family: serif;
+        
     }
     
     .navbar a i,
@@ -198,8 +202,9 @@
     }
     
     .navbar .dropdown ul a {
-        padding: 10px 20px;
-        text-transform: none;
+        /* padding: 10px 20px; */
+        text-transform: uppercase;
+        font-size: 14px;
     }
     
     .navbar .dropdown ul a i {
@@ -236,8 +241,10 @@
     }
 
     .nav-link b{
-        font-weight: 700;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: Montserrat;
+        text-transform: uppercase;
     }
     
     @media (max-width: 1366px) {
@@ -446,8 +453,9 @@
 #hero h2 {
     color: #fff;
     margin-bottom: 20px;
-    font-size: 48px;
+    font-size: 55px;
     font-weight: 700;
+    font-family: 'Montserrat';
 }
 
 #hero p {
@@ -616,11 +624,14 @@
     .section-title h5 {
         font-size: 14px;
         color: grey;
+        font-family: 'Roboto Condensed';
     }
     
     .section-title h2 {
+        font-family: 'Montserrat', sans-serif;
         font-size: 32px;
         font-weight: bold;
+        color:#000;
         text-transform: uppercase;
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -682,16 +693,22 @@
         list-style: none;
         padding: 0;
         margin-top: 20px;
+        font-family: 'Roboto Condensed';
+        
     }
     
     .about .content ul li {
         padding-bottom: 10px;
+        font-size: 20px;
+        font-family: 'Roboto Condensed';
+        color: #000;
     }
     
     .about .content ul i {
         font-size: 20px;
         padding-right: 4px;
         color: #0F6A07;
+        font-family: 'Roboto Condensed';
     }
     
     .about .content p:last-child {
@@ -750,13 +767,15 @@
     }
     
     .pergolas {
-        margin-left: 39px;
+        margin-left: 32px;
     }
     
     .p {
-        margin-left: 4px;
+        margin-left: 19px;
         color: #0F6A07;
-    }
+        font-family: 'Roboto Condensed';
+}
+    
     
     .ext_2 {
         border: 3px solid green;
@@ -771,9 +790,11 @@
     }
     
     .d {
-        margin-left: 1px;
+        margin-left: 18px;
         color: #0F6A07;
-    }
+        font-family: 'Roboto Condensed';
+}
+    
     
     .ext_3 {
         border: 3px solid green;
@@ -788,9 +809,11 @@
     }
     
     .t {
-        margin-left: 20px;
+        margin-left: 35px;
         color: #0F6A07;
-    }
+        font-family: 'Roboto Condensed';
+}
+    
     
     .ext_4 {
         border: 3px solid green;
@@ -807,10 +830,11 @@
     }
     
     .o {
-        margin-left: 22px;
+        margin-left: 38px;
         position: relative;
-        bottom: -4px;
+        bottom: -2px;
         color: #0F6A07;
+        font-family: 'Roboto Condensed';
     }
     
     .ext_5 {
@@ -828,6 +852,7 @@
     .f {
         margin-left: 45px;
         color: #0F6A07;
+        font-family: 'Roboto Condensed';
     }
     
     .ext_6 {
@@ -846,6 +871,7 @@
     .v {
         margin-left: 34px;
         color: #0F6A07;
+        font-family: 'Roboto Condensed';
     }
     
     .ext_7 {
@@ -862,6 +888,7 @@
     .w {
         margin-left: 28px;
         color: #0F6A07;
+        font-family: 'Roboto Condensed';
     }
     
     .ext_8 {
@@ -883,6 +910,7 @@
         top: 7px;
         left: 44px;
         color: #0F6A07;
+        font-family: 'Roboto Condensed';
     }
     
     .ext_9 {
@@ -897,8 +925,9 @@
     }
     
     .e {
-        margin-left: 14px;
+        margin-left: 32px;
         color: #0F6A07;
+        font-family: 'Roboto Condensed';
     }
     
     @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -1270,7 +1299,7 @@
             top: 7px;
         } */
         .features_section {
-            margin-top: 138px;
+            margin-top: -85px;
         }
     }
     
@@ -2029,7 +2058,9 @@
     
     .text-uppercase {
         color: #000;
+        font-family: 'Montserrat';
     }
+    
     
     .text-reset a:hover {
         color: #14db48;
@@ -2295,15 +2326,17 @@
         font-weight: 400;
         color: rgb(94, 85, 85);
         position: relative;
-        font-family: "open sans", sans-serif;
+        font-family: 'Roboto Condensed',sans-serif;
         padding: 0;
         margin: 0 0 15px 0;
     }
     
     #footer p {
-        font-size: 15;
-        /* font-style: italic; */
-        font-family: 'Open Sans';
+        font-size: 15px;
+        font-family: 'Roboto Condensed';
+        bottom: 4px;
+        position: relative;
+        color: #000;
         padding: 0;
         margin: -10 0 40px 0;
     }
@@ -2364,7 +2397,9 @@
     .text-reset {
         color: black!important;
         text-decoration: none;
-        font-family: 'Open Sans';
+        font-family: 'Roboto Condensed';
+        position: relative;
+        top: 0px;
     }
     /* ****************************   Whatsapp css   ************************************************** */
 
@@ -2378,4 +2413,10 @@
     .whatsapp_image{
         width:60px;
         height: 60px;
+    }
+   
+
+    .p-4 {
+        padding: 1.5rem!important;
+        font-family: 'Roboto Condensed';
     }
