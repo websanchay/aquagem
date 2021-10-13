@@ -1014,8 +1014,8 @@
             width: 70px;
         }
         .p {
-            margin-left: -13px;
-            font-size: 10px;
+            margin-left: -12px;
+            font-size: 12px;
         }
         .ext_2 {
             width: 130px;
@@ -1023,12 +1023,13 @@
             left: -1px;
         }
         .cladding {
-            margin-left: 24px;
+            margin-left: 14px;
             width: 70px;
+            margin-top: 2px;
         }
         .d {
-            margin-left: -14px;
-            font-size: 10px;
+            margin-left: -11px;
+            font-size: 12px;
         }
         .ext_3 {
             left: 17px;
@@ -1036,11 +1037,11 @@
             height: 105px;
         }
         .garden {
-            margin-left: 9px;
+            margin-left: 12px;
             width: 70px;
         }
         .t {
-            margin-left: -4px;
+            margin-left: 9px;
             font-size: 12px;
         }
         .ext_4 {
@@ -1050,12 +1051,12 @@
         }
         .outdoor {
             margin-left: 16px;
-            margin-top: 4px;
+            margin-top: 7px;
             width: 63px;
             height: 63px;
         }
         .o {
-            margin-left: 1px;
+            margin-left: 14px;
             position: relative;
             bottom: -3px;
             font-size: 11px;
@@ -1068,6 +1069,7 @@
         .fireplace {
             margin-left: 14px;
             width: 70px;
+            margin-top: 4px;
         }
         .f {
             margin-left: 21px;
@@ -1078,13 +1080,13 @@
             left: 41px;
         }
         .vertical {
-            margin-left: -7px;
+            margin-left: -5px;
             height: 70px;
             margin-top: 9px;
         }
         .v {
-            margin-left: -5px;
-            font-size: 11px;
+            margin-left: 5px;
+            font-size: 12px;
         }
         .ext_7 {
             width: 130px;
@@ -1097,8 +1099,8 @@
             margin-top: 9px;
         }
         .w {
-            margin-left: 9px;
-            font-size: 11px;
+            margin-left: 13px;
+            font-size: 12px;
         }
         .ext_8 {
             width: 130px;
@@ -1114,8 +1116,8 @@
         .b {
             position: relative;
             top: 5px;
-            left: 16px;
-            font-size: 11px;
+            left: 19px;
+            font-size: 12px;
         }
         .ext_9 {
             width: 130px;
@@ -1128,8 +1130,8 @@
             margin-top: 6px;
         }
         .e {
-            margin-left: -11px;
-            font-size: 11px;
+            margin-left: -1px;
+            font-size: 12px;
         }
         .gallery-int {
             left: 125px;
@@ -1641,7 +1643,7 @@
             width: 76px;
         }
         .p {
-            margin-left: 79px;
+            margin-left: 88px;
             font-size: 14px;
         }
         .ext_2 {
@@ -1655,7 +1657,7 @@
             width: 78px;
         }
         .d {
-            margin-left: 78px;
+            margin-left: 91px;
             font-size: 14px;
         }
         .ext_3 {
@@ -1669,7 +1671,7 @@
             width: 71px;
         }
         .t {
-            margin-left: 96px;
+            margin-left: 111px;
         }
         .ext_4 {
             width: 342px;
@@ -1678,13 +1680,13 @@
             top: 56px;
         }
         .outdoor {
-            margin-left: 112px;
+            margin-left: 116px;
             margin-top: 5px;
             width: 80px;
             height: 65px;
         }
         .o {
-            margin-left: 99px;
+            margin-left: 114px;
             font-size: 14px;
         }
         .ext_5 {
@@ -1698,7 +1700,7 @@
             width: 75px;
         }
         .f {
-            margin-left: 114px;
+            margin-left: 122px;
             font-size: 14px;
         }
         .ext_6 {
@@ -1708,13 +1710,13 @@
             height: 107px;
         }
         .vertical {
-            margin-left: 112px;
+            margin-left: 116px;
             height: 68px;
             margin-top: 9px;
             width: 72px;
         }
         .v {
-            margin-left: 90px;
+            margin-left: 106px;
             font-size: 14px;
         }
         .ext_7 {
@@ -1724,12 +1726,12 @@
             top: 93px;
         }
         .water {
-            margin-left: 100px;
+            margin-left: 102px;
             width: 85px;
             height: 74px;
         }
         .w {
-            margin-left: 91px;
+            margin-left: 108px;
             font-size: 14px;
         }
         .ext_8 {
@@ -1739,13 +1741,13 @@
             top: 121px;
         }
         .bar {
-            margin-left: 110px;
+            margin-left: 114px;
             width: 74px;
             height: 57px;
             margin-top: 12px;
         }
         .b {
-            left: 82px;
+            left: 116px;
             font-size: 14px;
         }
         .ext_9 {
@@ -1754,11 +1756,11 @@
             left: 2px;
         }
         .exteriors {
-            margin-left: 100px;
+            margin-left: 108px;
             width: 88px;
         }
         .e {
-            margin-left: 78px;
+            margin-left: 100px;
             font-size: 14px;
         }
         .img-fluid {
@@ -1788,7 +1790,7 @@
             width: 76px;
         }
         .p {
-            margin-left: 56px;
+            margin-left: 68px;
             font-size: 14px;
         }
         .ext_2 {
@@ -1802,7 +1804,7 @@
             width: 78px;
         }
         .d {
-            margin-left: 56px;
+            margin-left: 70px;
             font-size: 14px;
         }
         .ext_3 {
@@ -1816,7 +1818,7 @@
             width: 71px;
         }
         .t {
-            margin-left: 72px;
+            margin-left: 84px;
         }
         .ext_4 {
             width: 283px;
@@ -1831,7 +1833,7 @@
             height: 65px;
         }
         .o {
-            margin-left: 70px;
+            margin-left: 85px;
             font-size: 14px;
         }
         .ext_5 {
@@ -1841,11 +1843,11 @@
             top: 80px;
         }
         .fireplace {
-            margin-left: 83px;
+            margin-left: 89px;
             width: 75px;
         }
         .f {
-            margin-left: 85px;
+            margin-left: 97px;
             font-size: 14px;
         }
         .ext_6 {
@@ -1861,7 +1863,7 @@
             width: 72px;
         }
         .v {
-            margin-left: 70px;
+            margin-left: 79px;
             font-size: 14px;
         }
         .ext_7 {
@@ -1871,12 +1873,12 @@
             top: 93px;
         }
         .water {
-            margin-left: 75px;
+            margin-left: 79px;
             width: 85px;
             height: 74px;
         }
         .w {
-            margin-left: 68px;
+            margin-left: 81px;
             font-size: 14px;
         }
         .ext_8 {
@@ -1886,13 +1888,13 @@
             top: 121px;
         }
         .bar {
-            margin-left: 86px;
+            margin-left: 87px;
             width: 74px;
             height: 57px;
             margin-top: 12px;
         }
         .b {
-            left: 82px;
+            left: 91px;
             font-size: 14px;
         }
         .ext_9 {
@@ -1901,11 +1903,11 @@
             left: 2px;
         }
         .exteriors {
-            margin-left: 78px;
+            margin-left: 79px;
             width: 88px;
         }
         .e {
-            margin-left: 56px;
+            margin-left: 69px;
             font-size: 14px;
         }
         .img-fluid {
@@ -2322,7 +2324,7 @@
     }
     
     #footer h3 {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 400;
         color: rgb(94, 85, 85);
         position: relative;
