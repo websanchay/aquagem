@@ -262,3 +262,4 @@
 
 
 /**************************** delete cookies  *************************************** */
+$.cookie('my_cookie',null, {domain:'.thecreatives.in'})

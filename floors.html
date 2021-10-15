@@ -12,20 +12,21 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" 
     integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js" 
-     integrity="sha512-TEY9MppoX49BydDCCSsdqDUihEAEdO2S2En3WRjPoM+4wBkLtE7HKJ/Xt34c46/XM0Qxf6+F5caDMejengSDdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="assets/css/pergolas.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/93080f3a04.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" 
-    integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" 
+    <!-- very small file for critical CSS (or optionally inlined with a <style> block) -->
+    <link rel="stylesheet" href="critical.css">
+    <script defer src="https://kit.fontawesome.com/93080f3a04.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/imgLiquid/0.9.944/js/imgLiquid-min.js" 
     integrity="sha512-r4VzkuVP3meRHq9OT0J0TwErGgUs9tMV8P/RR9U8X/EDAaDxx+nwCrOq885oW3OPwp3YVRm6hDgngWRHynh1FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.1.1/compressor.min.js" 
-    integrity="sha512-VaRptAfSxXFAv+vx33XixtIVT9A/9unb1Q8fp63y1ljF+Sbka+eMJWoDAArdm7jOYuLQHVx5v60TQ+t3EA8weA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- async non-critical CSS -->
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="non-critical.css">
+    <!-- no-JS fallback for non-critical CSS -->
+<noscript>
+    <link rel="stylesheet" href="non-critical.css">
+</noscript>
 </head>
 
 <body>
@@ -256,9 +257,9 @@
         <a href=" https://wa.me/918287975156"><img class="whatsapp_image" src="assets/img/slide/whatsapp_img.png"></a>
     </div>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/text-compression.js"></script>
-    <script src="assets/js/render-blocking-resources.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    
+
 
 
 
