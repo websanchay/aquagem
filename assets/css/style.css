@@ -2426,11 +2426,24 @@
     /************************************PROJECT CSS******************************************************/
     .portfolio #portfolio-flters {
         list-style: none;
-        margin-bottom: 20px;
+        margin-bottom: 42px;
       }
 
+    .portfolio-img img{
+
+        width:360px;
+        height:300px;
+
+    }
+
     .section-title-1 h2{
-        padding-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 30px;
     }  
       
       .portfolio #portfolio-flters li {
@@ -2448,7 +2461,7 @@
       }
       
       .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-        background: #47b2e4;
+        background:#14db48;
         color: #fff;
       }
       
