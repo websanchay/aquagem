@@ -1,33 +1,19 @@
-    /* ************************************************PERGOLAS AND GAZEBOS CSS********************************************************** */
-    /* .pergolas_23 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-left: -46px;
-} */
-    /* .pergolos_23 {
-    padding: 0px;
-} */
-    /* .p_image {
-    margin-left: 5px;
-} */
-    li{
-        font-family: 'Roboto Condensed';
-      
-}
-    ul{
-        list-style: none;
+    li {
+        font-family: 'Roboto Condensed'
+    }
+    
+    ul {
+        list-style: none
     }
     
     .pg {
         margin-left: -32px;
-        margin-top: 114px;
+        margin-top: 114px
     }
     
     .p_img {
         width: 425px;
-        height: 350px;
+        height: 350px
     }
     
     .p_2 {
@@ -35,14 +21,14 @@
         position: absolute;
         top: 267px;
         left: 594px;
-        color: white;
+        color: #fff
     }
     
     .p_3 {
         font-weight: 900;
         position: absolute;
         top: 268px;
-        color: white;
+        color: #fff
     }
     
     .p_4 {
@@ -50,14 +36,13 @@
         letter-spacing: 2px;
         margin-top: 20px;
         margin-bottom: 30px;
-        color: black;
-        font-family: 'Montserrat';
+        color: #000;
+        font-family: Montserrat
     }
-
     
     .p_description {
         width: 500px;
-        height: 335px;
+        height: 335px
     }
     
     .description {
@@ -65,7 +50,7 @@
         position: relative;
         bottom: 23px;
         right: 92px;
-        text-decoration: underline;
+        text-decoration: underline
     }
     
     .breadcrumb {
@@ -76,68 +61,64 @@
         position: absolute;
         top: 76px;
         left: 833px;
-        background-color: #f5f5f500;
+        background-color: #f5f5f500
     }
     
     .breadcrumb>li {
         display: inline-block;
-        font-family: 'Montserrat';
-        font-size: 14px;
+        font-family: Montserrat;
+        font-size: 14px
     }
     
     .breadcrumb-item a {
         color: #121413;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 700
     }
     
     .breadcrumb-item+.breadcrumb-item::before {
         float: left;
         padding-right: .5rem;
         color: #121413;
-        content: var(--bs-breadcrumb-divider, "/");
+        content: var(--bs-breadcrumb-divider, "/")
     }
     
     .breadcrumb>.active {
         color: #121413;
-        font-weight: 700;
+        font-weight: 700
     }
     
     .breadcrumb>.active:hover {
-        color: #14db48;
+        color: #14db48
     }
     
     .navbar-fixed-top {
         position: relative;
         right: 0;
         left: 0;
-        top: -12px;
+        top: -12px
     }
-    /* * {
-    box-sizing: border-box;
-} */
     
     .column_1 {
         float: left;
         width: 16.66%;
-        padding: 5px;
+        padding: 5px
     }
     
     .outdoor_img {
         width: 100%;
-        height: 200px;
+        height: 200px
     }
-    /* Clearfix (clear floats) */
     
     .row::after {
         content: "";
         clear: both;
-        display: table;
+        display: table
     }
     
     .typeofpergolas {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap
     }
     
     .pergolas_p {
@@ -147,433 +128,422 @@
         margin-left: -92px;
         color: #000;
         width: auto;
-        margin-top: 12px;
-        
+        margin-top: 12px
     }
     
     .pergolas_c {
         margin-left: 30px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
+        color: #0f6a07;
+        font-family: 'Roboto Condensed'
     }
     
     .pergolas_w {
-        color: #0F6A07;
+        color: #0f6a07;
         font-size: 14px;
-        font-family: 'Roboto Condensed';
+        font-family: 'Roboto Condensed'
     }
     
     @media screen and (max-width:1496px) and (min-width:1200px) {
         .description {
-            right: 42px;
+            right: 42px
         }
         .pergolas_p {
-            margin-left: -40px;
+            margin-left: -40px
         }
     }
     
     @media screen and (max-width:1200px) and (min-width:1024px) {
         .breadcrumb {
-            left: 662px;
+            left: 662px
         }
         .description {
-            right: -29px;
+            right: -29px
         }
         .pergolas_p {
-            margin-left: 28px;
+            margin-left: 28px
         }
         .pergolas_c {
-            font-size: 11px;
+            font-size: 11px
         }
         .pergolas_w {
-            color: #0F6A07;
-            font-size: 11px;
+            color: #0f6a07;
+            font-size: 11px
         }
     }
     
     @media screen and (max-width:1024px) and (min-width:992px) {
         .breadcrumb {
-            left: 762px;
+            left: 762px
         }
         .p_img {
             width: 300px;
-            height: 300px;
+            height: 300px
         }
         .description {
-            right: -30px;
+            right: -30px
         }
         .pergolas_p {
-            margin-left: 37px;
+            margin-left: 37px
         }
         .p_description {
-            width: 470px;
+            width: 470px
         }
         .pergolas_w {
-            font-size: 11px;
+            font-size: 11px
         }
         .pergolas_c {
-            font-size: 11px;
+            font-size: 11px
         }
     }
     
     @media screen and (max-width:992px) and (min-width:768px) {
         .breadcrumb {
-            left: 418px;
+            left: 418px
         }
         .description {
             bottom: 11px;
             text-align: center;
-            right: 1px;
+            right: 1px
         }
         .pergolas_p {
-            margin-left: 15px;
+            margin-left: 15px
         }
-        /* .footer_1 {
-        margin-top: 0px;
-    } */
         .column_1 {
             width: 33.33%
         }
         .typeofpergolas {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .pergolas_c {
             margin-left: 30px;
-            color: #0F6A07;
+            color: #0f6a07
         }
     }
     
     @media screen and (max-width:768px) and (min-width:576px) {
         .breadcrumb {
             left: 289px;
-            font-size: 14px;
+            font-size: 14px
         }
         .description {
             bottom: 3px;
             right: 15px;
-            text-align: center;
+            text-align: center
         }
         .pergolas_p {
-            margin-left: 15px;
+            margin-left: 15px
         }
-        /* .footer_1 {
-        margin-top: 0px;
-    } */
         .column_1 {
             width: 33.33%
         }
         .typeofpergolas {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .pergolas_w {
-            font-size: 13px;
+            font-size: 13px
         }
         .pergolas_c {
-            font-size: 13px;
+            font-size: 13px
         }
     }
     
     @media screen and (max-width:576px) and (min-width:475px) {
         .breadcrumb {
             left: 234px;
-            font-size: 14px;
+            font-size: 14px
         }
         .p_img {
             width: 307px;
-            height: 280px;
+            height: 280px
         }
         .p_description {
             width: 420px;
-            height: 380px;
+            height: 380px
         }
         .pergolas_p {
-            margin-left: 6px;
+            margin-left: 6px
         }
         .description {
             bottom: 4px;
-            left: 192px;
+            left: 192px
         }
         .column_1 {
             width: 33.33%
         }
         .typeofpergolas {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .pergolas_w {
-            font-size: 11px;
+            font-size: 11px
         }
         .pergolas_c {
-            font-size: 11px;
+            font-size: 11px
         }
     }
     
     @media screen and (max-width:475px) and (min-width:425px) {
         .breadcrumb {
             left: 232px;
-            font-size: 11px;
+            font-size: 11px
         }
         .pg {
             display: inline-grid;
-            margin-left: 37px;
+            margin-left: 37px
         }
         .p_img {
             width: 307px;
             height: 280px;
-            margin-top: 6px;
+            margin-top: 6px
         }
         .p_description {
             width: 370px;
-            height: 336px;
+            height: 336px
         }
         .pergolas_p {
-            margin-left: 2px;
+            margin-left: 2px
         }
         .description {
             bottom: 4px;
-            left: 117px;
+            left: 117px
         }
         .column_1 {
             width: 33.33%
         }
         .typeofpergolas {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .pergolas_w {
-            font-size: 10px;
+            font-size: 10px
         }
         .pergolas_c {
-            font-size: 10px;
+            font-size: 10px
         }
         .pergolas_a {
-            margin-left: 14px;
+            margin-left: 14px
         }
     }
     
     @media screen and (max-width:425px) and (min-width:380px) {
         .breadcrumb {
             left: 191px;
-            font-size: 11px;
+            font-size: 11px
         }
         .pg {
             display: inline-grid;
-            margin-left: 37px;
+            margin-left: 37px
         }
         .p_img {
             width: 325px;
             height: 280px;
             margin-top: 6px;
-            margin-left: -39px;
+            margin-left: -39px
         }
         .p_4 {
-            font-size: 40px;
+            font-size: 40px
         }
         .p_description {
             width: 337px;
-            height: 336px;
+            height: 336px
         }
         .pergolas_p {
-            margin-left: 2px;
+            margin-left: 2px
         }
         .description {
             left: 97px;
-            bottom: 5px;
+            bottom: 5px
         }
         .column_1 {
             width: 33.33%
         }
         .typeofpergolas {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .pergolas_w {
-            font-size: 12px;
+            font-size: 12px
         }
         .pergolas_c {
             font-size: 12px;
-            margin-left: 0px;
+            margin-left: 0
         }
         .pergolas_a {
             margin-left: -2px;
-            font-size: 11px;
+            font-size: 11px
         }
     }
     
     @media screen and (max-width:380px) and (min-width:320px) {
         .breadcrumb {
             left: 191px;
-            font-size: 11px;
+            font-size: 11px
         }
         .breadcrumb-item a {
-            margin-left: 15px;
+            margin-left: 15px
         }
         .pg {
             display: inline-grid;
-            margin-left: 37px;
+            margin-left: 37px
         }
         .p_img {
             width: 280px;
             height: 280px;
             margin-top: 6px;
-            margin-left: -39px;
+            margin-left: -39px
         }
         .p_4 {
-            font-size: 30px;
+            font-size: 30px
         }
         .p_description {
             width: 293px;
             height: 336px;
-            margin-left: -13px;
+            margin-left: -13px
         }
         .pergolas_p {
-            margin-left: 2px;
+            margin-left: 2px
         }
         .description {
             left: 64px;
-            bottom: 5px;
+            bottom: 5px
         }
         .column_1 {
             width: 33.33%
         }
         .typeofpergolas {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .pergolas_w {
-            font-size: 12px;
+            font-size: 12px
         }
         .pergolas_c {
             font-size: 10px;
-            margin-left: 0px;
+            margin-left: 0
         }
         .pergolas_a {
             margin-left: -2px;
-            font-size: 11px;
+            font-size: 11px
         }
         .outdoor_img {
             width: 100%;
-            height: 126px;
+            height: 126px
         }
     }
-    /* **********************************************CLADDING AND DECKING CSS*********************************************************** */
     
     .column_2 {
         float: left;
         width: 33.33%;
-        padding: 5px;
+        padding: 5px
     }
     
     .outdoor_img_2 {
         width: 88%;
-        height: 260px;
+        height: 260px
     }
     
     .decking_w {
-        color: #0F6A07;
+        color: #0f6a07;
         font-size: 18px;
-        /* margin-left: 85px; */
-        font-family: 'Roboto Condensed';
+        font-family: 'Roboto Condensed'
     }
     
     .floor-section {
-        margin-top: -50px;
+        margin-top: -50px
     }
     
     @media screen and (max-width:992px) and (min-width:768px) {
         .decking_w {
-            margin-left: 0px;
+            margin-left: 0
         }
     }
     
     @media screen and (max-width:768px) and (min-width:576px) {
         .decking_w {
-            margin-left: 5px;
+            margin-left: 5px
         }
         .outdoor_img_2 {
             width: 88%;
-            height: 139px;
+            height: 139px
         }
     }
     
     @media screen and (max-width:576px) and (min-width:475px) {
         .outdoor_img_2 {
             width: 88%;
-            height: 139px;
+            height: 139px
         }
         .decking_w {
             margin-left: 15px;
-            font-size: 14px;
+            font-size: 14px
         }
     }
     
     @media screen and (max-width:475px) and (min-width:380px) {
         .decking_w {
             font-size: 13px;
-            margin-left: 6px;
+            margin-left: 6px
         }
         .outdoor_img_2 {
             width: 94%;
-            height: 137px;
+            height: 137px
         }
         .p_img {
-            width: 335px;
+            width: 335px
         }
         .p_description {
             width: 336px;
-            margin-left: -4px;
+            margin-left: -4px
         }
     }
     
     @media screen and (max-width:380px) and (min-width:320px) {
         .decking_w {
-            font-size: 13px;
-            /* margin-left: 6px; */
+            font-size: 13px
         }
         .outdoor_img_2 {
             width: 94%;
-            height: 137px;
+            height: 137px
         }
         .p_img {
-            width: 335px;
+            width: 335px
         }
         .p_description {
             width: 336px;
-            margin-left: -4px;
+            margin-left: -4px
         }
         @media screen and (max-width:320px) {
             .p_img {
-                width: 282px;
+                width: 282px
             }
             .p_description {
                 width: 282px;
-                margin-left: -4px;
+                margin-left: -4px
             }
         }
     }
-    /* **************************************************Outdoor Spaces************************************************************************* */
     
     .pergolas_r {
         text-align: justify;
         color: #000;
         margin-top: 12px;
         font-family: 'Roboto Condensed';
-        font-size: 16px;
+        font-size: 16px
     }
     
     .r_description {
         width: 500px;
-        height: 400px;
+        height: 400px
     }
     
     .description_hp {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
     
     .bar_right {
-        margin-left: 116px;
+        margin-left: 116px
     }
     
     .description_r {
         position: relative;
-        text-decoration: underline;
+        text-decoration: underline
     }
     
     @media screen and (max-width:1600px) and (min-width:1200px) {
@@ -582,13 +552,13 @@
             text-decoration: underline;
             position: relative;
             bottom: 23px;
-            right: -7px;
+            right: -7px
         }
         .bar_right {
-            margin-left: 110px;
+            margin-left: 110px
         }
         .bar_img {
-            margin-left: 33px;
+            margin-left: 33px
         }
     }
     
@@ -598,107 +568,106 @@
             text-decoration: underline;
             position: relative;
             bottom: 23px;
-            right: 5px;
+            right: 5px
         }
         .bar_right {
-            margin-left: -12px;
+            margin-left: -12px
         }
     }
     
     @media screen and (max-width:1024px) and (min-width:992px) {
         .description_r {
             text-align: justify;
-            text-decoration: underline;
+            text-decoration: underline
         }
         .bar_right {
-            margin-left: -7px;
+            margin-left: -7px
         }
     }
     
     @media screen and (min-width:992px) {
         .description_hp {
             display: block;
-            float: left;
+            float: left
         }
     }
     
     @media screen and (max-width:992px) and (min-width:991px) {
         .description_hp {
-            display: block;
+            display: block
         }
         .typeofpergolas_1 {
-            flex-wrap: nowrap;
+            flex-wrap: nowrap
         }
         .description {
             text-align: left;
-            margin-left: 14px;
+            margin-left: 14px
         }
         .column_1 {
             float: left;
             width: 16.66%;
-            padding: 5px;
+            padding: 5px
         }
     }
     
     @media screen and (max-width:990px) and (min-width:768px) {
         .description_r {
             text-decoration: underline;
-            bottom: 6px;
+            bottom: 6px
         }
         .bar_right {
-            margin-left: 15px;
+            margin-left: 15px
         }
     }
     
     @media screen and (max-width:768px) and (min-width:576px) {
         .bar_right {
-            margin-left: 16px;
+            margin-left: 16px
         }
     }
     
     @media screen and (max-width:576px) and (min-width:475px) {
         .bar_right {
-            margin-left: 5px;
+            margin-left: 5px
         }
     }
     
     @media screen and (max-width:475px) and (min-width:425px) {
         .bar_right {
-            margin-left: 5px;
+            margin-left: 5px
         }
     }
     
     @media screen and (max-width:425px) and (min-width:380px) {
         .bar_right {
-            margin-left: 9px;
+            margin-left: 9px
         }
     }
     
     @media screen and (max-width:380px) and (min-width:320px) {
         .bar_right {
-            margin-left: 7px;
+            margin-left: 7px
         }
     }
-    /* **********************************************************FLOORS*********************************************************************** */
     
     .column_3 {
         float: left;
         width: 25%;
-        padding: 5px;
+        padding: 5px
     }
     
     .typeofpergolas_1 {
-        flex-wrap: nowrap;
+        flex-wrap: nowrap
     }
     
     .outdoor_img_3 {
         width: 85%;
-        height: 200px;
+        height: 200px
     }
     
     .column_3 a h4 {
         text-decoration: none;
-        color: none;
+        color: none
     }
     
     .p_5 {
@@ -707,7 +676,7 @@
         margin-top: 44px;
         margin-bottom: 30px;
         color: #000;
-        font-family: 'Montserrat';
+        font-family: Montserrat
     }
     
     .p_6 {
@@ -716,7 +685,7 @@
         margin-top: 86px;
         margin-bottom: 30px;
         color: #000;
-        font-family: 'Montserrat';
+        font-family: Montserrat
     }
     
     .description_f {
@@ -725,7 +694,7 @@
         position: relative;
         bottom: 23px;
         right: 92px;
-        color: #000;
+        color: #000
     }
     
     .pergolas_f {
@@ -733,7 +702,7 @@
         margin-left: -92px;
         color: #000;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 14px
     }
     
     .description_fr {
@@ -741,8 +710,8 @@
         text-decoration: underline;
         position: relative;
         bottom: 23px;
-        right: 0px;
-        color: #000;
+        right: 0;
+        color: #000
     }
     
     .pergolas_fr {
@@ -751,172 +720,171 @@
         color: #000;
         font-weight: 400;
         font-size: 14px;
-        margin-top: 10px;
+        margin-top: 10px
     }
     
     .floor_f {
         margin-left: 9px;
         font-size: 18px;
         text-align: left;
-        color: #0F6A07;
-        font-weight: bold;
+        color: #0f6a07;
+        font-weight: 700
     }
     
     .floor_w {
-        color: #0F6A07;
+        color: #0f6a07
     }
     
     .text-reset_1 {
         color: inherit!important;
         font-size: 14px;
-        font-weight: 400px;
+        font-weight: 400px
     }
     
     .spc {
-        margin-left: 100px;
+        margin-left: 100px
     }
     
     @media screen and (max-width:1400px) and (min-width:1200px) {
         .pergolas_f {
-            margin-left: -39px;
+            margin-left: -39px
         }
         .description_f {
-            right: 39px;
+            right: 39px
         }
         .spc {
-            margin-left: 38px;
+            margin-left: 38px
         }
     }
     
     @media screen and (max-width:1200px) and (min-width:1024px) {
         .pergolas_f {
             margin-left: -13px;
-            font-size: 14px;
+            font-size: 14px
         }
         .description_f {
-            right: 8px;
+            right: 8px
         }
         .spc {
-            margin-left: 8px;
+            margin-left: 8px
         }
     }
     
     @media screen and (max-width:1024px) and (min-width:992px) {
         .pergolas_f {
             margin-left: 8px;
-            font-size: 14px;
+            font-size: 14px
         }
         .description_f {
-            right: -9px;
+            right: -9px
         }
         .spc {
-            margin-left: 1px;
+            margin-left: 1px
         }
     }
     
     @media screen and (max-width:990px) and (min-width:768px) {
         .description_hp {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column-reverse
         }
         .column_3 {
-            width: 50%;
+            width: 50%
         }
         .typeofpergolas_1 {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .description_f {
             text-align: center;
             bottom: 11px;
-            right: 15px;
+            right: 15px
         }
         .pergolas_f {
             margin-left: -15px;
-            margin-top: 13px;
+            margin-top: 13px
         }
         .description_fr {
             text-align: center;
             bottom: 8px;
-            right: 8px;
+            right: 8px
         }
         .spc {
-            margin-left: 8px;
+            margin-left: 8px
         }
         .pergolas_fr {
-            margin-left: -23px;
+            margin-left: -23px
         }
     }
     
     @media screen and (max-width:768px) and (max-width:576px) {
         .description_hp {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column-reverse
         }
         .column_3 {
-            width: 50%;
+            width: 50%
         }
         .typeofpergolas_1 {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .description_f {
             text-align: center;
             bottom: 6px;
-            right: 15px;
+            right: 15px
         }
         .pergolas_f {
             margin-left: -15px;
-            margin-top: 9px;
+            margin-top: 9px
         }
         .description_fr {
             text-align: center;
             bottom: 8px;
-            right: 8px;
+            right: 8px
         }
         .floor_f {
-            margin-left: 0px;
+            margin-left: 0;
             font-size: 18px;
             text-align: left;
-            color: #0F6A07;
-            font-weight: bold;
+            color: #0f6a07;
+            font-weight: 700
         }
         .spc {
-            margin-left: -7px;
+            margin-left: -7px
         }
     }
     
     @media screen and (max-width:576px) and (max-width:480px) {
         .description_hp {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column-reverse
         }
         .column_3 {
-            width: 50%;
+            width: 50%
         }
         .typeofpergolas_1 {
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
         .description_f {
             text-align: center;
             bottom: 6px;
-            right: 15px;
+            right: 15px
         }
         .pergolas_f {
-            margin-left: -15px;
+            margin-left: -15px
         }
         .description_fr {
             text-align: center;
             bottom: 8px;
-            right: 8px;
+            right: 8px
         }
         .floor_w {
-            margin-left: 0px;
+            margin-left: 0;
             font-size: 12px;
-            color: #0F6A07;
+            color: #0f6a07
         }
     }
-    /* **********************************************Projects CSS******************************************************* */
-
-    .project{
+    
+    .project {
         position: relative;
-        margin-top: 127px;
+        margin-top: 127px
     }

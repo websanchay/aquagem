@@ -1,0 +1,12 @@
+User-Agent: Googlebot
+Disallow: /local/
+Disallow: /assests/
+
+User-Agent: bingbot
+Disallow: /local/
+Disallow: /assests/
+
+User-agent: *
+Disallow:
+
+Sitemape: https://thecreatives.in/sitemap.xml

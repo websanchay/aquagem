@@ -1,420 +1,357 @@
-    html,
-    body {
-        font-family: "Open Sans", sans-serif;
-        color: #444444;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    
-    a {
-        text-decoration: none;
-        color: #14db48;
-    }
-    
-    a:hover {
-        color: #14db48;
-        text-decoration: none;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Raleway", sans-serif;
-    }
-    /*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-    /* #topbar {
-    background: #fbfbfb;
-    font-size: 15px;
-    height: 40px;
+body,
+html {
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+    margin: 0;
     padding: 0;
+    overflow-x: hidden
 }
 
-#topbar .contact-info a {
+a {
+    text-decoration: none;
+    color: #14db48
+}
+
+a:hover {
+    color: #14db48;
+    text-decoration: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Raleway, sans-serif
+}
+
+#header {
+    background: #fff;
+    transition: all .5s;
+    z-index: 997;
+    height: 106px;
+    padding-top: 90px
+}
+
+#header.header-scrolled {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .1)
+}
+
+#header .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+#header .logo a {
+    color: #5cb874
+}
+
+#header .logo img {
+    max-height: 138px;
+    max-width: 218px;
+    margin-top: -28px
+}
+
+.scroll {
+    min-height: 100%;
+    overflow: scroll
+}
+
+.nav-link {
+    padding: 0
+}
+
+.navbar {
+    padding: 0;
+    padding-top: 0;
+    padding-right: 70px;
+    margin-top: -19px
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center
+}
+
+.navbar li {
+    position: relative
+}
+
+.navbar a,
+.navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Roboto condensed;
+    padding: 0 0 10px 30px;
+    font-size: 16px;
+    color: #222;
+    white-space: nowrap;
+    transition: .3s;
+    text-decoration: none
+}
+
+.navbar a i,
+.navbar a:focus i {
+    font-size: 12px;
     line-height: 0;
-    color: #444444;
-    transition: 0.3s;
+    margin-left: 5px
 }
 
-#topbar .contact-info a:hover {
-    color: #14db48;
+.navbar .active,
+.navbar .active:focus,
+.navbar a:hover,
+.navbar li:hover>a {
+    color: #5cb874
 }
 
-#topbar .contact-info i {
-    color: #14db48;
+.navbar .getstarted {
+    color: #5cb874;
+    padding: 8px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    border: 2px solid #5cb874;
+    transition: .3s;
+    font-size: 14px
+}
+
+.navbar .getstarted:hover {
+    background: #5cb874;
+    color: #fff
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(127, 137, 161, .25);
+    transition: .3s
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px
+}
+
+.navbar .dropdown ul a {
+    text-transform: uppercase;
+    font-size: 14px
+}
+
+.navbar .dropdown ul a i {
+    font-size: 12px
+}
+
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul li:hover>a {
+    color: #5cb874
+}
+
+.navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible
+}
+
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden
+}
+
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible
+}
+
+.fixed-top {
+    position: absolute
+}
+
+.nav-link b {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Montserrat;
+    text-transform: uppercase
+}
+
+@media (max-width:1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%
+    }
+    .navbar .dropdown .dropdown:hover>ul {
+        left: -100%
+    }
+}
+
+.mobile-nav-toggle {
+    color: #222;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
     line-height: 0;
-    margin-right: 5px;
+    transition: .5s
 }
 
-#topbar .contact-info .phone-icon {
-    margin-left: 15px;
+.mobile-nav-toggle.bi-x {
+    color: #fff
 }
 
-#topbar .social-links a {
-    color: #6f6f6f;
-    padding: 4px 12px;
-    display: inline-block;
-    line-height: 1px;
-    transition: 0.3s;
-}
-
-#topbar .social-links a:hover {
-    color: #14db48;
-} */
-    /*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-    
-    #header {
-        background: #fff;
-        transition: all 0.5s;
-        z-index: 997;
-        height: 106px;
-        padding-top: 90px;
+@media (max-width:991px) {
+    .mobile-nav-toggle {
+        display: block
     }
-    
-    #header.header-scrolled {
-        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    }
-    
-    #header .logo {
-        font-size: 30px;
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
-    
-    #header .logo a {
-        color: #5cb874;
-    }
-    
-    #header .logo img {
-        max-height: 138px;
-        max-width: 218px;
-        margin-top: -28px;
-    }
-    /* .scrolled-offset {
-    margin-top: 166px;
-} */
-    
-    .scroll {
-        min-height: 100%;
-        overflow: scroll;
-    }
-    .nav-link{
-        padding: 0px;    
-    }
-    /*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-    /**
-* Desktop Navigation 
-*/
-    
-    .navbar {
-        padding: 0;
-        padding-top: 0;
-        padding-right: 70px;
-        margin-top: -19px;
-    }
-    
     .navbar ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        list-style: none;
-        align-items: center;
+        display: none
     }
-    
-    .navbar li {
-        position: relative;
-    }
-    
+}
+
+.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(9, 9, 9, .9);
+    transition: .3s;
+    z-index: 999
+}
+
+.navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px
+}
+
+.navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: .3s
+}
+
+.navbar-mobile a {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #222
+}
+
+.navbar-mobile .active,
+.navbar-mobile a:hover,
+.navbar-mobile li:hover>a {
+    color: #5cb874
+}
+
+.navbar-mobile .getstarted {
+    margin: 15px
+}
+
+.navbar-mobile .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(127, 137, 161, .25)
+}
+
+.navbar-mobile .dropdown ul li {
+    min-width: 200px
+}
+
+.navbar-mobile .dropdown ul a {
+    padding: 10px 20px
+}
+
+.navbar-mobile .dropdown ul a i {
+    font-size: 12px
+}
+
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul li:hover>a {
+    color: #5cb874
+}
+
+.navbar-mobile .dropdown>.dropdown-active {
+    display: block
+}
+
+@media screen and (max-width:1200px) and (min-width:992px) {
     .navbar a,
     .navbar a:focus {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-family: Roboto condensed;
-        padding: 0 0 10px 30px;
-        font-size: 16px;
-        color: #222222;
-        white-space: nowrap;
-        transition: 0.3s;
-        text-decoration: none;
-        
+        font-size: 13px
     }
-    
-    .navbar a i,
-    .navbar a:focus i {
-        font-size: 12px;
-        line-height: 0;
-        margin-left: 5px;
-    }
-    
-    .navbar a:hover,
-    .navbar .active,
-    .navbar .active:focus,
-    .navbar li:hover>a {
-        color: #5cb874;
-    }
-    
-    .navbar .getstarted {
-        color: #5cb874;
-        padding: 8px 25px;
-        margin-left: 30px;
-        border-radius: 4px;
-        border: 2px solid #5cb874;
-        transition: 0.3s;
-        font-size: 14px;
-    }
-    
-    .navbar .getstarted:hover {
-        background: #5cb874;
-        color: #fff;
-    }
-    
-    .navbar .dropdown ul {
-        display: block;
-        position: absolute;
-        left: 14px;
-        top: calc(100% + 30px);
-        margin: 0;
-        padding: 10px 0;
-        z-index: 99;
-        opacity: 0;
-        visibility: hidden;
-        background: #fff;
-        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-        transition: 0.3s;
-    }
-    
-    .navbar .dropdown ul li {
-        min-width: 200px;
-    }
-    
-    .navbar .dropdown ul a {
-        /* padding: 10px 20px; */
-        text-transform: uppercase;
-        font-size: 14px;
-    }
-    
-    .navbar .dropdown ul a i {
-        font-size: 12px;
-    }
-    
-    .navbar .dropdown ul a:hover,
-    .navbar .dropdown ul .active:hover,
-    .navbar .dropdown ul li:hover>a {
-        color: #5cb874;
-    }
-    
-    .navbar .dropdown:hover>ul {
-        opacity: 1;
-        top: 100%;
-        visibility: visible;
-    }
-    
-    .navbar .dropdown .dropdown ul {
-        top: 0;
-        left: calc(100% - 30px);
-        visibility: hidden;
-    }
-    
-    .navbar .dropdown .dropdown:hover>ul {
-        opacity: 1;
-        top: 0;
-        left: 100%;
-        visibility: visible;
-    }
-    
-    .fixed-top {
-        position: absolute;
-    }
+}
 
-    .nav-link b{
-        font-weight: 400;
-        font-size: 15px;
-        font-family: Montserrat;
-        text-transform: uppercase;
-    }
-    
-    @media (max-width: 1366px) {
-        .navbar .dropdown .dropdown ul {
-            left: -90%;
-        }
-        .navbar .dropdown .dropdown:hover>ul {
-            left: -100%;
-        }
-    }
-    /**
-* Mobile Navigation 
-*/
-    
-    .mobile-nav-toggle {
-        color: #222222;
-        font-size: 28px;
-        cursor: pointer;
-        display: none;
-        line-height: 0;
-        transition: 0.5s;
-    }
-    
-    .mobile-nav-toggle.bi-x {
-        color: #fff;
-    }
-    
-    @media (max-width: 991px) {
-        .mobile-nav-toggle {
-            display: block;
-        }
-        .navbar ul {
-            display: none;
-        }
-    }
-    
-    .navbar-mobile {
-        position: fixed;
-        overflow: hidden;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: rgba(9, 9, 9, 0.9);
-        transition: 0.3s;
-        z-index: 999;
-    }
-    
-    .navbar-mobile .mobile-nav-toggle {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-    }
-    
-    .navbar-mobile ul {
-        display: block;
-        position: absolute;
-        top: 55px;
-        right: 15px;
-        bottom: 15px;
-        left: 15px;
-        padding: 10px 0;
-        background-color: #fff;
-        overflow-y: auto;
-        transition: 0.3s;
-    }
-    
-    .navbar-mobile a {
-        padding: 10px 20px;
-        font-size: 15px;
-        color: #222222;
-    }
-    
-    .navbar-mobile a:hover,
-    .navbar-mobile .active,
-    .navbar-mobile li:hover>a {
-        color: #5cb874;
-    }
-    
-    .navbar-mobile .getstarted {
-        margin: 15px;
-    }
-    
-    .navbar-mobile .dropdown ul {
-        position: static;
-        display: none;
-        margin: 10px 20px;
-        padding: 10px 0;
-        z-index: 99;
-        opacity: 1;
-        visibility: visible;
-        background: #fff;
-        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    }
-    
-    .navbar-mobile .dropdown ul li {
-        min-width: 200px;
-    }
-    
-    .navbar-mobile .dropdown ul a {
-        padding: 10px 20px;
-    }
-    
-    .navbar-mobile .dropdown ul a i {
-        font-size: 12px;
-    }
-    
-    .navbar-mobile .dropdown ul a:hover,
-    .navbar-mobile .dropdown ul .active:hover,
-    .navbar-mobile .dropdown ul li:hover>a {
-        color: #5cb874;
-    }
-    
-    .navbar-mobile .dropdown>.dropdown-active {
-        display: block;
-    }
-    
-    @media screen and (max-width: 1200px) and (min-width: 992px) {
-        .navbar a,
-        .navbar a:focus {
-            font-size: 13px;
-        }
-    }
-    /*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-    
-    .back-to-top {
-        position: fixed;
-        visibility: hidden;
-        opacity: 0;
-        right: 15px;
-        bottom: 15px;
-        z-index: 996;
-        background: #14db48;
-        width: 40px;
-        height: 40px;
-        border-radius: 4px;
-        transition: all 0.4s;
-    }
-    
-    .back-to-top i {
-        font-size: 24px;
-        color: #fff;
-        line-height: 0;
-    }
-    
-    .back-to-top:hover {
-        background: #78c48c;
-        color: #fff;
-    }
-    
-    .back-to-top.active {
-        visibility: visible;
-        opacity: 1;
-    }
-    /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #14db48;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all .4s
+}
+
+.back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0
+}
+
+.back-to-top:hover {
+    background: #78c48c;
+    color: #fff
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1
+}
+
 #hero {
     width: 100%;
     height: 85vh;
-    /* background-color: rgba(9, 9, 9, 0.8); */
     overflow: hidden;
     position: relative;
-    top: 15px;
+    top: 15px
 }
 
 #heroCarousel {
-    margin-top: 153px;
+    margin-top: 153px
 }
 
 #hero .carousel,
@@ -428,11 +365,11 @@
     top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0
 }
 
 #hero .carousel-item::before {
-    content: '';
+    content: ''
 }
 
 #hero .carousel-container {
@@ -443,11 +380,11 @@
     bottom: 0;
     top: 0;
     left: 50px;
-    right: 50px;
+    right: 50px
 }
 
 #hero .container {
-    text-align: center;
+    text-align: center
 }
 
 #hero h2 {
@@ -455,56 +392,56 @@
     margin-bottom: 20px;
     font-size: 55px;
     font-weight: 700;
-    font-family: 'Montserrat';
+    font-family: Montserrat
 }
 
 #hero p {
-    -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
     margin: 0 auto 30px auto;
-    color: #fff;
+    color: #fff
 }
 
 #hero .carousel-inner .carousel-item {
     transition-property: opacity;
-    background-position: center top;
+    background-position: center top
 }
 
-#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-end,
 #hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-    opacity: 0;
+#hero .carousel-inner .carousel-item {
+    opacity: 0
 }
 
 #hero .carousel-inner .active,
 #hero .carousel-inner .carousel-item-next.carousel-item-start,
 #hero .carousel-inner .carousel-item-prev.carousel-item-end {
     opacity: 1;
-    transition: 0.5s;
+    transition: .5s
 }
 
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
-    background: none;
+    background: 0 0;
     font-size: 30px;
     line-height: 0;
     width: auto;
     height: auto;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, .2);
     border-radius: 50px;
-    transition: 0.3s;
-    color: rgba(255, 255, 255, 0.5);
+    transition: .3s;
+    color: rgba(255, 255, 255, .5);
     width: 54px;
     height: 54px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, .8)
 }
 
 #hero .carousel-indicators li {
@@ -516,2080 +453,2037 @@
     height: 12px;
     border-radius: 50px;
     opacity: .6;
-    transition: 0.3s;
+    transition: .3s
 }
 
 #hero .carousel-indicators li.active {
     opacity: 1;
-    background: #14db48;
+    background: #14db48
 }
 
 .carousel-inner img {
     width: 100%;
-    height: auto;
+    height: auto
 }
 
 #hero .btn-get-started {
-    font-family: "Raleway", sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
     display: inline-block;
     padding: 14px 32px;
     border-radius: 4px;
-    transition: 0.5s;
+    transition: .5s;
     line-height: 1;
     color: #fff;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    background: #14db48;
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+    background: #14db48
 }
 
 .floor {
-    text-align: center;
+    text-align: center
 }
 
 #hero .btn-get-started:hover {
-    background: #6ec083;
+    background: #6ec083
 }
-.animate__fadeInUp{
-    color:#fff;
+
+.animate__fadeInUp {
+    color: #fff
 }
-@media (max-width: 992px) {
+
+@media (max-width:992px) {
     #hero {
-        height: 100vh;
+        height: 100vh
     }
     #hero .carousel-container {
-        top: 66px;
+        top: 66px
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #hero h2 {
-        font-size: 37px;
+        font-size: 37px
     }
 }
 
-@media (min-width: 1024px) {
-    #hero .carousel-control-prev,
-    #hero .carousel-control-next {
-        width: 5%;
+@media (min-width:1024px) {
+    #hero .carousel-control-next,
+    #hero .carousel-control-prev {
+        width: 5%
     }
 }
 
-@media (max-height: 500px) {
+@media (max-height:500px) {
     #hero {
-        height: 130vh;
+        height: 130vh
     }
-    .animate__fadeInUp{
-        color:#fff;
-        font-size: 14px;
+    .animate__fadeInUp {
+        color: #fff;
+        font-size: 14px
     }
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .column {
     float: left;
     width: 33.33%;
-    padding: 5px;
+    padding: 5px
 }
-/* Clearfix (clear floats) */
 
 .row::after {
     content: "";
     clear: both;
-    display: table;
-}
-   
-    /*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-    
-    .about {
-        padding: 50px 0;
-    }
-    
-    .section-bg {
-        background-color: #f8fcf9;
-    }
-    
-    .section-title {
-        text-align: center;
-        padding-bottom: 30px;
-    }
-    
-    .section-title h5 {
-        font-size: 14px;
-        color: grey;
-        font-family: 'Roboto Condensed';
-    }
-    
-    .section-title h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
-        font-weight: bold;
-        color:#000;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        position: relative;
-    }
-    
-    .section-title h2::before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 120px;
-        height: 1px;
-        background: #ddd;
-        bottom: 1px;
-        left: calc(50% - 60px);
-    }
-    
-    .section-title h2::after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 40px;
-        height: 3px;
-        background: #14db48;
-        bottom: 0;
-        left: calc(50% - 20px);
-    }
-    
-    .section-title p {
-        margin-bottom: 0;
-        font-size: 14px;
-        color: #919191;
-    }
-    
-    @media screen and (max-width: 1200px) and (min-width: 992px) {
-        .content {
-            margin-top: 18px;
-        }
-    }
-    /* ----------------------------------------------------------- 
-# services Section
--------------------------------------------------------------*/
-    
-    .services {
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    /*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
-    
-    .about .content h3 {
-        font-weight: 700;
-        font-size: 28px;
-    }
-    
-    .about .content ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 20px;
-        font-family: 'Roboto Condensed';
-        
-    }
-    
-    .about .content ul li {
-        padding-bottom: 10px;
-        font-size: 20px;
-        font-family: 'Roboto Condensed';
-        color: #000;
-    }
-    
-    .about .content ul i {
-        font-size: 20px;
-        padding-right: 4px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-    }
-    
-    .about .content p:last-child {
-        margin-bottom: 0;
-    }
-    
-    .about .content p {
-        font-size: 14px;
-        text-align: justify;
-    }
-    /*--------------------------------------------------------------
-# Gallery
---------------------------------------------------------------*/
-    
-    .gallery {
-        padding-bottom: 30px;
-    }
-    
-    .gallery .gallery-item {
-        overflow: hidden;
-        border-right: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-    }
-    
-    .gallery .gallery-item img {
-        transition: all ease-in-out 0.4s;
-    }
-    
-    .gallery .gallery-item:hover img {
-        transform: scale(1.2);
-    }
-    
-    .img-fluid {
-        border: solid 2px green;
-    }
-    
-    .gallery-int {
-        position: relative;
-        left: 196px;
-        top: 8px;
-    }
-    /* .exteriors_1 {
-    padding-left: 169px;
+    display: table
 }
 
-.exteriors_2 {
-    padding-right: 8px;
-} */
-    
+.about {
+    padding: 50px 0
+}
+
+.section-bg {
+    background-color: #f8fcf9
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.section-title h5 {
+    font-size: 14px;
+    color: grey;
+    font-family: 'Roboto Condensed'
+}
+
+.section-title h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px)
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #14db48;
+    bottom: 0;
+    left: calc(50% - 20px)
+}
+
+.section-title p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #919191
+}
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+    .content {
+        margin-top: 18px
+    }
+}
+
+.services {
+    text-align: center;
+    font-weight: 700
+}
+
+.about .content h3 {
+    font-weight: 700;
+    font-size: 28px
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-family: 'Roboto Condensed'
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+    color: #000
+}
+
+.about .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.about .content p:last-child {
+    margin-bottom: 0
+}
+
+.about .content p {
+    font-size: 14px;
+    text-align: justify
+}
+
+.gallery {
+    padding-bottom: 30px
+}
+
+.gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff
+}
+
+.gallery .gallery-item img {
+    transition: all ease-in-out .4s
+}
+
+.gallery .gallery-item:hover img {
+    transform: scale(1.2)
+}
+
+.img-fluid {
+    border: solid 2px green
+}
+
+.gallery-int {
+    position: relative;
+    left: 196px;
+    top: 8px
+}
+
+.ext_1 {
+    border: 3px solid green;
+    width: 192px;
+    height: 130px;
+    position: relative;
+    left: 18px
+}
+
+.pergolas {
+    margin-left: 32px
+}
+
+.p {
+    margin-left: 19px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_2 {
+    border: 3px solid green;
+    position: relative;
+    width: 192px;
+    height: 130px;
+    left: 49px
+}
+
+.cladding {
+    margin-left: 29px
+}
+
+.d {
+    margin-left: 18px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_3 {
+    border: 3px solid green;
+    position: relative;
+    left: 81px;
+    width: 192px;
+    height: 130px
+}
+
+.garden {
+    margin-left: 27px
+}
+
+.t {
+    margin-left: 35px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_4 {
+    border: 3px solid green;
+    position: relative;
+    width: 192px;
+    height: 130px;
+    left: 116px
+}
+
+.outdoor {
+    margin-left: 29px;
+    height: 90px;
+    margin-top: 10px
+}
+
+.o {
+    margin-left: 38px;
+    position: relative;
+    bottom: -2px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_5 {
+    border: 3px solid green;
+    position: relative;
+    left: 150px;
+    width: 192px;
+    height: 130px
+}
+
+.fireplace {
+    margin-left: 28px
+}
+
+.f {
+    margin-left: 45px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_6 {
+    border: 3px solid green;
+    position: relative;
+    width: 200px;
+    left: 114px
+}
+
+.vertical {
+    margin-left: 41px;
+    height: 90px;
+    margin-top: 9px
+}
+
+.v {
+    margin-left: 34px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_7 {
+    border: 3px solid green;
+    position: relative;
+    width: 200px;
+    left: 157px
+}
+
+.water {
+    margin-left: 28px
+}
+
+.w {
+    margin-left: 28px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_8 {
+    border: 3px solid green;
+    position: relative;
+    width: 200px;
+    left: 197px
+}
+
+.bar {
+    margin-left: 43px;
+    width: 90px;
+    height: 90px;
+    margin-top: 7px
+}
+
+.b {
+    position: relative;
+    top: 7px;
+    left: 44px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+.ext_9 {
+    border: 3px solid green;
+    position: relative;
+    width: 200px;
+    left: 232px
+}
+
+.exteriors {
+    margin-left: 31px
+}
+
+.e {
+    margin-left: 32px;
+    color: #0f6a07;
+    font-family: 'Roboto Condensed'
+}
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+    body,
+    html {
+        margin: 0;
+        padding: 0
+    }
     .ext_1 {
-        border: 3px solid green;
-        width: 192px;
-        height: 130px;
+        width: 178px;
         position: relative;
-        left: 18px;
+        left: -19px
     }
-    
     .pergolas {
-        margin-left: 32px;
+        margin-left: 22px
     }
-    
-    .p {
-        margin-left: 19px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-}
-    
-    
     .ext_2 {
-        border: 3px solid green;
         position: relative;
-        width: 192px;
-        height: 130px;
-        left: 49px;
+        width: 178px;
+        left: -6px
     }
-    
     .cladding {
-        margin-left: 29px;
+        margin-left: 20px
     }
-    
-    .d {
-        margin-left: 18px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-}
-    
-    
     .ext_3 {
-        border: 3px solid green;
         position: relative;
-        left: 81px;
-        width: 192px;
-        height: 130px;
+        left: 11px;
+        width: 178px
     }
-    
     .garden {
-        margin-left: 27px;
+        margin-left: 14px
     }
-    
     .t {
-        margin-left: 35px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-}
-    
-    
+        margin-left: 10px
+    }
     .ext_4 {
-        border: 3px solid green;
         position: relative;
-        width: 192px;
-        height: 130px;
-        left: 116px;
+        width: 178px;
+        left: 25px
     }
-    
-    .outdoor {
-        margin-left: 29px;
-        height: 90px;
-        margin-top: 10px;
-    }
-    
-    .o {
-        margin-left: 38px;
-        position: relative;
-        bottom: -2px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-    }
-    
     .ext_5 {
-        border: 3px solid green;
         position: relative;
-        left: 150px;
-        width: 192px;
-        height: 130px;
+        left: 42px;
+        width: 178px
     }
-    
-    .fireplace {
-        margin-left: 28px;
-    }
-    
-    .f {
-        margin-left: 45px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-    }
-    
     .ext_6 {
-        border: 3px solid green;
-        position: relative;
-        width: 200px;
-        left: 114px;
+        left: 20px
     }
-    
     .vertical {
-        margin-left: 41px;
-        height: 90px;
-        margin-top: 9px;
+        margin-left: 37px
     }
-    
-    .v {
-        margin-left: 34px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-    }
-    
     .ext_7 {
-        border: 3px solid green;
-        position: relative;
-        width: 200px;
-        left: 157px;
+        left: 38px
     }
-    
-    .water {
-        margin-left: 28px;
-    }
-    
-    .w {
-        margin-left: 28px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
-    }
-    
     .ext_8 {
-        border: 3px solid green;
-        position: relative;
-        width: 200px;
-        left: 197px;
+        left: 56px;
+        height: 136px
     }
-    
-    .bar {
-        margin-left: 43px;
-        width: 90px;
-        height: 90px;
+    .ext_9 {
+        left: 70px
+    }
+    .p {
+        margin-left: -8px
+    }
+    .d {
+        margin-left: -9px
+    }
+    .e {
+        margin-left: 23px
+    }
+    .gallery-int {
+        left: 207px
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:768px) {
+    .ext_1 {
+        width: 130px;
+        height: 105px;
+        left: -19px
+    }
+    .pergolas {
+        margin-left: 13px;
+        width: 70px
+    }
+    .p {
+        margin-left: -12px;
+        font-size: 12px
+    }
+    .ext_2 {
+        width: 130px;
+        height: 105px;
+        left: -1px
+    }
+    .cladding {
+        margin-left: 14px;
+        width: 70px;
+        margin-top: 2px
+    }
+    .d {
+        margin-left: -11px;
+        font-size: 12px
+    }
+    .ext_3 {
+        left: 17px;
+        width: 130px;
+        height: 105px
+    }
+    .garden {
+        margin-left: 12px;
+        width: 70px
+    }
+    .t {
+        margin-left: 9px;
+        font-size: 12px
+    }
+    .ext_4 {
+        width: 130px;
+        height: 105px;
+        left: 38px
+    }
+    .outdoor {
+        margin-left: 16px;
         margin-top: 7px;
+        width: 63px;
+        height: 63px
     }
-    
+    .o {
+        margin-left: 14px;
+        position: relative;
+        bottom: -3px;
+        font-size: 11px
+    }
+    .ext_5 {
+        left: 52px;
+        width: 130px;
+        height: 105px
+    }
+    .fireplace {
+        margin-left: 14px;
+        width: 70px;
+        margin-top: 4px
+    }
+    .f {
+        margin-left: 21px;
+        font-size: 11px
+    }
+    .ext_6 {
+        width: 130px;
+        left: 41px
+    }
+    .vertical {
+        margin-left: -5px;
+        height: 70px;
+        margin-top: 9px
+    }
+    .v {
+        margin-left: 5px;
+        font-size: 12px
+    }
+    .ext_7 {
+        width: 130px;
+        left: 59px;
+        height: 115px
+    }
+    .water {
+        margin-left: 10px;
+        width: 70px;
+        margin-top: 9px
+    }
+    .w {
+        margin-left: 13px;
+        font-size: 12px
+    }
+    .ext_8 {
+        width: 130px;
+        left: 78px;
+        height: 115px
+    }
+    .bar {
+        margin-left: 14px;
+        width: 70px;
+        margin-top: 7px;
+        height: 70px
+    }
     .b {
         position: relative;
-        top: 7px;
-        left: 44px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
+        top: 5px;
+        left: 19px;
+        font-size: 12px
     }
-    
     .ext_9 {
-        border: 3px solid green;
-        position: relative;
-        width: 200px;
-        left: 232px;
+        width: 130px;
+        left: 98px;
+        height: 113px
     }
-    
     .exteriors {
-        margin-left: 31px;
+        margin-left: 11px;
+        width: 70px;
+        margin-top: 6px
     }
-    
     .e {
+        margin-left: -1px;
+        font-size: 12px
+    }
+    .gallery-int {
+        left: 125px
+    }
+    .gallery .gallery-item {
+        float: left
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:576px) {
+    .ext_1 {
+        width: 171px;
+        height: 109px;
+        left: -8px;
+        top: 98px
+    }
+    .pergolas {
+        margin-left: 28px;
+        width: 70px;
+        margin-top: 4px
+    }
+    .p {
+        margin-left: 1px;
+        font-size: 12px
+    }
+    .ext_2 {
+        width: 171px;
+        height: 109px;
+        left: 5px;
+        top: 97px
+    }
+    .cladding {
+        margin-left: 31px;
+        width: 70px;
+        height: 70px;
+        margin-top: 5px
+    }
+    .d {
+        margin-left: 6px;
+        font-size: 12px
+    }
+    .ext_3 {
+        left: 359px;
+        width: 171px;
+        height: 109px;
+        top: -11px
+    }
+    .garden {
+        margin-left: 29px;
+        width: 70px;
+        height: 70px;
+        margin-top: 2px
+    }
+    .t {
+        margin-left: 14px;
+        font-size: 12px
+    }
+    .ext_4 {
+        width: 171px;
+        height: 109px;
+        left: -180px;
+        top: 130px
+    }
+    .outdoor {
+        margin-left: 27px;
+        height: 70px;
+        margin-top: 3px;
+        width: 70px
+    }
+    .o {
+        margin-left: 14px;
+        position: relative;
+        bottom: -4px;
+        font-size: 12px
+    }
+    .ext_5 {
+        left: 176px;
+        width: 171px;
+        height: 109px;
+        top: 22px
+    }
+    .fireplace {
+        margin-left: 27px;
+        width: 70px;
+        height: 70px;
+        margin-top: 9px
+    }
+    .f {
         margin-left: 32px;
-        color: #0F6A07;
-        font-family: 'Roboto Condensed';
+        font-size: 12px
     }
-    
-    @media screen and (max-width: 1200px) and (min-width: 992px) {
-        html,
-        body {
-            margin: 0px;
-            padding: 0px;
-        }
-        .ext_1 {
-            width: 178px;
-            position: relative;
-            left: -19px;
-        }
-        .pergolas {
-            margin-left: 22px;
-        }
-        .ext_2 {
-            position: relative;
-            width: 178px;
-            left: -6px;
-        }
-        .cladding {
-            margin-left: 20px;
-        }
-        .ext_3 {
-            position: relative;
-            left: 11px;
-            width: 178px;
-        }
-        .garden {
-            margin-left: 14px;
-        }
-        .t {
-            margin-left: 10px;
-        }
-        .ext_4 {
-            position: relative;
-            width: 178px;
-            left: 25px;
-        }
-        .ext_5 {
-            position: relative;
-            left: 42px;
-            width: 178px;
-        }
-        .ext_6 {
-            left: 20px;
-        }
-        .vertical {
-            margin-left: 37px;
-        }
-        .ext_7 {
-            left: 38px;
-        }
-        .ext_8 {
-            left: 56px;
-            height: 136px;
-        }
-        .ext_9 {
-            left: 70px;
-        }
-        .p {
-            margin-left: -8px;
-        }
-        .d {
-            margin-left: -9px;
-        }
-        .e {
-            margin-left: 23px;
-        }
-        .gallery-int {
-            left: 207px;
-        }
+    .ext_6 {
+        left: 360px;
+        width: 171px;
+        height: 109px;
+        top: -127px
     }
-    
-    @media screen and (max-width: 992px) and (min-width: 768px) {
-        .ext_1 {
-            width: 130px;
-            height: 105px;
-            left: -19px;
-        }
-        .pergolas {
-            margin-left: 13px;
-            width: 70px;
-        }
-        .p {
-            margin-left: -12px;
-            font-size: 12px;
-        }
-        .ext_2 {
-            width: 130px;
-            height: 105px;
-            left: -1px;
-        }
-        .cladding {
-            margin-left: 14px;
-            width: 70px;
-            margin-top: 2px;
-        }
-        .d {
-            margin-left: -11px;
-            font-size: 12px;
-        }
-        .ext_3 {
-            left: 17px;
-            width: 130px;
-            height: 105px;
-        }
-        .garden {
-            margin-left: 12px;
-            width: 70px;
-        }
-        .t {
-            margin-left: 9px;
-            font-size: 12px;
-        }
-        .ext_4 {
-            width: 130px;
-            height: 105px;
-            left: 38px;
-        }
-        .outdoor {
-            margin-left: 16px;
-            margin-top: 7px;
-            width: 63px;
-            height: 63px;
-        }
-        .o {
-            margin-left: 14px;
-            position: relative;
-            bottom: -3px;
-            font-size: 11px;
-        }
-        .ext_5 {
-            left: 52px;
-            width: 130px;
-            height: 105px;
-        }
-        .fireplace {
-            margin-left: 14px;
-            width: 70px;
-            margin-top: 4px;
-        }
-        .f {
-            margin-left: 21px;
-            font-size: 11px;
-        }
-        .ext_6 {
-            width: 130px;
-            left: 41px;
-        }
-        .vertical {
-            margin-left: -5px;
-            height: 70px;
-            margin-top: 9px;
-        }
-        .v {
-            margin-left: 5px;
-            font-size: 12px;
-        }
-        .ext_7 {
-            width: 130px;
-            left: 59px;
-            height: 115px;
-        }
-        .water {
-            margin-left: 10px;
-            width: 70px;
-            margin-top: 9px;
-        }
-        .w {
-            margin-left: 13px;
-            font-size: 12px;
-        }
-        .ext_8 {
-            width: 130px;
-            left: 78px;
-            height: 115px;
-        }
-        .bar {
-            margin-left: 14px;
-            width: 70px;
-            margin-top: 7px;
-            height: 70px;
-        }
-        .b {
-            position: relative;
-            top: 5px;
-            left: 19px;
-            font-size: 12px;
-        }
-        .ext_9 {
-            width: 130px;
-            left: 98px;
-            height: 113px;
-        }
-        .exteriors {
-            margin-left: 11px;
-            width: 70px;
-            margin-top: 6px;
-        }
-        .e {
-            margin-left: -1px;
-            font-size: 12px;
-        }
-        .gallery-int {
-            left: 125px;
-        }
-        .gallery .gallery-item{
-            float: left;
-        }
+    .vertical {
+        margin-left: 41px;
+        height: 70px;
+        margin-top: 9px;
+        width: 70px
     }
-    
-    @media screen and (max-width: 768px) and (min-width: 576px) {
-        .ext_1 {
-            width: 171px;
-            height: 109px;
-            left: -8px;
-            top: 98px;
-        }
-        .pergolas {
-            margin-left: 28px;
-            width: 70px;
-            margin-top: 4px;
-        }
-        .p {
-            margin-left: 1px;
-            font-size: 12px;
-        }
-        .ext_2 {
-            width: 171px;
-            height: 109px;
-            left: 5px;
-            top: 97px;
-        }
-        .cladding {
-            margin-left: 31px;
-            width: 70px;
-            height: 70px;
-            margin-top: 5px;
-        }
-        .d {
-            margin-left: 6px;
-            font-size: 12px;
-        }
-        .ext_3 {
-            left: 359px;
-            width: 171px;
-            height: 109px;
-            top: -11px;
-        }
-        .garden {
-            margin-left: 29px;
-            width: 70px;
-            height: 70px;
-            margin-top: 2px;
-        }
-        .t {
-            margin-left: 14px;
-            font-size: 12px;
-        }
-        .ext_4 {
-            width: 171px;
-            height: 109px;
-            left: -180px;
-            top: 130px;
-        }
-        .outdoor {
-            margin-left: 27px;
-            height: 70px;
-            margin-top: 3px;
-            width: 70px;
-        }
-        .o {
-            margin-left: 14px;
-            position: relative;
-            bottom: -4px;
-            font-size: 12px;
-        }
-        .ext_5 {
-            left: 176px;
-            width: 171px;
-            height: 109px;
-            top: 22px;
-        }
-        .fireplace {
-            margin-left: 27px;
-            width: 70px;
-            height: 70px;
-            margin-top: 9px;
-        }
-        .f {
-            margin-left: 32px;
-            font-size: 12px;
-        }
-        .ext_6 {
-            left: 360px;
-            width: 171px;
-            height: 109px;
-            top: -127px;
-        }
-        .vertical {
-            margin-left: 41px;
-            height: 70px;
-            margin-top: 9px;
-            width: 70px;
-        }
-        .v {
-            margin-left: 24px;
-            font-size: 12px;
-        }
-        .ext_7 {
-            width: 171px;
-            left: -181px;
-            height: 109px;
-            top: 10px;
-        }
-        .water {
-            margin-left: 23px;
-            width: 70px;
-            height: 70px;
-            margin-top: 4px;
-        }
-        .w {
-            margin-left: 12px;
-        }
-        .ext_8 {
-            width: 171px;
-            left: 176px;
-            height: 109px;
-            bottom: 99px;
-        }
-        .bar {
-            margin-left: 32px;
-            width: 70px;
-            height: 65px;
-            margin-top: 7px;
-        }
-        .b {
-            position: relative;
-            top: 5px;
-            left: 30px;
-            font-size: 12px;
-        }
-        .ext_9 {
-            width: 171px;
-            left: 191px;
-            height: 109px;
-            bottom: 99px;
-        }
-        .exteriors {
-            margin-left: 39px;
-            width: 70px;
-            height: 70px;
-        }
-        .e {
-            margin-left: 16px;
-            font-size: 12px;
-        }
-        .footer_2 {
-            margin-top: -100px;
-        }
-        .gallery-int {
-            position: initial;
-            left: 0px;
-            top: 0px;
-        }
-        /* .backyard {
-            position: absolute;
-            width: 95%;
-            top: 7px;
-        } */
-        .features_section {
-            margin-top: -85px;
-        }
+    .v {
+        margin-left: 24px;
+        font-size: 12px
     }
-    
-    @media screen and (max-width: 575px) and (min-width: 475px) {
-        .ext_1 {
-            width: 142px;
-            height: 100px;
-            left: -1px;
-        }
-        .pergolas {
-            margin-left: 19px;
-            width: 61px;
-            margin-top: 4px;
-        }
-        .p {
-            margin-left: -12px;
-            font-size: 11px;
-        }
-        .ext_2 {
-            width: 142px;
-            height: 100px;
-            left: 10px;
-            top: -1px;
-        }
-        .cladding {
-            margin-left: 20px;
-            width: 55px;
-            height: 57px;
-            margin-top: 8px;
-        }
-        .d {
-            margin-left: -13px;
-            font-size: 11px;
-        }
-        .ext_3 {
-            left: 22px;
-            width: 142px;
-            height: 100px;
-            top: -1px;
-        }
-        .garden {
-            margin-left: 12px;
-            width: 75px;
-            height: 62px;
-            margin-top: 3px;
-        }
-        .t {
-            margin-left: 4px;
-            font-size: 11px;
-        }
-        .ext_4 {
-            width: 142px;
-            height: 100px;
-            left: -1px;
-            top: 20px;
-        }
-        .outdoor {
-            margin-left: 21px;
-            height: 58px;
-            margin-top: 7px;
-            width: 60px;
-        }
-        .o {
-            margin-left: 9px;
-            position: relative;
-            bottom: -4px;
-            font-size: 11px;
-        }
-        .ext_5 {
-            left: 10px;
-            width: 142px;
-            height: 100px;
-            top: 19px;
-        }
-        .fireplace {
-            margin-left: 18px;
-            width: 60px;
-            height: 60px;
-            margin-top: 9px;
-        }
-        .f {
-            margin-left: 16px;
-            font-size: 12px;
-        }
-        .ext_6 {
-            left: 305px;
-            width: 142px;
-            height: 100px;
-            top: -121px;
-        }
-        .vertical {
-            margin-left: 22px;
-            height: 55px;
-            margin-top: 13px;
-            width: 57px;
-        }
-        .v {
-            margin-left: 1px;
-            font-size: 12px;
-        }
-        .ext_7 {
-            width: 142px;
-            left: -143px;
-            height: 100px;
-            top: 8px;
-        }
-        .water {
-            margin-left: 12px;
-            width: 60px;
-            height: 58px;
-            margin-top: 9px;
-        }
-        .w {
-            margin-left: 1px;
-            font-size: 12px;
-        }
-        .ext_8 {
-            width: 142px;
-            left: -131px;
-            height: 100px;
-            bottom: -8px;
-        }
-        .bar {
-            margin-left: 26px;
-            width: 54px;
-            height: 44px;
-            margin-top: 18px;
-        }
-        .b {
-            position: relative;
-            top: 5px;
-            left: 12px;
-            font-size: 12px;
-        }
-        .ext_9 {
-            width: 142px;
-            left: 309px;
-            height: 100px;
-            bottom: 91px;
-        }
-        .exteriors {
-            margin-left: 16px;
-            width: 60px;
-            height: 61px;
-            margin-top: 4px;
-        }
-        .e {
-            margin-left: -9px;
-            font-size: 12px;
-        }
-        .img-fluid {
-            margin-top: 9px;
-        }
-        .footer_2 {
-            margin-top: -99px;
-        }
-        .gallery-int {
-            position: initial;
-            left: 0px;
-            top: 0px;
-        }
+    .ext_7 {
+        width: 171px;
+        left: -181px;
+        height: 109px;
+        top: 10px
     }
-    
-    @media screen and (max-width: 475px) and (min-width: 425px) {
-        /* html,
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        } */
-        .ext_1 {
-            width: 127px;
-            height: 100px;
-            left: -1px;
-        }
-        .pergolas {
-            margin-left: 14px;
-            width: 64px;
-            margin-top: 4px;
-        }
-        .p {
-            margin-left: -6px;
-            font-size: 9px;
-        }
-        .ext_2 {
-            width: 127px;
-            height: 100px;
-            left: 10px;
-            top: -1px;
-        }
-        .cladding {
-            margin-left: 14px;
-            width: 55px;
-            height: 57px;
-            margin-top: 12px;
-        }
-        .d {
-            margin-left: -6px;
-            font-size: 9px;
-        }
-        .ext_3 {
-            left: 21px;
-            width: 127px;
-            height: 100px;
-            top: -1px;
-        }
-        .garden {
-            margin-left: 6px;
-            width: 75px;
-            height: 62px;
-            margin-top: 3px;
-        }
-        .t {
-            margin-left: 9px;
-            font-size: 9px;
-        }
-        .ext_4 {
-            width: 127px;
-            height: 100px;
-            left: -1px;
-            top: 21px;
-        }
-        .outdoor {
-            margin-left: 17px;
-            height: 58px;
-            margin-top: 7px;
-            width: 60px;
-        }
-        .o {
-            margin-left: 9px;
-            position: relative;
-            bottom: -4px;
-            font-size: 10px;
-        }
-        .ext_5 {
-            left: 10px;
-            width: 127px;
-            height: 100px;
-            top: 21px;
-        }
-        .fireplace {
-            margin-left: 13px;
-            width: 60px;
-            height: 60px;
-            margin-top: 9px;
-        }
-        .f {
-            margin-left: 15px;
-            font-size: 10px;
-        }
-        .ext_6 {
-            left: 275px;
-            width: 127px;
-            height: 100px;
-            top: -119px;
-        }
-        .vertical {
-            margin-left: 13px;
-            height: 55px;
-            margin-top: 13px;
-            width: 57px;
-        }
-        .v {
-            margin-left: 1px;
-            font-size: 10px;
-        }
-        .ext_7 {
-            width: 127px;
-            left: -128px;
-            height: 100px;
-            top: 8px;
-        }
-        .water {
-            margin-left: 7px;
-            width: 60px;
-            height: 58px;
-            margin-top: 9px;
-        }
-        .w {
-            margin-left: 1px;
-            font-size: 10px;
-        }
-        .ext_8 {
-            width: 127px;
-            left: -116px;
-            height: 100px;
-            bottom: -8px;
-        }
-        .bar {
-            margin-left: 15px;
-            width: 54px;
-            height: 44px;
-            margin-top: 20px;
-        }
-        .b {
-            position: relative;
-            top: 5px;
-            left: 11px;
-            font-size: 10px;
-        }
-        .ext_9 {
-            width: 127px;
-            left: 274px;
-            height: 100px;
-            bottom: 92px;
-        }
-        .exteriors {
-            margin-left: 11px;
-            width: 60px;
-            height: 61px;
-            margin-top: 7px;
-        }
-        .e {
-            margin-left: -5px;
-            font-size: 10px;
-        }
-        .img-fluid {
-            margin-top: 9px;
-        }
-        .footer_2 {
-            margin-top: -99px;
-        }
-        .gallery-int {
-            position: initial;
-            left: 0px;
-            top: 0px;
-        }
+    .water {
+        margin-left: 23px;
+        width: 70px;
+        height: 70px;
+        margin-top: 4px
     }
-    
-    @media screen and (max-width: 425px) and (min-width: 381px) {
-        .ext_1 {
-            width: 342px;
-            height: 107px;
-            left: 4px;
-            bottom: 6px;
-        }
-        .pergolas {
-            margin-left: 113px;
-            width: 76px;
-        }
-        .p {
-            margin-left: 88px;
-            font-size: 14px;
-        }
-        .ext_2 {
-            width: 342px;
-            height: 107px;
-            left: 4px;
-            top: 13px;
-        }
-        .cladding {
-            margin-left: 113px;
-            width: 78px;
-        }
-        .d {
-            margin-left: 91px;
-            font-size: 14px;
-        }
-        .ext_3 {
-            left: 3px;
-            width: 342px;
-            height: 107px;
-            top: 33px;
-        }
-        .garden {
-            margin-left: 119px;
-            width: 71px;
-        }
-        .t {
-            margin-left: 111px;
-        }
-        .ext_4 {
-            width: 342px;
-            height: 107px;
-            left: 3px;
-            top: 56px;
-        }
-        .outdoor {
-            margin-left: 116px;
-            margin-top: 5px;
-            width: 80px;
-            height: 65px;
-        }
-        .o {
-            margin-left: 114px;
-            font-size: 14px;
-        }
-        .ext_5 {
-            left: 3px;
-            width: 342px;
-            height: 107px;
-            top: 80px;
-        }
-        .fireplace {
-            margin-left: 111px;
-            width: 75px;
-        }
-        .f {
-            margin-left: 122px;
-            font-size: 14px;
-        }
-        .ext_6 {
-            width: 342px;
-            top: 65px;
-            left: 3px;
-            height: 107px;
-        }
-        .vertical {
-            margin-left: 116px;
-            height: 68px;
-            margin-top: 9px;
-            width: 72px;
-        }
-        .v {
-            margin-left: 106px;
-            font-size: 14px;
-        }
-        .ext_7 {
-            width: 342px;
-            height: 107px;
-            left: 3px;
-            top: 93px;
-        }
-        .water {
-            margin-left: 102px;
-            width: 85px;
-            height: 74px;
-        }
-        .w {
-            margin-left: 108px;
-            font-size: 14px;
-        }
-        .ext_8 {
-            width: 342px;
-            height: 107px;
-            left: 2px;
-            top: 121px;
-        }
-        .bar {
-            margin-left: 114px;
-            width: 74px;
-            height: 57px;
-            margin-top: 12px;
-        }
-        .b {
-            left: 116px;
-            font-size: 14px;
-        }
-        .ext_9 {
-            width: 342px;
-            top: 149px;
-            left: 2px;
-        }
-        .exteriors {
-            margin-left: 108px;
-            width: 88px;
-        }
-        .e {
-            margin-left: 100px;
-            font-size: 14px;
-        }
-        .img-fluid {
-            margin-top: 9px;
-        }
-        .footer_1 {
-            margin-top: 495px;
-        }
-        .footer_2 {
-            margin-top: -316px;
-        }
-        .gallery-int {
-            left: 0px;
-            top: 0px;
-        }
+    .w {
+        margin-left: 12px
     }
-    
-    @media screen and (max-width: 380px) and (min-width: 320px) {
-        .ext_1 {
-            width: 285px;
-            height: 107px;
-            left: 4px;
-            bottom: 6px;
-        }
-        .pergolas {
-            margin-left: 92px;
-            width: 76px;
-        }
-        .p {
-            margin-left: 68px;
-            font-size: 14px;
-        }
-        .ext_2 {
-            width: 284px;
-            height: 107px;
-            left: 4px;
-            top: 13px;
-        }
-        .cladding {
-            margin-left: 90px;
-            width: 78px;
-        }
-        .d {
-            margin-left: 70px;
-            font-size: 14px;
-        }
-        .ext_3 {
-            left: 3px;
-            width: 285px;
-            height: 107px;
-            top: 33px;
-        }
-        .garden {
-            margin-left: 91px;
-            width: 71px;
-        }
-        .t {
-            margin-left: 84px;
-        }
-        .ext_4 {
-            width: 283px;
-            height: 107px;
-            left: 3px;
-            top: 56px;
-        }
-        .outdoor {
-            margin-left: 87px;
-            margin-top: 5px;
-            width: 80px;
-            height: 65px;
-        }
-        .o {
-            margin-left: 85px;
-            font-size: 14px;
-        }
-        .ext_5 {
-            left: 3px;
-            width: 284px;
-            height: 107px;
-            top: 80px;
-        }
-        .fireplace {
-            margin-left: 89px;
-            width: 75px;
-        }
-        .f {
-            margin-left: 97px;
-            font-size: 14px;
-        }
-        .ext_6 {
-            width: 285px;
-            top: 65px;
-            left: 3px;
-            height: 107px;
-        }
-        .vertical {
-            margin-left: 88px;
-            height: 68px;
-            margin-top: 9px;
-            width: 72px;
-        }
-        .v {
-            margin-left: 79px;
-            font-size: 14px;
-        }
-        .ext_7 {
-            width: 284px;
-            height: 107px;
-            left: 3px;
-            top: 93px;
-        }
-        .water {
-            margin-left: 79px;
-            width: 85px;
-            height: 74px;
-        }
-        .w {
-            margin-left: 81px;
-            font-size: 14px;
-        }
-        .ext_8 {
-            width: 288px;
-            height: 107px;
-            left: 2px;
-            top: 121px;
-        }
-        .bar {
-            margin-left: 87px;
-            width: 74px;
-            height: 57px;
-            margin-top: 12px;
-        }
-        .b {
-            left: 91px;
-            font-size: 14px;
-        }
-        .ext_9 {
-            width: 289px;
-            top: 149px;
-            left: 2px;
-        }
-        .exteriors {
-            margin-left: 79px;
-            width: 88px;
-        }
-        .e {
-            margin-left: 69px;
-            font-size: 14px;
-        }
-        .img-fluid {
-            margin-top: 9px;
-        }
-        .footer_1 {
-            margin-top: 495px;
-        }
-        .footer_2 {
-            margin-top: -316px;
-        }
-        .gallery-int {
-            left: 0px;
-            top: 0px;
-        }
+    .ext_8 {
+        width: 171px;
+        left: 176px;
+        height: 109px;
+        bottom: 99px
     }
-    /*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-    
-    .services .icon-box {
-        text-align: center;
-        padding: 70px 20px 80px 20px;
-        transition: all ease-in-out 0.3s;
-        background: #fff;
-        box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+    .bar {
+        margin-left: 32px;
+        width: 70px;
+        height: 65px;
+        margin-top: 7px
     }
-    
-    .services .icon-box .icon {
-        margin: 0 auto;
-        width: 100px;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: ease-in-out 0.3s;
+    .b {
         position: relative;
+        top: 5px;
+        left: 30px;
+        font-size: 12px
     }
-    
-    .services .icon-box .icon i {
-        font-size: 36px;
-        transition: 0.5s;
-        position: relative;
+    .ext_9 {
+        width: 171px;
+        left: 191px;
+        height: 109px;
+        bottom: 99px
     }
-    
-    .services .icon-box .icon svg {
-        position: absolute;
-        top: 0;
+    .exteriors {
+        margin-left: 39px;
+        width: 70px;
+        height: 70px
+    }
+    .e {
+        margin-left: 16px;
+        font-size: 12px
+    }
+    .footer_2 {
+        margin-top: -100px
+    }
+    .gallery-int {
+        position: initial;
         left: 0;
+        top: 0
     }
-    
-    .services .icon-box .icon svg path {
-        transition: 0.5s;
-        fill: #f5f5f5;
+    .features_section {
+        margin-top: -85px
     }
-    
-    .services .icon-box h4 {
-        font-weight: 600;
-        margin: 10px 0 15px 0;
-        font-size: 22px;
-    }
-    
-    .services .icon-box h4 a {
-        color: #222222;
-        transition: ease-in-out 0.3s;
-    }
-    
-    .services .icon-box p {
-        line-height: 24px;
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-    
-    .services .icon-box:hover {
-        border-color: #fff;
-        box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-    }
-    
-    .services .iconbox-blue i {
-        color: #47aeff;
-    }
-    
-    .services .iconbox-blue:hover .icon i {
-        color: #fff;
-    }
-    
-    .services .iconbox-blue:hover .icon path {
-        fill: #47aeff;
-    }
-    
-    .services .iconbox-orange i {
-        color: #ffa76e;
-    }
-    
-    .services .iconbox-orange:hover .icon i {
-        color: #fff;
-    }
-    
-    .services .iconbox-orange:hover .icon path {
-        fill: #ffa76e;
-    }
-    
-    .services .iconbox-pink i {
-        color: #e80368;
-    }
-    
-    .services .iconbox-pink:hover .icon i {
-        color: #fff;
-    }
-    
-    .services .iconbox-pink:hover .icon path {
-        fill: #e80368;
-    }
-    
-    .services .iconbox-yellow i {
-        color: #ffbb2c;
-    }
-    
-    .services .iconbox-yellow:hover .icon i {
-        color: #fff;
-    }
-    
-    .services .iconbox-yellow:hover .icon path {
-        fill: #ffbb2c;
-    }
-    
-    .services .iconbox-red i {
-        color: #ff5828;
-    }
-    
-    .services .iconbox-red:hover .icon i {
-        color: #fff;
-    }
-    
-    .services .iconbox-red:hover .icon path {
-        fill: #ff5828;
-    }
-    
-    .services .iconbox-teal i {
-        color: #11dbcf;
-    }
-    
-    .services .iconbox-teal:hover .icon i {
-        color: #fff;
-    }
-    
-    .services .iconbox-teal:hover .icon path {
-        fill: #11dbcf;
-    }
-    
-    .text-uppercase {
-        color: #000;
-        font-family: 'Montserrat';
-    }
-    
-    
-    .text-reset a:hover {
-        color: #14db48;
-    }
-    /*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-    
-    .contact .info {
-        border-top: 3px solid #5cb874;
-        border-bottom: 3px solid #5cb874;
-        padding: 30px;
-        background: #fff;
-        width: 100%;
-        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-    }
-    
-    .contact .info i {
-        font-size: 20px;
-        color: #5cb874;
-        float: left;
-        width: 44px;
-        height: 44px;
-        background: #eaf6ed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50px;
-        transition: all 0.3s ease-in-out;
-    }
-    
-    .contact .info h4 {
-        padding: 0 0 0 60px;
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 5px;
-        color: #222222;
-    }
-    
-    .contact .info p {
-        padding: 0 0 10px 60px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        color: #555555;
-    }
-    
-    .contact .info .social-links {
-        padding-left: 60px;
-    }
-    
-    .contact .info .social-links a {
-        font-size: 18px;
-        display: inline-block;
-        background: #333;
-        color: #fff;
-        line-height: 1;
-        padding: 8px 0;
-        border-radius: 50%;
-        text-align: center;
-        width: 36px;
-        height: 36px;
-        transition: 0.3s;
-        margin-right: 10px;
-    }
-    
-    .contact .info .social-links a:hover {
-        background: #5cb874;
-        color: #fff;
-    }
-    
-    .contact .info .email:hover i,
-    .contact .info .address:hover i,
-    .contact .info .phone:hover i {
-        background: #5cb874;
-        color: #fff;
-    }
-    
-    .contact .php-email-form {
-        width: 100%;
-        border-top: 3px solid #14db48;
-        border-bottom: 3px solid #14db48;
-        padding: 30px;
-        background: #fff;
-        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-    }
-    
-    .contact .php-email-form .form-group {
-        padding-bottom: 8px;
-    }
-    
-    .contact .php-email-form .error-message {
-        display: none;
-        color: #fff;
-        background: #ed3c0d;
-        text-align: left;
-        padding: 15px;
-        font-weight: 600;
-    }
-    
-    .contact .php-email-form .error-message br+br {
-        margin-top: 25px;
-    }
-    
-    .contact .php-email-form .sent-message {
-        display: none;
-        color: #fff;
-        background: #18d26e;
-        text-align: center;
-        padding: 15px;
-        font-weight: 600;
-    }
-    
-    .contact .php-email-form .loading {
-        display: none;
-        background: #fff;
-        text-align: center;
-        padding: 15px;
-    }
-    
-    .contact .php-email-form .loading:before {
-        content: "";
-        display: inline-block;
-        border-radius: 50%;
-        width: 24px;
-        height: 24px;
-        margin: 0 10px -6px 0;
-        border: 3px solid #18d26e;
-        border-top-color: #eee;
-        -webkit-animation: animate-loading 1s linear infinite;
-        animation: animate-loading 1s linear infinite;
-    }
-    
-    .contact .php-email-form input,
-    .contact .php-email-form textarea {
-        border-radius: 0;
-        box-shadow: none;
-        font-size: 14px;
-        border-radius: 4px;
-    }
-    
-    .contact .php-email-form input:focus,
-    .contact .php-email-form textarea:focus {
-        border-color: #14db48;
-    }
-    
-    .contact .php-email-form input {
-        height: 44px;
-    }
-    
-    .contact .php-email-form textarea {
-        padding: 10px 12px;
-    }
-    
-    .contact .php-email-form button[type="submit"] {
-        background: #14db48;
-        border: 0;
-        padding: 10px 24px;
-        color: #fff;
-        transition: 0.4s;
-        border-radius: 4px;
-    }
-    
-    .contact .php-email-form button[type="submit"]:hover {
-        background: #6ec083;
-    }
-    
-    @-webkit-keyframes animate-loading {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-    
-    @keyframes animate-loading {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-    /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-    
-    .breadcrumbs {
-        padding: 15px 0;
-        background: #fbfbfb;
-        min-height: 40px;
-    }
-    
-    @media (max-width: 992px) {
-        .breadcrumbs {
-            margin-top: 66px;
-        }
-    }
-    
-    .breadcrumbs h2 {
-        font-size: 28px;
-        font-weight: 300;
-    }
-    
-    .breadcrumbs ol {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        font-size: 14px;
-    }
-    
-    .breadcrumbs ol li+li {
-        padding-left: 10px;
-    }
-    
-    .breadcrumbs ol li+li::before {
-        display: inline-block;
-        padding-right: 10px;
-        color: #3c3c3c;
-        content: "/";
-    }
-    
-    @media (max-width: 768px) {
-        .breadcrumbs .d-flex {
-            display: block !important;
-        }
-        .breadcrumbs ol {
-            display: block;
-        }
-        .breadcrumbs ol li {
-            display: inline-block;
-        }
-        .b2 {
-            margin-top: 5px;
-        }
-    }
-    
-    @media(max-width:375px) {
-        .b2 {
-            margin-top: 5px;
-        }
-    }
-    /*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-    
-    #footer {
-        background: #0909091f;
-        color: #000;
-        font-size: 14px;
-        text-align: center;
-        /* padding: 30px 0; */
-    }
-    
-    .img-responsive {
-        width: 10rem;
-    }
-    
-    #footer h3 {
-        font-size: 30px;
-        font-weight: 400;
-        color: rgb(94, 85, 85);
-        position: relative;
-        font-family: 'Roboto Condensed',sans-serif;
-        padding: 0;
-        margin: 0 0 15px 0;
-    }
-    
-    #footer p {
-        font-size: 15px;
-        font-family: 'Roboto Condensed';
-        bottom: 4px;
-        position: relative;
-        color: #000;
-        padding: 0;
-        margin: -10 0 40px 0;
-    }
-    
-    #footer .social-links {
-        margin: 0 0 40px 0;
-    }
-    
-    #footer .social-links a {
-        font-size: 18px;
-        display: inline-block;
-        background: #5cb874;
-        color: #fff;
-        line-height: 1;
-        padding: 8px 0;
-        margin-right: 4px;
-        border-radius: 50%;
-        text-align: center;
-        width: 36px;
-        height: 36px;
-        transition: 0.3s;
-    }
-    
-    #footer .social-links a:hover {
-        background: #449d5b;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-    #footer .copyright {
-        margin: 0 0 5px 0;
-    }
-    
-    #footer .credits {
-        font-size: 13px;
-    }
-    
-    .copyright span {
-        color: #14db48
-    }
-    
-    .copyright strong {
-        color: rgb(30, 9, 105)
-    }
-    
-    .address h3 b {
-        color: rgb(30, 9, 105);
-    }
-    
-    .address p {
-        margin: -10px 0 40px 0;
-    }
-    
-    a.text-reset:hover {
-        color: #14db48!important;
-    }
-    
-    .text-reset {
-        color: black!important;
-        text-decoration: none;
-        font-family: 'Roboto Condensed';
-        position: relative;
-        top: 0px;
-    }
-    /* ****************************   Whatsapp css   ************************************************** */
+}
 
-    .whatsapp{
-        position:fixed;
-        left:10px;
-        bottom:10px;
+@media screen and (max-width:575px) and (min-width:475px) {
+    .ext_1 {
+        width: 142px;
+        height: 100px;
+        left: -1px
+    }
+    .pergolas {
+        margin-left: 19px;
+        width: 61px;
+        margin-top: 4px
+    }
+    .p {
+        margin-left: -12px;
+        font-size: 11px
+    }
+    .ext_2 {
+        width: 142px;
+        height: 100px;
+        left: 10px;
+        top: -1px
+    }
+    .cladding {
+        margin-left: 20px;
+        width: 55px;
+        height: 57px;
+        margin-top: 8px
+    }
+    .d {
+        margin-left: -13px;
+        font-size: 11px
+    }
+    .ext_3 {
+        left: 22px;
+        width: 142px;
+        height: 100px;
+        top: -1px
+    }
+    .garden {
+        margin-left: 12px;
+        width: 75px;
+        height: 62px;
+        margin-top: 3px
+    }
+    .t {
+        margin-left: 4px;
+        font-size: 11px
+    }
+    .ext_4 {
+        width: 142px;
+        height: 100px;
+        left: -1px;
+        top: 20px
+    }
+    .outdoor {
+        margin-left: 21px;
+        height: 58px;
+        margin-top: 7px;
+        width: 60px
+    }
+    .o {
+        margin-left: 9px;
+        position: relative;
+        bottom: -4px;
+        font-size: 11px
+    }
+    .ext_5 {
+        left: 10px;
+        width: 142px;
+        height: 100px;
+        top: 19px
+    }
+    .fireplace {
+        margin-left: 18px;
         width: 60px;
-        height:60px;
-    }
-    .whatsapp_image{
-        width:60px;
         height: 60px;
+        margin-top: 9px
     }
-   
-
-    .p-4 {
-        padding: 1.5rem!important;
-        font-family: 'Roboto Condensed';
+    .f {
+        margin-left: 16px;
+        font-size: 12px
     }
-
-    /************************************PROJECT CSS******************************************************/
-    .portfolio #portfolio-flters {
-        list-style: none;
-        margin-bottom: 42px;
-      }
-
-    .portfolio-img img{
-
-        width:360px;
-        height:300px;
-
+    .ext_6 {
+        left: 305px;
+        width: 142px;
+        height: 100px;
+        top: -121px
     }
-
-    .section-title-1 h2{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 32px;
-        font-weight: bold;
-        color: #000;
-        text-transform: uppercase;
-        text-align: center;
-        padding-bottom: 30px;
-    }  
-      
-      .portfolio #portfolio-flters li {
-        cursor: pointer;
-        display: inline-block;
-        margin: 10px 5px;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 1;
-        color: #444444;
-        transition: all 0.3s;
-        padding: 8px 20px;
-        border-radius: 50px;
-        font-family: "Poppins", sans-serif;
-      }
-      
-      .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-        background:#14db48;
-        color: #fff;
-      }
-      
-      .portfolio .portfolio-item {
-        margin-bottom: 30px;
-      }
-      
-      .portfolio .portfolio-item .portfolio-img {
-        overflow: hidden;
-      }
-      
-      .portfolio .portfolio-item .portfolio-img img {
-        transition: all 0.6s;
-      }
-      
-      .portfolio .portfolio-item .portfolio-info {
-        opacity: 0;
-        position: absolute;
-        left: 15px;
-        bottom: 0;
-        z-index: 3;
-        right: 15px;
-        transition: all 0.3s;
-        background: rgba(55, 81, 126, 0.8);
-        padding: 10px 15px;
-      }
-      
-      .portfolio .portfolio-item .portfolio-info h4 {
-        font-size: 18px;
-        color: #fff;
-        font-weight: 600;
-        color: #fff;
-        margin-bottom: 0px;
-      }
-      
-      .portfolio .portfolio-item .portfolio-info p {
-        color: #f9fcfe;
-        font-size: 14px;
-        margin-bottom: 0;
-      }
-      
-      .portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
-        position: absolute;
-        right: 40px;
-        font-size: 24px;
-        top: calc(50% - 18px);
-        color: #fff;
-        transition: 0.3s;
-      }
-      
-      .portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
-        color: #47b2e4;
-      }
-      
-      .portfolio .portfolio-item .portfolio-info .details-link {
-        right: 10px;
-      }
-      
-      .portfolio .portfolio-item:hover .portfolio-img img {
-        transform: scale(1.15);
-      }
-      
-      .portfolio .portfolio-item:hover .portfolio-info {
-        opacity: 1;
-      }
-      
-      /*--------------------------------------------------------------
-      # Portfolio Details
-      --------------------------------------------------------------*/
-      .portfolio-details {
-        padding-top: 40px;
-      }
-      
-      .portfolio-details .portfolio-details-slider img {
-        width: 100%;
-      }
-      
-      .portfolio-details .portfolio-details-slider .swiper-pagination {
-        margin-top: 20px;
+    .vertical {
+        margin-left: 22px;
+        height: 55px;
+        margin-top: 13px;
+        width: 57px
+    }
+    .v {
+        margin-left: 1px;
+        font-size: 12px
+    }
+    .ext_7 {
+        width: 142px;
+        left: -143px;
+        height: 100px;
+        top: 8px
+    }
+    .water {
+        margin-left: 12px;
+        width: 60px;
+        height: 58px;
+        margin-top: 9px
+    }
+    .w {
+        margin-left: 1px;
+        font-size: 12px
+    }
+    .ext_8 {
+        width: 142px;
+        left: -131px;
+        height: 100px;
+        bottom: -8px
+    }
+    .bar {
+        margin-left: 26px;
+        width: 54px;
+        height: 44px;
+        margin-top: 18px
+    }
+    .b {
         position: relative;
-      }
-      
-      .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: #fff;
-        opacity: 1;
-        border: 1px solid #47b2e4;
-      }
-      
-      .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-        background-color: #47b2e4;
-      }
-      
-      .portfolio-details .portfolio-info {
-        padding: 30px;
-        box-shadow: 0px 0 30px rgba(55, 81, 126, 0.08);
-      }
-      
-      .portfolio-details .portfolio-info h3 {
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
-      }
-      
-      .portfolio-details .portfolio-info ul {
-        list-style: none;
-        padding: 0;
-        font-size: 15px;
-      }
-      
-      .portfolio-details .portfolio-info ul li + li {
-        margin-top: 10px;
-      }
-      
-      .portfolio-details .portfolio-description {
-        padding-top: 30px;
-      }
-      
-      .portfolio-details .portfolio-description h2 {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 20px;
-      }
-      
-      .portfolio-details .portfolio-description p {
-        padding: 0;
-      }
-      
+        top: 5px;
+        left: 12px;
+        font-size: 12px
+    }
+    .ext_9 {
+        width: 142px;
+        left: 309px;
+        height: 100px;
+        bottom: 91px
+    }
+    .exteriors {
+        margin-left: 16px;
+        width: 60px;
+        height: 61px;
+        margin-top: 4px
+    }
+    .e {
+        margin-left: -9px;
+        font-size: 12px
+    }
+    .img-fluid {
+        margin-top: 9px
+    }
+    .footer_2 {
+        margin-top: -99px
+    }
+    .gallery-int {
+        position: initial;
+        left: 0;
+        top: 0
+    }
+}
+
+@media screen and (max-width:475px) and (min-width:425px) {
+    .ext_1 {
+        width: 127px;
+        height: 100px;
+        left: -1px
+    }
+    .pergolas {
+        margin-left: 14px;
+        width: 64px;
+        margin-top: 4px
+    }
+    .p {
+        margin-left: -6px;
+        font-size: 9px
+    }
+    .ext_2 {
+        width: 127px;
+        height: 100px;
+        left: 10px;
+        top: -1px
+    }
+    .cladding {
+        margin-left: 14px;
+        width: 55px;
+        height: 57px;
+        margin-top: 12px
+    }
+    .d {
+        margin-left: -6px;
+        font-size: 9px
+    }
+    .ext_3 {
+        left: 21px;
+        width: 127px;
+        height: 100px;
+        top: -1px
+    }
+    .garden {
+        margin-left: 6px;
+        width: 75px;
+        height: 62px;
+        margin-top: 3px
+    }
+    .t {
+        margin-left: 9px;
+        font-size: 9px
+    }
+    .ext_4 {
+        width: 127px;
+        height: 100px;
+        left: -1px;
+        top: 21px
+    }
+    .outdoor {
+        margin-left: 17px;
+        height: 58px;
+        margin-top: 7px;
+        width: 60px
+    }
+    .o {
+        margin-left: 9px;
+        position: relative;
+        bottom: -4px;
+        font-size: 10px
+    }
+    .ext_5 {
+        left: 10px;
+        width: 127px;
+        height: 100px;
+        top: 21px
+    }
+    .fireplace {
+        margin-left: 13px;
+        width: 60px;
+        height: 60px;
+        margin-top: 9px
+    }
+    .f {
+        margin-left: 15px;
+        font-size: 10px
+    }
+    .ext_6 {
+        left: 275px;
+        width: 127px;
+        height: 100px;
+        top: -119px
+    }
+    .vertical {
+        margin-left: 13px;
+        height: 55px;
+        margin-top: 13px;
+        width: 57px
+    }
+    .v {
+        margin-left: 1px;
+        font-size: 10px
+    }
+    .ext_7 {
+        width: 127px;
+        left: -128px;
+        height: 100px;
+        top: 8px
+    }
+    .water {
+        margin-left: 7px;
+        width: 60px;
+        height: 58px;
+        margin-top: 9px
+    }
+    .w {
+        margin-left: 1px;
+        font-size: 10px
+    }
+    .ext_8 {
+        width: 127px;
+        left: -116px;
+        height: 100px;
+        bottom: -8px
+    }
+    .bar {
+        margin-left: 15px;
+        width: 54px;
+        height: 44px;
+        margin-top: 20px
+    }
+    .b {
+        position: relative;
+        top: 5px;
+        left: 11px;
+        font-size: 10px
+    }
+    .ext_9 {
+        width: 127px;
+        left: 274px;
+        height: 100px;
+        bottom: 92px
+    }
+    .exteriors {
+        margin-left: 11px;
+        width: 60px;
+        height: 61px;
+        margin-top: 7px
+    }
+    .e {
+        margin-left: -5px;
+        font-size: 10px
+    }
+    .img-fluid {
+        margin-top: 9px
+    }
+    .footer_2 {
+        margin-top: -99px
+    }
+    .gallery-int {
+        position: initial;
+        left: 0;
+        top: 0
+    }
+}
+
+@media screen and (max-width:425px) and (min-width:381px) {
+    .ext_1 {
+        width: 342px;
+        height: 107px;
+        left: 4px;
+        bottom: 6px
+    }
+    .pergolas {
+        margin-left: 113px;
+        width: 76px
+    }
+    .p {
+        margin-left: 88px;
+        font-size: 14px
+    }
+    .ext_2 {
+        width: 342px;
+        height: 107px;
+        left: 4px;
+        top: 13px
+    }
+    .cladding {
+        margin-left: 113px;
+        width: 78px
+    }
+    .d {
+        margin-left: 91px;
+        font-size: 14px
+    }
+    .ext_3 {
+        left: 3px;
+        width: 342px;
+        height: 107px;
+        top: 33px
+    }
+    .garden {
+        margin-left: 119px;
+        width: 71px
+    }
+    .t {
+        margin-left: 111px
+    }
+    .ext_4 {
+        width: 342px;
+        height: 107px;
+        left: 3px;
+        top: 56px
+    }
+    .outdoor {
+        margin-left: 116px;
+        margin-top: 5px;
+        width: 80px;
+        height: 65px
+    }
+    .o {
+        margin-left: 114px;
+        font-size: 14px
+    }
+    .ext_5 {
+        left: 3px;
+        width: 342px;
+        height: 107px;
+        top: 80px
+    }
+    .fireplace {
+        margin-left: 111px;
+        width: 75px
+    }
+    .f {
+        margin-left: 122px;
+        font-size: 14px
+    }
+    .ext_6 {
+        width: 342px;
+        top: 65px;
+        left: 3px;
+        height: 107px
+    }
+    .vertical {
+        margin-left: 116px;
+        height: 68px;
+        margin-top: 9px;
+        width: 72px
+    }
+    .v {
+        margin-left: 106px;
+        font-size: 14px
+    }
+    .ext_7 {
+        width: 342px;
+        height: 107px;
+        left: 3px;
+        top: 93px
+    }
+    .water {
+        margin-left: 102px;
+        width: 85px;
+        height: 74px
+    }
+    .w {
+        margin-left: 108px;
+        font-size: 14px
+    }
+    .ext_8 {
+        width: 342px;
+        height: 107px;
+        left: 2px;
+        top: 121px
+    }
+    .bar {
+        margin-left: 114px;
+        width: 74px;
+        height: 57px;
+        margin-top: 12px
+    }
+    .b {
+        left: 116px;
+        font-size: 14px
+    }
+    .ext_9 {
+        width: 342px;
+        top: 149px;
+        left: 2px
+    }
+    .exteriors {
+        margin-left: 108px;
+        width: 88px
+    }
+    .e {
+        margin-left: 100px;
+        font-size: 14px
+    }
+    .img-fluid {
+        margin-top: 9px
+    }
+    .footer_1 {
+        margin-top: 495px
+    }
+    .footer_2 {
+        margin-top: -316px
+    }
+    .gallery-int {
+        left: 0;
+        top: 0
+    }
+}
+
+@media screen and (max-width:380px) and (min-width:320px) {
+    .ext_1 {
+        width: 285px;
+        height: 107px;
+        left: 4px;
+        bottom: 6px
+    }
+    .pergolas {
+        margin-left: 92px;
+        width: 76px
+    }
+    .p {
+        margin-left: 68px;
+        font-size: 14px
+    }
+    .ext_2 {
+        width: 284px;
+        height: 107px;
+        left: 4px;
+        top: 13px
+    }
+    .cladding {
+        margin-left: 90px;
+        width: 78px
+    }
+    .d {
+        margin-left: 70px;
+        font-size: 14px
+    }
+    .ext_3 {
+        left: 3px;
+        width: 285px;
+        height: 107px;
+        top: 33px
+    }
+    .garden {
+        margin-left: 91px;
+        width: 71px
+    }
+    .t {
+        margin-left: 84px
+    }
+    .ext_4 {
+        width: 283px;
+        height: 107px;
+        left: 3px;
+        top: 56px
+    }
+    .outdoor {
+        margin-left: 87px;
+        margin-top: 5px;
+        width: 80px;
+        height: 65px
+    }
+    .o {
+        margin-left: 85px;
+        font-size: 14px
+    }
+    .ext_5 {
+        left: 3px;
+        width: 284px;
+        height: 107px;
+        top: 80px
+    }
+    .fireplace {
+        margin-left: 89px;
+        width: 75px
+    }
+    .f {
+        margin-left: 97px;
+        font-size: 14px
+    }
+    .ext_6 {
+        width: 285px;
+        top: 65px;
+        left: 3px;
+        height: 107px
+    }
+    .vertical {
+        margin-left: 88px;
+        height: 68px;
+        margin-top: 9px;
+        width: 72px
+    }
+    .v {
+        margin-left: 79px;
+        font-size: 14px
+    }
+    .ext_7 {
+        width: 284px;
+        height: 107px;
+        left: 3px;
+        top: 93px
+    }
+    .water {
+        margin-left: 79px;
+        width: 85px;
+        height: 74px
+    }
+    .w {
+        margin-left: 81px;
+        font-size: 14px
+    }
+    .ext_8 {
+        width: 288px;
+        height: 107px;
+        left: 2px;
+        top: 121px
+    }
+    .bar {
+        margin-left: 87px;
+        width: 74px;
+        height: 57px;
+        margin-top: 12px
+    }
+    .b {
+        left: 91px;
+        font-size: 14px
+    }
+    .ext_9 {
+        width: 289px;
+        top: 149px;
+        left: 2px
+    }
+    .exteriors {
+        margin-left: 79px;
+        width: 88px
+    }
+    .e {
+        margin-left: 69px;
+        font-size: 14px
+    }
+    .img-fluid {
+        margin-top: 9px
+    }
+    .footer_1 {
+        margin-top: 495px
+    }
+    .footer_2 {
+        margin-top: -316px
+    }
+    .gallery-int {
+        left: 0;
+        top: 0
+    }
+}
+
+.services .icon-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out .3s;
+    background: #fff;
+    box-shadow: 0 5px 90px 0 rgba(110, 123, 131, .1)
+}
+
+.services .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .3s;
+    position: relative
+}
+
+.services .icon-box .icon i {
+    font-size: 36px;
+    transition: .5s;
+    position: relative
+}
+
+.services .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.services .icon-box .icon svg path {
+    transition: .5s;
+    fill: #f5f5f5
+}
+
+.services .icon-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px
+}
+
+.services .icon-box h4 a {
+    color: #222;
+    transition: ease-in-out .3s
+}
+
+.services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+.services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, .08)
+}
+
+.services .iconbox-blue i {
+    color: #47aeff
+}
+
+.services .iconbox-blue:hover .icon i {
+    color: #fff
+}
+
+.services .iconbox-blue:hover .icon path {
+    fill: #47aeff
+}
+
+.services .iconbox-orange i {
+    color: #ffa76e
+}
+
+.services .iconbox-orange:hover .icon i {
+    color: #fff
+}
+
+.services .iconbox-orange:hover .icon path {
+    fill: #ffa76e
+}
+
+.services .iconbox-pink i {
+    color: #e80368
+}
+
+.services .iconbox-pink:hover .icon i {
+    color: #fff
+}
+
+.services .iconbox-pink:hover .icon path {
+    fill: #e80368
+}
+
+.services .iconbox-yellow i {
+    color: #ffbb2c
+}
+
+.services .iconbox-yellow:hover .icon i {
+    color: #fff
+}
+
+.services .iconbox-yellow:hover .icon path {
+    fill: #ffbb2c
+}
+
+.services .iconbox-red i {
+    color: #ff5828
+}
+
+.services .iconbox-red:hover .icon i {
+    color: #fff
+}
+
+.services .iconbox-red:hover .icon path {
+    fill: #ff5828
+}
+
+.services .iconbox-teal i {
+    color: #11dbcf
+}
+
+.services .iconbox-teal:hover .icon i {
+    color: #fff
+}
+
+.services .iconbox-teal:hover .icon path {
+    fill: #11dbcf
+}
+
+.text-uppercase {
+    color: #000;
+    font-family: Montserrat
+}
+
+.text-reset a:hover {
+    color: #14db48
+}
+
+.contact .info {
+    border-top: 3px solid #5cb874;
+    border-bottom: 3px solid #5cb874;
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, .12)
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #5cb874;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #eaf6ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all .3s ease-in-out
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #222
+}
+
+.contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555
+}
+
+.contact .info .social-links {
+    padding-left: 60px
+}
+
+.contact .info .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: .3s;
+    margin-right: 10px
+}
+
+.contact .info .social-links a:hover {
+    background: #5cb874;
+    color: #fff
+}
+
+.contact .info .address:hover i,
+.contact .info .email:hover i,
+.contact .info .phone:hover i {
+    background: #5cb874;
+    color: #fff
+}
+
+.contact .php-email-form {
+    width: 100%;
+    border-top: 3px solid #14db48;
+    border-bottom: 3px solid #14db48;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, .12)
+}
+
+.contact .php-email-form .form-group {
+    padding-bottom: 8px
+}
+
+.contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600
+}
+
+.contact .php-email-form .error-message br+br {
+    margin-top: 25px
+}
+
+.contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600
+}
+
+.contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px
+}
+
+.contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    border-radius: 4px
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+    border-color: #14db48
+}
+
+.contact .php-email-form input {
+    height: 44px
+}
+
+.contact .php-email-form textarea {
+    padding: 10px 12px
+}
+
+.contact .php-email-form button[type=submit] {
+    background: #14db48;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: .4s;
+    border-radius: 4px
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    background: #6ec083
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.breadcrumbs {
+    padding: 15px 0;
+    background: #fbfbfb;
+    min-height: 40px
+}
+
+@media (max-width:992px) {
+    .breadcrumbs {
+        margin-top: 66px
+    }
+}
+
+.breadcrumbs h2 {
+    font-size: 28px;
+    font-weight: 300
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px
+}
+
+.breadcrumbs ol li+li {
+    padding-left: 10px
+}
+
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #3c3c3c;
+    content: "/"
+}
+
+@media (max-width:768px) {
+    .breadcrumbs .d-flex {
+        display: block!important
+    }
+    .breadcrumbs ol {
+        display: block
+    }
+    .breadcrumbs ol li {
+        display: inline-block
+    }
+    .b2 {
+        margin-top: 5px
+    }
+}
+
+@media(max-width:375px) {
+    .b2 {
+        margin-top: 5px
+    }
+}
+
+#footer {
+    background: #0909091f;
+    color: #000;
+    font-size: 14px;
+    text-align: center
+}
+
+.img-responsive {
+    width: 10rem
+}
+
+#footer h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #5e5555;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0
+}
+
+#footer p {
+    font-size: 15px;
+    font-family: 'Roboto Condensed';
+    bottom: 4px;
+    position: relative;
+    color: #000;
+    padding: 0;
+    margin: -10 0 40px 0
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #5cb874;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: .3s
+}
+
+#footer .social-links a:hover {
+    background: #449d5b;
+    color: #fff;
+    text-decoration: none
+}
+
+#footer .copyright {
+    margin: 0 0 5px 0
+}
+
+#footer .credits {
+    font-size: 13px
+}
+
+.copyright span {
+    color: #14db48
+}
+
+.copyright strong {
+    color: #1e0969
+}
+
+.address h3 b {
+    color: #1e0969
+}
+
+.address p {
+    margin: -10px 0 40px 0
+}
+
+a.text-reset:hover {
+    color: #14db48!important
+}
+
+.text-reset {
+    color: #000!important;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    position: relative;
+    top: 0
+}
+
+.whatsapp {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 60px
+}
+
+.whatsapp_image {
+    width: 60px;
+    height: 60px
+}
+
+.p-4 {
+    padding: 1.5rem!important;
+    font-family: 'Roboto Condensed'
+}
+
+
+/* ---------------------------------------------------------------PORTFOLIO SECTION---------------------------------------------------------------- */
+
+.portfolio #portfolio-flters {
+    list-style: none;
+    margin-bottom: 42px;
+}
+
+.portfolio-img img {
+    width: 360px;
+    height: 300px;
+}
+
+.section-title-1 h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444;
+    transition: all .3s;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-family: Poppins, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio #portfolio-flters li.filter-active,
+.portfolio #portfolio-flters li:hover {
+    background: #14db48;
+    color: #fff
+}
+
+.portfolio .portfolio-item {
+    margin-bottom: 30px
+}
+
+.portfolio .portfolio-item .portfolio-img {
+    overflow: hidden
+}
+
+.portfolio .portfolio-item .portfolio-img img {
+    transition: all .6s
+}
+
+.portfolio .portfolio-item .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    right: 0px;
+    transition: all .3s;
+    background: rgba(55, 81, 126, .8);
+}
+
+.portfolio-info {
+    padding: 10px 15px;
+}
+
+.portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.portfolio .portfolio-item .portfolio-info p {
+    color: #f9fcfe;
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link,
+.portfolio .portfolio-item .portfolio-info .preview-link {
+    position: absolute;
+    right: 40px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: #fff;
+    transition: .3s
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link:hover,
+.portfolio .portfolio-item .portfolio-info .preview-link:hover {
+    color: #47b2e4
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+    right: 10px
+}
+
+.portfolio .portfolio-item:hover .portfolio-img img {
+    transform: scale(1.15)
+}
+
+.portfolio .portfolio-item:hover .portfolio-info {
+    opacity: 1
+}
+
+.portfolio-details {
+    padding-top: 40px
+}
+
+.portfolio-details .portfolio-details-slider img {
+    width: 100%
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #47b2e4
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #47b2e4
+}
+
+.portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(55, 81, 126, .08)
+}
+
+.portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee
+}
+
+.portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px
+}
+
+.portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px
+}
+
+.portfolio-details .portfolio-description {
+    padding-top: 30px
+}
+
+.portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px
+}
+
+.portfolio-details .portfolio-description p {
+    padding: 0
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
