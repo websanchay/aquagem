@@ -1,29 +1,30 @@
-
-
-body{
+body {
     margin: 0;
-    font-family: 'poppins',sans-serif;
-  
+    font-family: 'poppins', sans-serif;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
 }
-.container{
+
+.container {
     max-width: 1140px;
     margin: auto;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.section-title{
+.section-title {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
 }
-.section-title h1{
+
+.section-title h1 {
     display: inline-block;
     font-size: 35px;
     text-transform: uppercase;
@@ -33,7 +34,8 @@ body{
     position: relative;
     font-family: Montserrat, sans-serif;
 }
-.section-title h1:before{
+
+.section-title h1:before {
     content: '';
     left: 0;
     position: absolute;
@@ -42,31 +44,38 @@ body{
     /* background-color: #febd01; */
     bottom: 0px;
 }
-.text-center{
+
+.text-center {
     text-align: center!important;
 }
-.text-right{
+
+.text-right {
     text-align: right!important;
 }
-.portfolio{
+
+.portfolio {
     background-color: white;
     padding: 100px 7px;
-    margin-top:130px;
+    margin-top: 130px;
 }
-.portfolio .section-title h1:before{
+
+.portfolio .section-title h1:before {
     left: 30%;
 }
-.portfolio .filter-buttons{
+
+.portfolio .filter-buttons {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
 }
-.portfolio .filter-buttons ul{
+
+.portfolio .filter-buttons ul {
     list-style: none;
     text-align: center;
     padding: 0;
 }
-.portfolio .filter-buttons ul li{
+
+.portfolio .filter-buttons ul li {
     color: #000000;
     font-weight: 500;
     font-size: 16px;
@@ -75,47 +84,57 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     padding-bottom: 0px;
-   
 }
-.portfolio .filter-buttons ul li.active{
+
+.portfolio .filter-buttons ul li.active {
     color: #14db48;
     border-bottom: 2px solid #14db48;
 }
-.portfolio .portfolio-gallery{
+
+.portfolio .portfolio-gallery {
     flex: 0 0 100%;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.portfolio .portfolio-gallery .item{
+
+.portfolio .portfolio-gallery .item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     position: relative;
     padding: 8px;
- 
 }
-.portfolio .portfolio-gallery .item .inner{
+
+.portfolio .portfolio-gallery .item .inner {
     position: relative;
 }
-.portfolio .portfolio-gallery .item img{
+
+.portfolio .portfolio-gallery .item img {
     width: 100%;
     display: block;
+    height: auto;
 }
 
-@media(max-width:767px){
+.video-fluid {
+    width: 100%;
+    height: auto;
+}
 
-    .portfolio .portfolio-gallery .item{
-        flex:0 0 50% ;
+@media(max-width:767px) {
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 50%;
         max-width: 50%;
         position: relative;
-        padding:8px ;
+        padding: 8px;
     }
-
-
 }
-@media(max-width:500px){
 
-    .portfolio .portfolio-gallery .item{
-        flex:0 0 100% ;
-        max-width: 100%; }
+@media(max-width:500px) {
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
+
+
+/* -------------------------Gallery Interiors------------------------------- */
